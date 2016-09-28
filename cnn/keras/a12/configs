@@ -1,0 +1,10 @@
+num_epoch = 500
+num_train_samples = 923 * 5
+num_val_samples = 481
+
+path_ADNI = '/home/mhubrich/ADNI'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/something'
+
+config['lr'] = 0.01
+config['decay'] = 0.001
+config['momentum'] = 0.8

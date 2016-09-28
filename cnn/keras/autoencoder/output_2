@@ -1,0 +1,319 @@
+Found 923 scans belonging to 2 classes.
+Found 481 scans belonging to 2 classes.
+Epoch 1/2000
+19:15:52: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00000: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.00-loss_0.448-acc_0.671.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3471s - loss: 0.4479 - acc: 0.6715 - val_loss: 0.4479 - val_acc: 0.6711
+Epoch 2/2000
+20:13:45: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00001: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.01-loss_0.448-acc_0.682.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3472s - loss: 0.4479 - acc: 0.6816 - val_loss: 0.4468 - val_acc: 0.6885
+Epoch 3/2000
+21:11:38: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00002: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.02-loss_0.448-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3472s - loss: 0.4479 - acc: 0.6912 - val_loss: 0.4474 - val_acc: 0.6921
+Epoch 4/2000
+22:09:31: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00003: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.03-loss_0.448-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4479 - acc: 0.6982 - val_loss: 0.4477 - val_acc: 0.6979
+Epoch 5/2000
+23:07:24: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00004: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.04-loss_0.448-acc_0.706.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3472s - loss: 0.4478 - acc: 0.7063 - val_loss: 0.4472 - val_acc: 0.7088
+Epoch 6/2000
+00:05:16: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00005: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.05-loss_0.448-acc_0.712.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3472s - loss: 0.4478 - acc: 0.7123 - val_loss: 0.4475 - val_acc: 0.7102
+Epoch 7/2000
+01:03:09: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00006: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.06-loss_0.448-acc_0.718.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3472s - loss: 0.4478 - acc: 0.7178 - val_loss: 0.4476 - val_acc: 0.7133
+Epoch 8/2000
+02:01:02: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00007: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.07-loss_0.448-acc_0.722.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4477 - acc: 0.7217 - val_loss: 0.4468 - val_acc: 0.7272
+Epoch 9/2000
+02:58:55: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00008: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.08-loss_0.448-acc_0.727.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3472s - loss: 0.4477 - acc: 0.7267 - val_loss: 0.4468 - val_acc: 0.7266
+Epoch 10/2000
+03:56:48: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00009: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.09-loss_0.448-acc_0.731.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4477 - acc: 0.7308 - val_loss: 0.4473 - val_acc: 0.7194
+Epoch 11/2000
+04:54:42: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00010: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.10-loss_0.448-acc_0.734.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4477 - acc: 0.7336 - val_loss: 0.4466 - val_acc: 0.7363
+Epoch 12/2000
+05:52:35: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00011: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.11-loss_0.448-acc_0.737.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4476 - acc: 0.7373 - val_loss: 0.4467 - val_acc: 0.7392
+Epoch 13/2000
+06:50:28: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00012: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.12-loss_0.448-acc_0.739.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4476 - acc: 0.7389 - val_loss: 0.4471 - val_acc: 0.7312
+Epoch 14/2000
+07:48:21: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00013: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.13-loss_0.448-acc_0.740.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4476 - acc: 0.7405 - val_loss: 0.4470 - val_acc: 0.7344
+Epoch 15/2000
+08:46:14: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00014: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.14-loss_0.448-acc_0.742.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4476 - acc: 0.7421 - val_loss: 0.4470 - val_acc: 0.7403
+Epoch 16/2000
+09:44:08: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00015: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.15-loss_0.448-acc_0.744.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4476 - acc: 0.7440 - val_loss: 0.4469 - val_acc: 0.7404
+Epoch 17/2000
+10:42:01: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00016: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.16-loss_0.448-acc_0.744.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3473s - loss: 0.4477 - acc: 0.7445 - val_loss: 0.4469 - val_acc: 0.7455
+Epoch 18/2000
+11:39:55: Batch 0800: 0.31 Examples/Second, 3.26 Seconds/Batch
+Epoch 00017: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.17-loss_0.448-acc_0.747.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3475s - loss: 0.4475 - acc: 0.7466 - val_loss: 0.4466 - val_acc: 0.7485
+Epoch 19/2000
+12:37:53: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00018: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.18-loss_0.448-acc_0.749.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4476 - acc: 0.7491 - val_loss: 0.4467 - val_acc: 0.7497
+Epoch 20/2000
+13:35:52: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00019: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.19-loss_0.448-acc_0.750.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4476 - acc: 0.7503 - val_loss: 0.4468 - val_acc: 0.7484
+Epoch 21/2000
+14:33:51: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00020: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.20-loss_0.448-acc_0.751.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4476 - acc: 0.7512 - val_loss: 0.4468 - val_acc: 0.7504
+Epoch 22/2000
+15:31:50: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00021: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.21-loss_0.448-acc_0.753.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4476 - acc: 0.7533 - val_loss: 0.4466 - val_acc: 0.7535
+Epoch 23/2000
+16:29:49: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00022: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.22-loss_0.448-acc_0.754.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4476 - acc: 0.7538 - val_loss: 0.4467 - val_acc: 0.7544
+Epoch 24/2000
+17:27:47: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00023: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.23-loss_0.448-acc_0.755.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4476 - acc: 0.7546 - val_loss: 0.4468 - val_acc: 0.7527
+Epoch 25/2000
+18:25:46: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00024: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.24-loss_0.448-acc_0.756.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7563 - val_loss: 0.4468 - val_acc: 0.7549
+Epoch 26/2000
+19:23:45: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00025: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.25-loss_0.448-acc_0.757.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7573 - val_loss: 0.4468 - val_acc: 0.7549
+Epoch 27/2000
+20:21:43: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00026: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.26-loss_0.448-acc_0.759.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7592 - val_loss: 0.4466 - val_acc: 0.7582
+Epoch 28/2000
+21:19:42: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00027: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.27-loss_0.448-acc_0.760.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7598 - val_loss: 0.4468 - val_acc: 0.7588
+Epoch 29/2000
+22:17:41: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00028: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.28-loss_0.448-acc_0.761.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4476 - acc: 0.7613 - val_loss: 0.4466 - val_acc: 0.7614
+Epoch 30/2000
+23:15:39: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00029: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.29-loss_0.447-acc_0.763.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7627 - val_loss: 0.4468 - val_acc: 0.7603
+Epoch 31/2000
+00:13:37: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00030: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.30-loss_0.448-acc_0.764.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7638 - val_loss: 0.4467 - val_acc: 0.7631
+Epoch 32/2000
+01:11:36: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00031: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.31-loss_0.448-acc_0.765.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7655 - val_loss: 0.4468 - val_acc: 0.7635
+Epoch 33/2000
+02:09:35: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00032: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.32-loss_0.448-acc_0.766.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7663 - val_loss: 0.4467 - val_acc: 0.7644
+Epoch 34/2000
+03:07:34: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00033: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.33-loss_0.448-acc_0.767.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7671 - val_loss: 0.4466 - val_acc: 0.7676
+Epoch 35/2000
+04:05:33: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00034: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.34-loss_0.448-acc_0.769.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7689 - val_loss: 0.4467 - val_acc: 0.7702
+Epoch 36/2000
+05:03:32: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00035: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.35-loss_0.447-acc_0.770.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7697 - val_loss: 0.4467 - val_acc: 0.7700
+Epoch 37/2000
+06:01:31: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00036: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.36-loss_0.448-acc_0.771.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7709 - val_loss: 0.4467 - val_acc: 0.7694
+Epoch 38/2000
+06:59:30: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00037: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.37-loss_0.447-acc_0.772.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7721 - val_loss: 0.4466 - val_acc: 0.7721
+Epoch 39/2000
+07:57:29: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00038: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.38-loss_0.447-acc_0.773.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7732 - val_loss: 0.4466 - val_acc: 0.7716
+Epoch 40/2000
+08:55:28: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00039: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.39-loss_0.447-acc_0.774.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7743 - val_loss: 0.4467 - val_acc: 0.7735
+Epoch 41/2000
+09:53:27: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00040: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.40-loss_0.447-acc_0.775.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7747 - val_loss: 0.4466 - val_acc: 0.7753
+Epoch 42/2000
+10:51:26: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00041: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.41-loss_0.447-acc_0.776.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7756 - val_loss: 0.4466 - val_acc: 0.7749
+Epoch 43/2000
+11:49:26: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00042: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.42-loss_0.447-acc_0.776.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7765 - val_loss: 0.4466 - val_acc: 0.7759
+Epoch 44/2000
+12:47:25: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00043: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.43-loss_0.447-acc_0.777.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3479s - loss: 0.4475 - acc: 0.7774 - val_loss: 0.4466 - val_acc: 0.7774
+Epoch 45/2000
+13:45:24: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch
+Epoch 00044: saving model to /home/mhubrich/checkpoints/adni/auto3D_2/weights.44-loss_0.447-acc_0.779.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p
+3478s - loss: 0.4475 - acc: 0.7786 - val_loss: 0.4466 - val_acc: 0.7790
+Epoch 46/2000
+14:43:22: Batch 0800: 0.31 Examples/Second, 3.27 Seconds/Batch

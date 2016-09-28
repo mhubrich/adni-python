@@ -1,0 +1,1726 @@
+Found 923 scans belonging to 2 classes.
+Found 481 scans belonging to 2 classes.
+Epoch 1/2000
+11:02:10: Batch 0050: 19.62 Examples/Second, 3.26 Seconds/Batch
+Epoch 00000: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.00-loss_0.585-acc_0.684.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+254s - loss: 0.5849 - acc: 0.6841 - val_loss: 0.5663 - val_acc: 0.7484
+Epoch 2/2000
+11:06:23: Batch 0050: 19.87 Examples/Second, 3.22 Seconds/Batch
+Epoch 00001: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.01-loss_0.583-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+251s - loss: 0.5830 - acc: 0.6964 - val_loss: 0.5620 - val_acc: 0.7484
+Epoch 3/2000
+11:10:34: Batch 0050: 19.88 Examples/Second, 3.22 Seconds/Batch
+Epoch 00002: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.02-loss_0.581-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+251s - loss: 0.5806 - acc: 0.6984 - val_loss: 0.5592 - val_acc: 0.7568
+Epoch 4/2000
+11:14:45: Batch 0050: 19.87 Examples/Second, 3.22 Seconds/Batch
+Epoch 00003: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.03-loss_0.579-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+251s - loss: 0.5792 - acc: 0.6930 - val_loss: 0.5567 - val_acc: 0.7588
+Epoch 5/2000
+11:18:56: Batch 0050: 19.89 Examples/Second, 3.22 Seconds/Batch
+Epoch 00004: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.04-loss_0.570-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+250s - loss: 0.5701 - acc: 0.7073 - val_loss: 0.5588 - val_acc: 0.7588
+Epoch 6/2000
+11:23:07: Batch 0050: 19.88 Examples/Second, 3.22 Seconds/Batch
+Epoch 00005: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.05-loss_0.579-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+250s - loss: 0.5785 - acc: 0.7025 - val_loss: 0.5600 - val_acc: 0.7588
+Epoch 7/2000
+11:27:18: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00006: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.06-loss_0.580-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5804 - acc: 0.6936 - val_loss: 0.5629 - val_acc: 0.7547
+Epoch 8/2000
+11:31:27: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00007: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.07-loss_0.580-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5801 - acc: 0.6975 - val_loss: 0.5618 - val_acc: 0.7588
+Epoch 9/2000
+11:35:37: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00008: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.08-loss_0.576-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5760 - acc: 0.6988 - val_loss: 0.5594 - val_acc: 0.7505
+Epoch 10/2000
+11:39:46: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00009: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.09-loss_0.577-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5771 - acc: 0.6943 - val_loss: 0.5568 - val_acc: 0.7547
+Epoch 11/2000
+11:43:56: Batch 0050: 19.97 Examples/Second, 3.21 Seconds/Batch
+Epoch 00010: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.10-loss_0.588-acc_0.690.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5876 - acc: 0.6901 - val_loss: 0.5526 - val_acc: 0.7588
+Epoch 12/2000
+11:48:06: Batch 0050: 19.97 Examples/Second, 3.21 Seconds/Batch
+Epoch 00011: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.11-loss_0.582-acc_0.690.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5822 - acc: 0.6901 - val_loss: 0.5597 - val_acc: 0.7568
+Epoch 13/2000
+11:52:16: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00012: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.12-loss_0.581-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5813 - acc: 0.6945 - val_loss: 0.5568 - val_acc: 0.7568
+Epoch 14/2000
+11:56:25: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00013: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.13-loss_0.579-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5792 - acc: 0.6992 - val_loss: 0.5532 - val_acc: 0.7588
+Epoch 15/2000
+12:00:35: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00014: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.14-loss_0.575-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5751 - acc: 0.6949 - val_loss: 0.5542 - val_acc: 0.7609
+Epoch 16/2000
+12:04:45: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00015: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.15-loss_0.570-acc_0.710.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5701 - acc: 0.7096 - val_loss: 0.5603 - val_acc: 0.7526
+Epoch 17/2000
+12:08:54: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00016: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.16-loss_0.577-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5771 - acc: 0.6940 - val_loss: 0.5511 - val_acc: 0.7630
+Epoch 18/2000
+12:13:04: Batch 0050: 19.97 Examples/Second, 3.21 Seconds/Batch
+Epoch 00017: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.17-loss_0.578-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5781 - acc: 0.6979 - val_loss: 0.5537 - val_acc: 0.7630
+Epoch 19/2000
+12:17:13: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00018: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.18-loss_0.575-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5755 - acc: 0.6990 - val_loss: 0.5634 - val_acc: 0.7588
+Epoch 20/2000
+12:21:23: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00019: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.19-loss_0.575-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5751 - acc: 0.6971 - val_loss: 0.5598 - val_acc: 0.7609
+Epoch 21/2000
+12:25:33: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00020: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.20-loss_0.580-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5801 - acc: 0.6971 - val_loss: 0.5592 - val_acc: 0.7588
+Epoch 22/2000
+12:29:42: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00021: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.21-loss_0.571-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5715 - acc: 0.6969 - val_loss: 0.5611 - val_acc: 0.7547
+Epoch 23/2000
+12:33:52: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00022: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.22-loss_0.576-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5762 - acc: 0.7010 - val_loss: 0.5637 - val_acc: 0.7526
+Epoch 24/2000
+12:38:02: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00023: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.23-loss_0.578-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5777 - acc: 0.7021 - val_loss: 0.5563 - val_acc: 0.7588
+Epoch 25/2000
+12:42:11: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00024: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.24-loss_0.574-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5741 - acc: 0.6971 - val_loss: 0.5597 - val_acc: 0.7568
+Epoch 26/2000
+12:46:21: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00025: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.25-loss_0.579-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5792 - acc: 0.7010 - val_loss: 0.5629 - val_acc: 0.7505
+Epoch 27/2000
+12:50:31: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00026: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.26-loss_0.581-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5813 - acc: 0.6969 - val_loss: 0.5607 - val_acc: 0.7588
+Epoch 28/2000
+12:54:40: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00027: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.27-loss_0.572-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5717 - acc: 0.6973 - val_loss: 0.5632 - val_acc: 0.7547
+Epoch 29/2000
+12:58:50: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00028: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.28-loss_0.579-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5791 - acc: 0.6982 - val_loss: 0.5608 - val_acc: 0.7588
+Epoch 30/2000
+13:02:59: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00029: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.29-loss_0.581-acc_0.692.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5811 - acc: 0.6919 - val_loss: 0.5611 - val_acc: 0.7547
+Epoch 31/2000
+13:07:09: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00030: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.30-loss_0.582-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5820 - acc: 0.6982 - val_loss: 0.5589 - val_acc: 0.7568
+Epoch 32/2000
+13:11:19: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00031: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.31-loss_0.573-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5727 - acc: 0.7010 - val_loss: 0.5601 - val_acc: 0.7526
+Epoch 33/2000
+13:15:28: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00032: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.32-loss_0.572-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5717 - acc: 0.7025 - val_loss: 0.5641 - val_acc: 0.7505
+Epoch 34/2000
+13:19:38: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00033: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.33-loss_0.579-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5790 - acc: 0.6964 - val_loss: 0.5679 - val_acc: 0.7464
+Epoch 35/2000
+13:23:48: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00034: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.34-loss_0.579-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5794 - acc: 0.6925 - val_loss: 0.5643 - val_acc: 0.7505
+Epoch 36/2000
+13:27:57: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00035: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.35-loss_0.586-acc_0.688.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5858 - acc: 0.6882 - val_loss: 0.5615 - val_acc: 0.7547
+Epoch 37/2000
+13:32:07: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00036: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.36-loss_0.581-acc_0.687.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5814 - acc: 0.6871 - val_loss: 0.5637 - val_acc: 0.7505
+Epoch 38/2000
+13:36:16: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00037: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.37-loss_0.582-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5820 - acc: 0.6992 - val_loss: 0.5676 - val_acc: 0.7484
+Epoch 39/2000
+13:40:26: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00038: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.38-loss_0.583-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5834 - acc: 0.6945 - val_loss: 0.5599 - val_acc: 0.7547
+Epoch 40/2000
+13:44:36: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00039: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.39-loss_0.573-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5732 - acc: 0.7038 - val_loss: 0.5572 - val_acc: 0.7568
+Epoch 41/2000
+13:48:45: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00040: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.40-loss_0.580-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5804 - acc: 0.6945 - val_loss: 0.5653 - val_acc: 0.7526
+Epoch 42/2000
+13:52:55: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00041: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.41-loss_0.577-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5769 - acc: 0.7021 - val_loss: 0.5596 - val_acc: 0.7526
+Epoch 43/2000
+13:57:05: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00042: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.42-loss_0.573-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5735 - acc: 0.7049 - val_loss: 0.5601 - val_acc: 0.7526
+Epoch 44/2000
+14:01:14: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00043: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.43-loss_0.566-acc_0.709.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5661 - acc: 0.7088 - val_loss: 0.5621 - val_acc: 0.7505
+Epoch 45/2000
+14:05:24: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00044: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.44-loss_0.575-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5751 - acc: 0.7005 - val_loss: 0.5632 - val_acc: 0.7547
+Epoch 46/2000
+14:09:33: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00045: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.45-loss_0.580-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5799 - acc: 0.6943 - val_loss: 0.5592 - val_acc: 0.7526
+Epoch 47/2000
+14:13:43: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00046: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.46-loss_0.573-acc_0.708.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5726 - acc: 0.7083 - val_loss: 0.5578 - val_acc: 0.7547
+Epoch 48/2000
+14:17:53: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00047: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.47-loss_0.573-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5727 - acc: 0.7034 - val_loss: 0.5572 - val_acc: 0.7568
+Epoch 49/2000
+14:22:02: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00048: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.48-loss_0.577-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5766 - acc: 0.6988 - val_loss: 0.5551 - val_acc: 0.7588
+Epoch 50/2000
+14:26:12: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00049: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.49-loss_0.574-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5736 - acc: 0.7012 - val_loss: 0.5610 - val_acc: 0.7568
+Epoch 51/2000
+14:30:22: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00050: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.50-loss_0.569-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5688 - acc: 0.7042 - val_loss: 0.5672 - val_acc: 0.7484
+Epoch 52/2000
+14:34:31: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00051: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.51-loss_0.577-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5767 - acc: 0.6973 - val_loss: 0.5616 - val_acc: 0.7547
+Epoch 53/2000
+14:38:41: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00052: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.52-loss_0.580-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5796 - acc: 0.6977 - val_loss: 0.5653 - val_acc: 0.7568
+Epoch 54/2000
+14:42:51: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00053: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.53-loss_0.583-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5827 - acc: 0.6951 - val_loss: 0.5671 - val_acc: 0.7484
+Epoch 55/2000
+14:47:00: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00054: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.54-loss_0.583-acc_0.688.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5830 - acc: 0.6878 - val_loss: 0.5571 - val_acc: 0.7588
+Epoch 56/2000
+14:51:10: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00055: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.55-loss_0.573-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5728 - acc: 0.7008 - val_loss: 0.5578 - val_acc: 0.7588
+Epoch 57/2000
+14:55:20: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00056: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.56-loss_0.577-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5765 - acc: 0.6984 - val_loss: 0.5642 - val_acc: 0.7547
+Epoch 58/2000
+14:59:29: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00057: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.57-loss_0.577-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5769 - acc: 0.6951 - val_loss: 0.5626 - val_acc: 0.7547
+Epoch 59/2000
+15:03:39: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00058: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.58-loss_0.580-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5800 - acc: 0.6943 - val_loss: 0.5616 - val_acc: 0.7526
+Epoch 60/2000
+15:07:49: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00059: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.59-loss_0.575-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5748 - acc: 0.6984 - val_loss: 0.5672 - val_acc: 0.7484
+Epoch 61/2000
+15:11:58: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00060: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.60-loss_0.577-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5771 - acc: 0.6988 - val_loss: 0.5557 - val_acc: 0.7588
+Epoch 62/2000
+15:16:08: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00061: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.61-loss_0.575-acc_0.708.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5752 - acc: 0.7083 - val_loss: 0.5643 - val_acc: 0.7526
+Epoch 63/2000
+15:20:17: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00062: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.62-loss_0.578-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5776 - acc: 0.7075 - val_loss: 0.5593 - val_acc: 0.7568
+Epoch 64/2000
+15:24:27: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00063: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.63-loss_0.575-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5748 - acc: 0.7023 - val_loss: 0.5559 - val_acc: 0.7609
+Epoch 65/2000
+15:28:37: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00064: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.64-loss_0.573-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5733 - acc: 0.6971 - val_loss: 0.5595 - val_acc: 0.7588
+Epoch 66/2000
+15:32:46: Batch 0050: 19.97 Examples/Second, 3.21 Seconds/Batch
+Epoch 00065: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.65-loss_0.575-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5749 - acc: 0.7003 - val_loss: 0.5654 - val_acc: 0.7547
+Epoch 67/2000
+15:36:56: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00066: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.66-loss_0.582-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5817 - acc: 0.6958 - val_loss: 0.5607 - val_acc: 0.7568
+Epoch 68/2000
+15:41:05: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00067: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.67-loss_0.580-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5800 - acc: 0.7010 - val_loss: 0.5666 - val_acc: 0.7526
+Epoch 69/2000
+15:45:15: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00068: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.68-loss_0.586-acc_0.686.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5864 - acc: 0.6862 - val_loss: 0.5636 - val_acc: 0.7547
+Epoch 70/2000
+15:49:25: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00069: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.69-loss_0.581-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5813 - acc: 0.6949 - val_loss: 0.5606 - val_acc: 0.7547
+Epoch 71/2000
+15:53:34: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00070: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.70-loss_0.577-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5769 - acc: 0.7066 - val_loss: 0.5561 - val_acc: 0.7609
+Epoch 72/2000
+15:57:44: Batch 0050: 19.97 Examples/Second, 3.21 Seconds/Batch
+Epoch 00071: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.71-loss_0.577-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5770 - acc: 0.7014 - val_loss: 0.5618 - val_acc: 0.7568
+Epoch 73/2000
+16:01:54: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00072: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.72-loss_0.574-acc_0.709.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5744 - acc: 0.7092 - val_loss: 0.5664 - val_acc: 0.7484
+Epoch 74/2000
+16:06:03: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00073: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.73-loss_0.574-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5737 - acc: 0.7031 - val_loss: 0.5695 - val_acc: 0.7505
+Epoch 75/2000
+16:10:13: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00074: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.74-loss_0.584-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5836 - acc: 0.6927 - val_loss: 0.5624 - val_acc: 0.7568
+Epoch 76/2000
+16:14:22: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00075: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.75-loss_0.574-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5745 - acc: 0.7075 - val_loss: 0.5626 - val_acc: 0.7568
+Epoch 77/2000
+16:18:32: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00076: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.76-loss_0.579-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5793 - acc: 0.7005 - val_loss: 0.5626 - val_acc: 0.7547
+Epoch 78/2000
+16:22:42: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00077: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.77-loss_0.577-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5774 - acc: 0.7008 - val_loss: 0.5655 - val_acc: 0.7484
+Epoch 79/2000
+16:26:51: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00078: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.78-loss_0.574-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5738 - acc: 0.6986 - val_loss: 0.5590 - val_acc: 0.7526
+Epoch 80/2000
+16:31:01: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00079: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.79-loss_0.588-acc_0.692.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5884 - acc: 0.6919 - val_loss: 0.5612 - val_acc: 0.7526
+Epoch 81/2000
+16:35:11: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00080: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.80-loss_0.574-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5739 - acc: 0.7034 - val_loss: 0.5628 - val_acc: 0.7484
+Epoch 82/2000
+16:39:20: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00081: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.81-loss_0.575-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5752 - acc: 0.7003 - val_loss: 0.5536 - val_acc: 0.7609
+Epoch 83/2000
+16:43:30: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00082: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.82-loss_0.582-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5817 - acc: 0.6936 - val_loss: 0.5525 - val_acc: 0.7630
+Epoch 84/2000
+16:47:39: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00083: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.83-loss_0.585-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5853 - acc: 0.6960 - val_loss: 0.5574 - val_acc: 0.7568
+Epoch 85/2000
+16:51:49: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00084: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.84-loss_0.575-acc_0.708.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5746 - acc: 0.7077 - val_loss: 0.5605 - val_acc: 0.7505
+Epoch 86/2000
+16:55:59: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00085: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.85-loss_0.571-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5709 - acc: 0.7053 - val_loss: 0.5584 - val_acc: 0.7505
+Epoch 87/2000
+17:00:08: Batch 0050: 19.96 Examples/Second, 3.21 Seconds/Batch
+Epoch 00086: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.86-loss_0.579-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5792 - acc: 0.7010 - val_loss: 0.5641 - val_acc: 0.7443
+Epoch 88/2000
+17:04:18: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00087: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.87-loss_0.577-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5775 - acc: 0.6936 - val_loss: 0.5634 - val_acc: 0.7484
+Epoch 89/2000
+17:08:27: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00088: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.88-loss_0.578-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5783 - acc: 0.6966 - val_loss: 0.5583 - val_acc: 0.7526
+Epoch 90/2000
+17:12:37: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00089: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.89-loss_0.573-acc_0.710.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5735 - acc: 0.7099 - val_loss: 0.5616 - val_acc: 0.7484
+Epoch 91/2000
+17:16:47: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00090: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.90-loss_0.587-acc_0.692.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5866 - acc: 0.6921 - val_loss: 0.5553 - val_acc: 0.7609
+Epoch 92/2000
+17:20:56: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00091: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.91-loss_0.576-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5765 - acc: 0.6971 - val_loss: 0.5600 - val_acc: 0.7484
+Epoch 93/2000
+17:25:06: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00092: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.92-loss_0.579-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5785 - acc: 0.6979 - val_loss: 0.5556 - val_acc: 0.7568
+Epoch 94/2000
+17:29:15: Batch 0050: 20.00 Examples/Second, 3.20 Seconds/Batch
+Epoch 00093: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.93-loss_0.582-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5823 - acc: 0.7010 - val_loss: 0.5588 - val_acc: 0.7526
+Epoch 95/2000
+17:33:25: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00094: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.94-loss_0.576-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5761 - acc: 0.6999 - val_loss: 0.5610 - val_acc: 0.7568
+Epoch 96/2000
+17:37:35: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00095: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.95-loss_0.581-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5812 - acc: 0.7029 - val_loss: 0.5635 - val_acc: 0.7526
+Epoch 97/2000
+17:41:44: Batch 0050: 20.01 Examples/Second, 3.20 Seconds/Batch
+Epoch 00096: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.96-loss_0.579-acc_0.689.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5790 - acc: 0.6888 - val_loss: 0.5622 - val_acc: 0.7526
+Epoch 98/2000
+17:45:53: Batch 0050: 20.00 Examples/Second, 3.20 Seconds/Batch
+Epoch 00097: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.97-loss_0.582-acc_0.687.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5822 - acc: 0.6867 - val_loss: 0.5658 - val_acc: 0.7443
+Epoch 99/2000
+17:50:03: Batch 0050: 20.01 Examples/Second, 3.20 Seconds/Batch
+Epoch 00098: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.98-loss_0.574-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5740 - acc: 0.6986 - val_loss: 0.5626 - val_acc: 0.7505
+Epoch 100/2000
+17:54:13: Batch 0050: 19.88 Examples/Second, 3.22 Seconds/Batch
+Epoch 00099: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.99-loss_0.575-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+252s - loss: 0.5752 - acc: 0.6938 - val_loss: 0.5624 - val_acc: 0.7526
+Epoch 101/2000
+17:58:29: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00100: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.100-loss_0.580-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5803 - acc: 0.6975 - val_loss: 0.5602 - val_acc: 0.7505
+Epoch 102/2000
+18:02:46: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00101: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.101-loss_0.575-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5754 - acc: 0.6977 - val_loss: 0.5620 - val_acc: 0.7464
+Epoch 103/2000
+18:07:02: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00102: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.102-loss_0.578-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5785 - acc: 0.7021 - val_loss: 0.5549 - val_acc: 0.7588
+Epoch 104/2000
+18:11:18: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00103: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.103-loss_0.581-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5812 - acc: 0.6930 - val_loss: 0.5599 - val_acc: 0.7505
+Epoch 105/2000
+18:15:34: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00104: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.104-loss_0.573-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5727 - acc: 0.6975 - val_loss: 0.5620 - val_acc: 0.7484
+Epoch 106/2000
+18:19:51: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00105: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.105-loss_0.575-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5745 - acc: 0.7008 - val_loss: 0.5616 - val_acc: 0.7505
+Epoch 107/2000
+18:24:07: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00106: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.106-loss_0.577-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5773 - acc: 0.6997 - val_loss: 0.5615 - val_acc: 0.7505
+Epoch 108/2000
+18:28:23: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00107: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.107-loss_0.575-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5753 - acc: 0.6927 - val_loss: 0.5703 - val_acc: 0.7401
+Epoch 109/2000
+18:32:40: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00108: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.108-loss_0.573-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5733 - acc: 0.7023 - val_loss: 0.5665 - val_acc: 0.7505
+Epoch 110/2000
+18:36:51: Batch 0050: 20.03 Examples/Second, 3.20 Seconds/Batch
+Epoch 00109: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.109-loss_0.586-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5860 - acc: 0.6914 - val_loss: 0.5578 - val_acc: 0.7568
+Epoch 111/2000
+18:41:00: Batch 0050: 20.02 Examples/Second, 3.20 Seconds/Batch
+Epoch 00110: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.110-loss_0.576-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5765 - acc: 0.7047 - val_loss: 0.5607 - val_acc: 0.7526
+Epoch 112/2000
+18:45:10: Batch 0050: 19.89 Examples/Second, 3.22 Seconds/Batch
+Epoch 00111: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.111-loss_0.579-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+252s - loss: 0.5786 - acc: 0.6992 - val_loss: 0.5611 - val_acc: 0.7547
+Epoch 113/2000
+18:49:27: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00112: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.112-loss_0.581-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5808 - acc: 0.6990 - val_loss: 0.5583 - val_acc: 0.7547
+Epoch 114/2000
+18:53:43: Batch 0050: 19.47 Examples/Second, 3.29 Seconds/Batch
+Epoch 00113: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.113-loss_0.585-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5845 - acc: 0.6938 - val_loss: 0.5668 - val_acc: 0.7464
+Epoch 115/2000
+18:57:59: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00114: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.114-loss_0.582-acc_0.690.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5816 - acc: 0.6899 - val_loss: 0.5599 - val_acc: 0.7547
+Epoch 116/2000
+19:02:15: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00115: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.115-loss_0.569-acc_0.708.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5691 - acc: 0.7083 - val_loss: 0.5604 - val_acc: 0.7526
+Epoch 117/2000
+19:06:32: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00116: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.116-loss_0.573-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5732 - acc: 0.6995 - val_loss: 0.5610 - val_acc: 0.7588
+Epoch 118/2000
+19:10:48: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00117: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.117-loss_0.575-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5754 - acc: 0.6964 - val_loss: 0.5648 - val_acc: 0.7526
+Epoch 119/2000
+19:15:04: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00118: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.118-loss_0.583-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5835 - acc: 0.6969 - val_loss: 0.5634 - val_acc: 0.7505
+Epoch 120/2000
+19:19:20: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00119: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.119-loss_0.576-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5758 - acc: 0.7044 - val_loss: 0.5545 - val_acc: 0.7547
+Epoch 121/2000
+19:23:36: Batch 0050: 19.47 Examples/Second, 3.29 Seconds/Batch
+Epoch 00120: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.120-loss_0.578-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5783 - acc: 0.6966 - val_loss: 0.5539 - val_acc: 0.7547
+Epoch 122/2000
+19:27:52: Batch 0050: 19.47 Examples/Second, 3.29 Seconds/Batch
+Epoch 00121: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.121-loss_0.579-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5788 - acc: 0.6988 - val_loss: 0.5636 - val_acc: 0.7505
+Epoch 123/2000
+19:32:09: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00122: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.122-loss_0.576-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5760 - acc: 0.7014 - val_loss: 0.5660 - val_acc: 0.7422
+Epoch 124/2000
+19:36:25: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00123: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.123-loss_0.580-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5804 - acc: 0.6973 - val_loss: 0.5586 - val_acc: 0.7547
+Epoch 125/2000
+19:40:41: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00124: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.124-loss_0.578-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5779 - acc: 0.6986 - val_loss: 0.5631 - val_acc: 0.7484
+Epoch 126/2000
+19:44:57: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00125: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.125-loss_0.586-acc_0.689.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5860 - acc: 0.6893 - val_loss: 0.5497 - val_acc: 0.7672
+Epoch 127/2000
+19:49:14: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00126: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.126-loss_0.584-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5839 - acc: 0.6964 - val_loss: 0.5617 - val_acc: 0.7505
+Epoch 128/2000
+19:53:30: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00127: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.127-loss_0.584-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5838 - acc: 0.6938 - val_loss: 0.5617 - val_acc: 0.7526
+Epoch 129/2000
+19:57:46: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00128: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.128-loss_0.587-acc_0.685.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5872 - acc: 0.6852 - val_loss: 0.5580 - val_acc: 0.7609
+Epoch 130/2000
+20:02:02: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00129: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.129-loss_0.569-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5688 - acc: 0.7038 - val_loss: 0.5585 - val_acc: 0.7547
+Epoch 131/2000
+20:06:19: Batch 0050: 19.46 Examples/Second, 3.29 Seconds/Batch
+Epoch 00130: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.130-loss_0.570-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5703 - acc: 0.7047 - val_loss: 0.5642 - val_acc: 0.7464
+Epoch 132/2000
+20:10:35: Batch 0050: 19.45 Examples/Second, 3.29 Seconds/Batch
+Epoch 00131: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.131-loss_0.576-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+257s - loss: 0.5762 - acc: 0.6932 - val_loss: 0.5589 - val_acc: 0.7588
+Epoch 133/2000
+20:14:52: Batch 0050: 19.44 Examples/Second, 3.29 Seconds/Batch
+Epoch 00132: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.132-loss_0.575-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5745 - acc: 0.7021 - val_loss: 0.5596 - val_acc: 0.7568
+Epoch 134/2000
+20:19:09: Batch 0050: 19.43 Examples/Second, 3.29 Seconds/Batch
+Epoch 00133: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.133-loss_0.572-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5721 - acc: 0.6969 - val_loss: 0.5592 - val_acc: 0.7568
+Epoch 135/2000
+20:23:26: Batch 0050: 19.43 Examples/Second, 3.29 Seconds/Batch
+Epoch 00134: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.134-loss_0.570-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5700 - acc: 0.7040 - val_loss: 0.5581 - val_acc: 0.7526
+Epoch 136/2000
+20:27:42: Batch 0050: 19.43 Examples/Second, 3.29 Seconds/Batch
+Epoch 00135: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.135-loss_0.581-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5811 - acc: 0.6966 - val_loss: 0.5607 - val_acc: 0.7464
+Epoch 137/2000
+20:31:59: Batch 0050: 19.42 Examples/Second, 3.30 Seconds/Batch
+Epoch 00136: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.136-loss_0.570-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5704 - acc: 0.7051 - val_loss: 0.5538 - val_acc: 0.7588
+Epoch 138/2000
+20:36:15: Batch 0050: 19.43 Examples/Second, 3.29 Seconds/Batch
+Epoch 00137: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.137-loss_0.579-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5789 - acc: 0.7001 - val_loss: 0.5634 - val_acc: 0.7526
+Epoch 139/2000
+20:40:32: Batch 0050: 19.43 Examples/Second, 3.29 Seconds/Batch
+Epoch 00138: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.138-loss_0.583-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5831 - acc: 0.6947 - val_loss: 0.5603 - val_acc: 0.7505
+Epoch 140/2000
+20:44:49: Batch 0050: 19.43 Examples/Second, 3.29 Seconds/Batch
+Epoch 00139: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.139-loss_0.579-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5790 - acc: 0.7003 - val_loss: 0.5629 - val_acc: 0.7484
+Epoch 141/2000
+20:49:01: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00140: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.140-loss_0.584-acc_0.682.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5842 - acc: 0.6819 - val_loss: 0.5507 - val_acc: 0.7609
+Epoch 142/2000
+20:53:11: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00141: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.141-loss_0.570-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5697 - acc: 0.7012 - val_loss: 0.5576 - val_acc: 0.7526
+Epoch 143/2000
+20:57:20: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00142: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.142-loss_0.577-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5766 - acc: 0.6990 - val_loss: 0.5635 - val_acc: 0.7422
+Epoch 144/2000
+21:01:30: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00143: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.143-loss_0.579-acc_0.689.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5788 - acc: 0.6891 - val_loss: 0.5632 - val_acc: 0.7484
+Epoch 145/2000
+21:05:40: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00144: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.144-loss_0.573-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5734 - acc: 0.7042 - val_loss: 0.5593 - val_acc: 0.7526
+Epoch 146/2000
+21:09:49: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00145: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.145-loss_0.588-acc_0.690.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5883 - acc: 0.6901 - val_loss: 0.5557 - val_acc: 0.7568
+Epoch 147/2000
+21:13:59: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00146: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.146-loss_0.584-acc_0.688.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5841 - acc: 0.6875 - val_loss: 0.5599 - val_acc: 0.7505
+Epoch 148/2000
+21:18:08: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00147: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.147-loss_0.576-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5759 - acc: 0.7027 - val_loss: 0.5582 - val_acc: 0.7526
+Epoch 149/2000
+21:22:18: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00148: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.148-loss_0.580-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5799 - acc: 0.6910 - val_loss: 0.5583 - val_acc: 0.7547
+Epoch 150/2000
+21:26:28: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00149: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.149-loss_0.567-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5670 - acc: 0.6986 - val_loss: 0.5585 - val_acc: 0.7484
+Epoch 151/2000
+21:30:37: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00150: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.150-loss_0.579-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5791 - acc: 0.6956 - val_loss: 0.5614 - val_acc: 0.7484
+Epoch 152/2000
+21:34:47: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00151: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.151-loss_0.569-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5692 - acc: 0.6964 - val_loss: 0.5673 - val_acc: 0.7464
+Epoch 153/2000
+21:38:57: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00152: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.152-loss_0.573-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+252s - loss: 0.5726 - acc: 0.7038 - val_loss: 0.5620 - val_acc: 0.7484
+Epoch 154/2000
+21:43:09: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00153: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.153-loss_0.573-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5727 - acc: 0.7038 - val_loss: 0.5601 - val_acc: 0.7484
+Epoch 155/2000
+21:47:19: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00154: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.154-loss_0.580-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5799 - acc: 0.6990 - val_loss: 0.5615 - val_acc: 0.7547
+Epoch 156/2000
+21:51:28: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00155: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.155-loss_0.581-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5814 - acc: 0.6914 - val_loss: 0.5568 - val_acc: 0.7526
+Epoch 157/2000
+21:55:38: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00156: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.156-loss_0.576-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5760 - acc: 0.6908 - val_loss: 0.5605 - val_acc: 0.7526
+Epoch 158/2000
+21:59:48: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00157: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.157-loss_0.571-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5709 - acc: 0.6975 - val_loss: 0.5598 - val_acc: 0.7547
+Epoch 159/2000
+22:03:57: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00158: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.158-loss_0.588-acc_0.689.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5876 - acc: 0.6895 - val_loss: 0.5537 - val_acc: 0.7526
+Epoch 160/2000
+22:08:07: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00159: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.159-loss_0.572-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5716 - acc: 0.7010 - val_loss: 0.5594 - val_acc: 0.7526
+Epoch 161/2000
+22:12:17: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00160: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.160-loss_0.572-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5720 - acc: 0.6949 - val_loss: 0.5610 - val_acc: 0.7505
+Epoch 162/2000
+22:16:26: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00161: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.161-loss_0.569-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5695 - acc: 0.7036 - val_loss: 0.5579 - val_acc: 0.7547
+Epoch 163/2000
+22:20:36: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00162: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.162-loss_0.582-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5821 - acc: 0.6951 - val_loss: 0.5588 - val_acc: 0.7547
+Epoch 164/2000
+22:24:46: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00163: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.163-loss_0.580-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5799 - acc: 0.6979 - val_loss: 0.5601 - val_acc: 0.7505
+Epoch 165/2000
+22:28:55: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00164: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.164-loss_0.582-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5819 - acc: 0.6964 - val_loss: 0.5607 - val_acc: 0.7505
+Epoch 166/2000
+22:33:05: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00165: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.165-loss_0.581-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5810 - acc: 0.6934 - val_loss: 0.5587 - val_acc: 0.7526
+Epoch 167/2000
+22:37:15: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00166: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.166-loss_0.581-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5809 - acc: 0.7021 - val_loss: 0.5598 - val_acc: 0.7505
+Epoch 168/2000
+22:41:24: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00167: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.167-loss_0.581-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5810 - acc: 0.6966 - val_loss: 0.5609 - val_acc: 0.7484
+Epoch 169/2000
+22:45:34: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00168: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.168-loss_0.574-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5741 - acc: 0.7051 - val_loss: 0.5588 - val_acc: 0.7484
+Epoch 170/2000
+22:49:44: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00169: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.169-loss_0.568-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5684 - acc: 0.7075 - val_loss: 0.5579 - val_acc: 0.7526
+Epoch 171/2000
+22:53:53: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00170: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.170-loss_0.577-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5771 - acc: 0.6995 - val_loss: 0.5557 - val_acc: 0.7526
+Epoch 172/2000
+22:58:03: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00171: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.171-loss_0.571-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5706 - acc: 0.7031 - val_loss: 0.5619 - val_acc: 0.7464
+Epoch 173/2000
+23:02:12: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00172: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.172-loss_0.583-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5833 - acc: 0.6977 - val_loss: 0.5552 - val_acc: 0.7526
+Epoch 174/2000
+23:06:22: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00173: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.173-loss_0.573-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5730 - acc: 0.7025 - val_loss: 0.5558 - val_acc: 0.7568
+Epoch 175/2000
+23:10:32: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00174: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.174-loss_0.571-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5712 - acc: 0.7027 - val_loss: 0.5614 - val_acc: 0.7505
+Epoch 176/2000
+23:14:41: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00175: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.175-loss_0.579-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5788 - acc: 0.7021 - val_loss: 0.5595 - val_acc: 0.7526
+Epoch 177/2000
+23:18:51: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00176: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.176-loss_0.589-acc_0.682.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5888 - acc: 0.6817 - val_loss: 0.5586 - val_acc: 0.7547
+Epoch 178/2000
+23:23:01: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00177: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.177-loss_0.579-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5789 - acc: 0.7014 - val_loss: 0.5568 - val_acc: 0.7588
+Epoch 179/2000
+23:27:10: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00178: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.178-loss_0.576-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5763 - acc: 0.6947 - val_loss: 0.5580 - val_acc: 0.7547
+Epoch 180/2000
+23:31:20: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00179: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.179-loss_0.571-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5710 - acc: 0.7021 - val_loss: 0.5623 - val_acc: 0.7484
+Epoch 181/2000
+23:35:30: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00180: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.180-loss_0.585-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5845 - acc: 0.6914 - val_loss: 0.5621 - val_acc: 0.7526
+Epoch 182/2000
+23:39:40: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00181: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.181-loss_0.573-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5734 - acc: 0.7040 - val_loss: 0.5623 - val_acc: 0.7484
+Epoch 183/2000
+23:43:49: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00182: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.182-loss_0.571-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5710 - acc: 0.7070 - val_loss: 0.5625 - val_acc: 0.7505
+Epoch 184/2000
+23:47:59: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00183: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.183-loss_0.581-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5813 - acc: 0.6956 - val_loss: 0.5607 - val_acc: 0.7588
+Epoch 185/2000
+23:52:08: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00184: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.184-loss_0.579-acc_0.687.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5789 - acc: 0.6873 - val_loss: 0.5655 - val_acc: 0.7464
+Epoch 186/2000
+23:56:18: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00185: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.185-loss_0.576-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5756 - acc: 0.7040 - val_loss: 0.5595 - val_acc: 0.7568
+Epoch 187/2000
+00:00:28: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00186: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.186-loss_0.576-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5762 - acc: 0.7029 - val_loss: 0.5601 - val_acc: 0.7547
+Epoch 188/2000
+00:04:37: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00187: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.187-loss_0.574-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5739 - acc: 0.7003 - val_loss: 0.5620 - val_acc: 0.7505
+Epoch 189/2000
+00:08:47: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00188: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.188-loss_0.587-acc_0.688.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5866 - acc: 0.6875 - val_loss: 0.5668 - val_acc: 0.7443
+Epoch 190/2000
+00:12:57: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00189: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.189-loss_0.580-acc_0.692.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5805 - acc: 0.6923 - val_loss: 0.5602 - val_acc: 0.7547
+Epoch 191/2000
+00:17:06: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00190: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.190-loss_0.577-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5766 - acc: 0.7049 - val_loss: 0.5618 - val_acc: 0.7547
+Epoch 192/2000
+00:21:16: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00191: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.191-loss_0.572-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5716 - acc: 0.7066 - val_loss: 0.5671 - val_acc: 0.7505
+Epoch 193/2000
+00:25:26: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00192: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.192-loss_0.574-acc_0.706.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5738 - acc: 0.7057 - val_loss: 0.5598 - val_acc: 0.7568
+Epoch 194/2000
+00:29:35: Batch 0050: 19.96 Examples/Second, 3.21 Seconds/Batch
+Epoch 00193: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.193-loss_0.581-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5806 - acc: 0.6953 - val_loss: 0.5614 - val_acc: 0.7547
+Epoch 195/2000
+00:33:45: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00194: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.194-loss_0.576-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5765 - acc: 0.6930 - val_loss: 0.5592 - val_acc: 0.7568
+Epoch 196/2000
+00:37:55: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00195: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.195-loss_0.573-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5726 - acc: 0.6977 - val_loss: 0.5574 - val_acc: 0.7588
+Epoch 197/2000
+00:42:04: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00196: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.196-loss_0.565-acc_0.711.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5650 - acc: 0.7105 - val_loss: 0.5560 - val_acc: 0.7588
+Epoch 198/2000
+00:46:14: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00197: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.197-loss_0.580-acc_0.692.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5802 - acc: 0.6917 - val_loss: 0.5607 - val_acc: 0.7505
+Epoch 199/2000
+00:50:23: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00198: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.198-loss_0.587-acc_0.683.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5871 - acc: 0.6834 - val_loss: 0.5607 - val_acc: 0.7547
+Epoch 200/2000
+00:54:33: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00199: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.199-loss_0.566-acc_0.712.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5665 - acc: 0.7125 - val_loss: 0.5590 - val_acc: 0.7568
+Epoch 201/2000
+00:58:43: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00200: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.200-loss_0.568-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5680 - acc: 0.7066 - val_loss: 0.5583 - val_acc: 0.7568
+Epoch 202/2000
+01:02:52: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00201: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.201-loss_0.577-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5773 - acc: 0.6949 - val_loss: 0.5627 - val_acc: 0.7526
+Epoch 203/2000
+01:07:02: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00202: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.202-loss_0.580-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5800 - acc: 0.6975 - val_loss: 0.5620 - val_acc: 0.7505
+Epoch 204/2000
+01:11:11: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00203: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.203-loss_0.570-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5704 - acc: 0.6990 - val_loss: 0.5567 - val_acc: 0.7568
+Epoch 205/2000
+01:15:21: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00204: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.204-loss_0.578-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5779 - acc: 0.7018 - val_loss: 0.5581 - val_acc: 0.7588
+Epoch 206/2000
+01:19:31: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00205: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.205-loss_0.577-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5773 - acc: 0.6977 - val_loss: 0.5607 - val_acc: 0.7526
+Epoch 207/2000
+01:23:40: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00206: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.206-loss_0.577-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5770 - acc: 0.6966 - val_loss: 0.5592 - val_acc: 0.7547
+Epoch 208/2000
+01:27:50: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00207: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.207-loss_0.577-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5772 - acc: 0.6966 - val_loss: 0.5555 - val_acc: 0.7630
+Epoch 209/2000
+01:32:00: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00208: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.208-loss_0.575-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5753 - acc: 0.7025 - val_loss: 0.5627 - val_acc: 0.7568
+Epoch 210/2000
+01:36:09: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00209: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.209-loss_0.570-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5695 - acc: 0.7012 - val_loss: 0.5650 - val_acc: 0.7547
+Epoch 211/2000
+01:40:19: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00210: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.210-loss_0.588-acc_0.687.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5883 - acc: 0.6869 - val_loss: 0.5589 - val_acc: 0.7588
+Epoch 212/2000
+01:44:29: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00211: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.211-loss_0.574-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5737 - acc: 0.7073 - val_loss: 0.5629 - val_acc: 0.7547
+Epoch 213/2000
+01:48:38: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00212: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.212-loss_0.572-acc_0.707.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5720 - acc: 0.7068 - val_loss: 0.5583 - val_acc: 0.7588
+Epoch 214/2000
+01:52:48: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00213: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.213-loss_0.574-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5741 - acc: 0.6999 - val_loss: 0.5639 - val_acc: 0.7505
+Epoch 215/2000
+01:56:58: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00214: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.214-loss_0.578-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5783 - acc: 0.6927 - val_loss: 0.5555 - val_acc: 0.7568
+Epoch 216/2000
+02:01:07: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00215: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.215-loss_0.570-acc_0.703.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5704 - acc: 0.7027 - val_loss: 0.5651 - val_acc: 0.7401
+Epoch 217/2000
+02:05:17: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00216: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.216-loss_0.584-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5842 - acc: 0.6927 - val_loss: 0.5545 - val_acc: 0.7568
+Epoch 218/2000
+02:09:27: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00217: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.217-loss_0.578-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5778 - acc: 0.7005 - val_loss: 0.5534 - val_acc: 0.7651
+Epoch 219/2000
+02:13:36: Batch 0050: 19.96 Examples/Second, 3.21 Seconds/Batch
+Epoch 00218: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.218-loss_0.576-acc_0.694.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5758 - acc: 0.6945 - val_loss: 0.5622 - val_acc: 0.7526
+Epoch 220/2000
+02:17:46: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00219: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.219-loss_0.566-acc_0.706.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5665 - acc: 0.7060 - val_loss: 0.5626 - val_acc: 0.7526
+Epoch 221/2000
+02:21:56: Batch 0050: 19.96 Examples/Second, 3.21 Seconds/Batch
+Epoch 00220: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.220-loss_0.581-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5814 - acc: 0.6966 - val_loss: 0.5598 - val_acc: 0.7568
+Epoch 222/2000
+02:26:05: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00221: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.221-loss_0.574-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5743 - acc: 0.7016 - val_loss: 0.5657 - val_acc: 0.7422
+Epoch 223/2000
+02:30:15: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00222: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.222-loss_0.577-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5770 - acc: 0.7049 - val_loss: 0.5648 - val_acc: 0.7484
+Epoch 224/2000
+02:34:25: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00223: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.223-loss_0.578-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5781 - acc: 0.7008 - val_loss: 0.5642 - val_acc: 0.7505
+Epoch 225/2000
+02:38:34: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00224: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.224-loss_0.576-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5765 - acc: 0.6953 - val_loss: 0.5546 - val_acc: 0.7630
+Epoch 226/2000
+02:42:44: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00225: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.225-loss_0.574-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5744 - acc: 0.6977 - val_loss: 0.5684 - val_acc: 0.7422
+Epoch 227/2000
+02:46:54: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00226: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.226-loss_0.573-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5726 - acc: 0.7021 - val_loss: 0.5693 - val_acc: 0.7422
+Epoch 228/2000
+02:51:03: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00227: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.227-loss_0.573-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5735 - acc: 0.7042 - val_loss: 0.5631 - val_acc: 0.7505
+Epoch 229/2000
+02:55:13: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00228: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.228-loss_0.580-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5798 - acc: 0.6979 - val_loss: 0.5664 - val_acc: 0.7505
+Epoch 230/2000
+02:59:23: Batch 0050: 19.97 Examples/Second, 3.21 Seconds/Batch
+Epoch 00229: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.229-loss_0.574-acc_0.704.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5738 - acc: 0.7038 - val_loss: 0.5591 - val_acc: 0.7588
+Epoch 231/2000
+03:03:32: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00230: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.230-loss_0.575-acc_0.695.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5752 - acc: 0.6953 - val_loss: 0.5633 - val_acc: 0.7568
+Epoch 232/2000
+03:07:43: Batch 0050: 19.82 Examples/Second, 3.23 Seconds/Batch
+Epoch 00231: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.231-loss_0.577-acc_0.693.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+253s - loss: 0.5774 - acc: 0.6925 - val_loss: 0.5647 - val_acc: 0.7484
+Epoch 233/2000
+03:12:00: Batch 0050: 19.42 Examples/Second, 3.30 Seconds/Batch
+Epoch 00232: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.232-loss_0.580-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5796 - acc: 0.6958 - val_loss: 0.5583 - val_acc: 0.7547
+Epoch 234/2000
+03:16:17: Batch 0050: 19.42 Examples/Second, 3.29 Seconds/Batch
+Epoch 00233: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.233-loss_0.570-acc_0.699.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+256s - loss: 0.5705 - acc: 0.6992 - val_loss: 0.5605 - val_acc: 0.7526
+Epoch 235/2000
+03:20:29: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00234: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.234-loss_0.578-acc_0.697.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5783 - acc: 0.6973 - val_loss: 0.5568 - val_acc: 0.7609
+Epoch 236/2000
+03:24:38: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00235: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.235-loss_0.577-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5770 - acc: 0.7005 - val_loss: 0.5570 - val_acc: 0.7609
+Epoch 237/2000
+03:28:48: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00236: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.236-loss_0.575-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5747 - acc: 0.6958 - val_loss: 0.5687 - val_acc: 0.7422
+Epoch 238/2000
+03:32:57: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00237: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.237-loss_0.582-acc_0.691.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5819 - acc: 0.6908 - val_loss: 0.5621 - val_acc: 0.7568
+Epoch 239/2000
+03:37:07: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00238: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.238-loss_0.578-acc_0.700.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5778 - acc: 0.7001 - val_loss: 0.5638 - val_acc: 0.7568
+Epoch 240/2000
+03:41:16: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00239: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.239-loss_0.574-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5740 - acc: 0.6960 - val_loss: 0.5676 - val_acc: 0.7443
+Epoch 241/2000
+03:45:26: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00240: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.240-loss_0.577-acc_0.698.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5774 - acc: 0.6982 - val_loss: 0.5648 - val_acc: 0.7484
+Epoch 242/2000
+03:49:35: Batch 0050: 20.00 Examples/Second, 3.20 Seconds/Batch
+Epoch 00241: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.241-loss_0.575-acc_0.705.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5754 - acc: 0.7047 - val_loss: 0.5631 - val_acc: 0.7547
+Epoch 243/2000
+03:53:45: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00242: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.242-loss_0.574-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5743 - acc: 0.7016 - val_loss: 0.5645 - val_acc: 0.7547
+Epoch 244/2000
+03:57:54: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00243: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.243-loss_0.578-acc_0.696.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5781 - acc: 0.6962 - val_loss: 0.5584 - val_acc: 0.7630
+Epoch 245/2000
+04:02:04: Batch 0050: 19.98 Examples/Second, 3.20 Seconds/Batch
+Epoch 00244: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.244-loss_0.575-acc_0.701.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5748 - acc: 0.7014 - val_loss: 0.5643 - val_acc: 0.7547
+Epoch 246/2000
+04:06:13: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch
+Epoch 00245: saving model to /home/mhubrich/checkpoints/adni/d3G_augm_5/weights.245-loss_0.571-acc_0.702.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/d3G_augm_5/MySGD_config.p
+249s - loss: 0.5714 - acc: 0.7018 - val_loss: 0.5637 - val_acc: 0.7464
+Epoch 247/2000
+04:10:23: Batch 0050: 19.99 Examples/Second, 3.20 Seconds/Batch

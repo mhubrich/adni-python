@@ -1,0 +1,10 @@
+target_size = (30, 30, 30)
+batch_size = 32
+num_train_samples = 923 * 5
+
+path_weights = '/home/mhubrich/checkpoints/adni/d3_1/weights.276-loss_0.662-acc_0.608.h5'
+
+lr = 0.01
+deca = 0.0
+momentum = 0.9
+nesterov = True

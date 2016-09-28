@@ -1,0 +1,8 @@
+target_size = (30, 30, 30)
+batch_size = 32
+num_train_samples = 923 * 5
+
+lr = 0.001
+deca = 0.000001
+momentum = 0.5
+nesterov = True
