@@ -1,3 +1,7 @@
 *~
 *.pyc
 .idea/
+
+# due to large file size
+*.h5
+/cnn/keras/prediction/*.csv
