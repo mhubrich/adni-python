@@ -1,4 +1,4 @@
-from keras.preprocessing.image import ImageDataGenerator, DirectoryIterator, array_to_img, img_to_array, load_img
+from keras.preprocessing.image import ImageDataGenerator, DirectoryIterator, img_to_array, load_img
 import keras.backend.common as K
 import numpy as np
 import os

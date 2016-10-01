@@ -1,7 +1,7 @@
 from cnn.keras import callbacks
 from cnn.keras.models.vgg16.model import build_model
 from cnn.keras.optimizers import MyRMSprop
-from cnn.keras.rotation import inputs
+from cnn.keras.rotation.image_processing import inputs
 
 # Training specific parameters
 classes = ['Normal', 'AD']
@@ -18,7 +18,7 @@ path_optimizer_weights = None
 path_optimizer_updates = None
 
 
-def train(weights_path):
+def train():
     # Get inputs for training and validation
     train_inputs = inputs(batch_size, classes, 'train')
     val_inputs = inputs(batch_size, classes, 'val')

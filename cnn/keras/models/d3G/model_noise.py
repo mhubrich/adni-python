@@ -1,11 +1,11 @@
-from cnn.keras.models.sequential_multi_threading import SequentialMultiThreading
+from keras.models import Sequential
 from keras.layers.convolutional import Convolution3D
 from keras.layers.core import Flatten, Dense, Dropout
 from keras.layers.noise import GaussianNoise
 
 
 def build_model(num_classes, input_shape=(1, 29, 29, 29)):
-    model = SequentialMultiThreading()
+    model = Sequential()
 
     model.add(GaussianNoise(sigma=0.01, input_shape=input_shape))
     model.add(Convolution3D(32, 5, 5, 5, activation='relu'))

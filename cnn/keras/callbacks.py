@@ -154,11 +154,11 @@ class _HistoryPrinter(Callback):
             print('\n')
             for i in range(0, len(self.acc)):
                 if len(self.val_acc) > 0:
-                    str = 'Epoch %d -- Acc: %.5f, Loss: %.5f -- Val Acc: %.5f, Val Loss: %.5f'
-                    print(str % (i+1, self.acc[i], self.loss[i], self.val_acc[i], self.val_loss[i]))
+                    s = 'Epoch %d -- Acc: %.5f, Loss: %.5f -- Val Acc: %.5f, Val Loss: %.5f'
+                    print(s % (i+1, self.acc[i], self.loss[i], self.val_acc[i], self.val_loss[i]))
                 else:
-                    str = 'Epoch %d -- Acc: %.5f, Loss: %.5f'
-                    print(str % (i + 1, self.acc[i], self.loss[i]))
+                    s = 'Epoch %d -- Acc: %.5f, Loss: %.5f'
+                    print(s % (i + 1, self.acc[i], self.loss[i]))
 
 
 def print_history():

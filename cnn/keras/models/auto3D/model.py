@@ -1,9 +1,9 @@
-from cnn.keras.models.sequential_multi_threading import SequentialMultiThreading
+from keras.models import Sequential
 from keras.layers.convolutional import Convolution3D, UpSampling3D, MaxPooling3D
 
 
 def build_model(input_shape=(1, 96, 96, 96)):
-    model = SequentialMultiThreading()
+    model = Sequential()
 
     model.add(Convolution3D(64, 3, 3, 3, activation='relu', border_mode='same', input_shape=input_shape))
     model.add(Convolution3D(64, 3, 3, 3, activation='relu', border_mode='same'))

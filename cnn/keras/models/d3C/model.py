@@ -1,10 +1,10 @@
-from cnn.keras.models.sequential_multi_threading import SequentialMultiThreading
+from keras.models import Sequential
 from keras.layers.convolutional import Convolution3D, ZeroPadding3D
 from keras.layers.core import Flatten, Dense, Dropout
 
 
 def build_model(num_classes, input_shape=(1, 20, 20, 20)):
-    model = SequentialMultiThreading()
+    model = Sequential()
 
     model.add(ZeroPadding3D(padding=(3, 3, 3), input_shape=input_shape))
     model.add(Convolution3D(16, 7, 7, 7, activation='relu'))

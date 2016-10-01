@@ -93,11 +93,12 @@ def train():
         callbacks=cbks,
         verbose=2,
         max_q_size=320,
-        nb_preprocessing_threads=2)
+        nb_worker=2,
+        pickle_safe=True)
 
     return hist
 
 
 if __name__ == "__main__":
-    hist = train()
+    train()
 

@@ -1,11 +1,11 @@
-from cnn.keras.models.sequential_multi_threading import SequentialMultiThreading
+from keras.models import Sequential
 from keras.layers.convolutional import Convolution3D
 from keras.layers.core import Flatten, Dense, Dropout
 from keras.regularizers import l2
 
 
 def build_model(num_classes, input_shape=(1, 29, 29, 29)):
-    model = SequentialMultiThreading()
+    model = Sequential()
 
     model.add(Convolution3D(32, 5, 5, 5, activation='relu', input_shape=input_shape, W_regularizer=l2(0.001)))
     model.add(Convolution3D(32, 5, 5, 5, activation='relu', W_regularizer=l2(0.001)))

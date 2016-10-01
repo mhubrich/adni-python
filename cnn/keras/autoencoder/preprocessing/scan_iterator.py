@@ -75,7 +75,7 @@ class ScanIterator(Iterator):
         batch_x = np.zeros((current_batch_size,) + self.image_shape)
         # build batch of image data
         for i, j in enumerate(index_array):
-            x = scan=self.scans[j]
+            x = self.scans[j]
             if self.dim_ordering == 'tf':
                 x = np.expand_dims(x, axis=3)
             else:  # new

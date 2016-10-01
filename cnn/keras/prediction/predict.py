@@ -1,5 +1,4 @@
 import csv
-import os
 
 from cnn.keras.models.d3G.model import build_model
 from cnn.keras.prediction.predict_generator import predict_generator
