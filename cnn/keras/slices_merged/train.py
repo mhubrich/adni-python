@@ -1,13 +1,13 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.d3G.model import build_model
+from cnn.keras.models.slices_merged.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
-from cnn.keras.slices.preprocessing.image_processing import inputs
+from cnn.keras.slices_merged.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('outputG_29_augm_1', 'w')
+sys.stdout = sys.stderr = open('outputG_1', 'w')
 
 
 # Training specific parameters
@@ -23,7 +23,7 @@ num_train_samples = 923 * 5
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/slices_G_augm_1'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/slices_merged_G_1'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -62,8 +62,10 @@ def _split_scans():
 def train():
     # Get inputs for training and validation
     scans_train, scans_val = _split_scans()
-    train_inputs = inputs(scans_train, target_size, batch_size, classes, 'train', SEED)
-    val_inputs = inputs(scans_val, target_size, batch_size, classes, 'val', SEED)
+    train_inputs1 = inputs(scans_train, target_size, range(18, 47), batch_size, classes, 'train', SEED)
+    train_inputs2 = inputs(scans_train, target_size, range(47, 76), batch_size, classes, 'train', SEED)
+    val_inputs1 = inputs(scans_val, target_size, range(18, 47), batch_size, classes, 'val', SEED)
+    val_inputs2 = inputs(scans_val, target_size, range(47, 76), batch_size, classes, 'val', SEED)
 
     # Set up the model
     model = build_model(num_classes=len(classes), input_shape=(1,)+target_size)
@@ -85,10 +87,10 @@ def train():
 
     # Start training
     hist = model.fit_generator(
-        train_inputs,
+        [train_inputs1, train_inputs2],
         samples_per_epoch=num_train_samples,
         nb_epoch=num_epoch,
-        validation_data=val_inputs,
+        validation_data=[val_inputs1, val_inputs2],
         nb_val_samples=num_val_samples,
         callbacks=cbks,
         verbose=2,

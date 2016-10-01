@@ -8,22 +8,22 @@ from scipy import ndimage
 from utils.sort_scans import sort_groups
 
 # SLICES = range(32, 62) # 30
-# SLICES = range(37, 58) # 21
-SLICES = range(32, 61) # 29
+SLICES = range(37, 58) # 21
+# SLICES = range(32, 61) # 29
 
-def _rand_voxel(target_size):
+def _rand_voxel(target_size, slices):
     return random.randint(7, 86-target_size[0]), random.randint(3, 92-target_size[1]),\
-           random.randint(0, len(SLICES)-target_size[2])
+           random.randint(0, len(slices)-target_size[2])
 
 
 def _load_scan(scan, voxel, target_size, dim_ordering):
     x = scan[voxel[0]:voxel[0]+target_size[0], :, :] \
             [:, voxel[1]:voxel[1]+target_size[1], :] \
             [:, :, voxel[2]:voxel[2]+target_size[2]]
-    #if dim_ordering == 'tf':
-    #    x = np.expand_dims(x, axis=3)
-    #else:
-    #    x = np.expand_dims(x, axis=0)
+    if dim_ordering == 'tf':
+        x = np.expand_dims(x, axis=3)
+    else:
+        x = np.expand_dims(x, axis=0)
     return x
 
 
@@ -40,11 +40,12 @@ def augment_scan(scan):  # new
 class ScanIterator(Iterator):
 
     def __init__(self, scans, image_data_generator,
-                 target_size=(10, 10, 10),
+                 slices, target_size=(10, 10, 10),
                  dim_ordering=K.image_dim_ordering,
                  classes=None, class_mode='categorical',
                  batch_size=64, shuffle=True, seed=None):
         self.image_data_generator = image_data_generator
+        self.slices = slices
         self.target_size = tuple(target_size)
         self.shuffle = shuffle
         self.dim_ordering = dim_ordering
@@ -79,7 +80,7 @@ class ScanIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         self.filenames = []
-        self.scans = np.zeros((self.nb_sample,) + (96, 96, len(SLICES)), dtype='float32')
+        self.scans = np.zeros((self.nb_sample,) + (96, 96, len(slices)), dtype='float32')
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         if not self.shuffle:
             self.voxels = []
@@ -95,13 +96,13 @@ class ScanIterator(Iterator):
                 s = np.squeeze(s)
                 s_min, s_max = np.min(s), np.max(s)
                 # Cut slice (160, 160, 96) -> (96, 96, 20)
-                s = s[32:128, :, :][:, 32:128, :][:, :, SLICES]
+                s = s[32:128, :, :][:, 32:128, :][:, :, slices]
                 # Rescale to [0,1]
                 s = (s - s_min) / (s_max - s_min)
                 self.scans[i] = s
                 self.filenames.append(scan.group + '_' + scan.imageID + '_' + scan.subject)
                 if not self.shuffle:
-                    self.voxels.append(_rand_voxel(self.target_size))
+                    self.voxels.append(_rand_voxel(self.target_size, self.slices))
                 i += 1
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
@@ -113,17 +114,11 @@ class ScanIterator(Iterator):
         # build batch of image data
         for i, j in enumerate(index_array):
             if self.shuffle:
-                voxel = _rand_voxel(self.target_size)
+                voxel = _rand_voxel(self.target_size, self.slices)
             else:
                 voxel = self.voxels[j]
             x = _load_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size,
                            dim_ordering=self.dim_ordering)
-            if self.shuffle:
-                x = augment_scan(x)
-            if self.dim_ordering == 'tf':
-                x = np.expand_dims(x, axis=3)
-            else:
-                x = np.expand_dims(x, axis=0)
             # x = self.image_data_generator.random_transform(x)
             # x = self.image_data_generator.standardize(x)
             batch_x[i] = x

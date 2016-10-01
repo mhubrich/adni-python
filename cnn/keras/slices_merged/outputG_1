@@ -1,0 +1,18 @@
+Found 923 scans belonging to 2 classes.
+Found 923 scans belonging to 2 classes.
+Found 481 scans belonging to 2 classes.
+Found 481 scans belonging to 2 classes.
+Traceback (most recent call last):
+  File "train.py", line 104, in <module>
+    hist = train()
+  File "train.py", line 98, in train
+    nb_preprocessing_threads=2)
+  File "/home/mhubrich/python-adni/cnn/keras/models/sequential_multi_threading.py", line 79, in fit_generator
+    nb_threads=nb_preprocessing_threads)
+  File "/home/mhubrich/python-adni/cnn/keras/models/model_multi_threading.py", line 71, in fit_generator
+    val_x, val_y, val_sample_weights = self._standardize_user_data(val_x, val_y, val_sample_weight)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/keras/engine/training.py", line 921, in _standardize_user_data
+    exception_prefix='model input')
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/keras/engine/training.py", line 68, in standardize_input_data
+    'Found: ' + str(data)[:200] + '...')
+Exception: Error when checking model input: data should be a Numpy array, or list/dict of Numpy arrays. Found: <cnn.keras.slices_merged.preprocessing.scan_iterator.ScanIterator object at 0x2b78925e8f10>...
