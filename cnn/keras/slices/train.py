@@ -7,7 +7,7 @@ from cnn.keras.slices.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('outputG_29_augm_1', 'w')
+sys.stdout = sys.stderr = open('outputG_29_augm_2', 'w')
 
 
 # Training specific parameters
@@ -23,11 +23,11 @@ num_train_samples = 923 * 5
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/slices_G_augm_1'
-path_weights = None
-path_optimizer_weights = None
-path_optimizer_updates = None
-path_optimizer_config = None
+path_checkpoints = '/home/mhubrich/checkpoints/adni/slices_G_augm_2'
+path_weights = '/home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.158-loss_0.677-acc_0.590.h5'
+path_optimizer_weights = '/home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p'
+path_optimizer_updates = '/home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p'
+path_optimizer_config = '/home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p'
 
 
 def _split_scans():
@@ -69,7 +69,7 @@ def train():
     model = build_model(num_classes=len(classes), input_shape=(1,)+target_size)
     config = load_config(path_optimizer_config)
     if config == {}:
-        config['lr'] = 0.001
+        config['lr'] = 0.0001  # new
         config['decay'] = 0.000001
         config['momentum'] = 0.9
     sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)

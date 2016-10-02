@@ -4,17 +4,18 @@ import numpy as np
 import nibabel as nib
 
 from utils.sort_scans import sort_groups
-from cnn.keras.d3.preprocessing.scan_iterator import _load_scan
+from cnn.keras.slices.preprocessing.scan_iterator import _load_scan, SLICES
 
 
-target_size = (29, 29, 29)
+target_size = (21, 21, 21)
 #interval = range(17, 78 - target_size[0], 5)
 #interval = range(13, 81 - target_size[0], 2)
 interval = range(17, 78 - target_size[0], 3)
+interval_z = [SLICES[0]]
 #interval_x = [46, 47, 48, 49, 50]
 #interval_y = [44, 45, 46, 47, 48]
 #interval_z = [54, 55, 56, 57, 58]
-GRID = [(x, y, z) for x in interval for y in interval for z in interval]
+GRID = [(x, y, z) for x in interval for y in interval for z in interval_z]
 
 
 class PredictGenerator(ImageDataGenerator):
@@ -68,7 +69,7 @@ class FilenameIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         self.filenames = []
-        self.scans = np.zeros((self.nb_sample,) + (96, 96, 96), dtype='float32')
+        self.scans = np.zeros((self.nb_sample,) + (96, 96, len(SLICES)), dtype='float32')
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         self.nb_sample *= len(GRID)
         print('Extracting %d samples per scan, %d in total.' % (len(GRID), self.nb_sample))
@@ -84,7 +85,7 @@ class FilenameIterator(Iterator):
                 s = np.squeeze(s)
                 s_min, s_max = np.min(s), np.max(s)
                 # Cut slice (160, 160, 96) -> (96, 96, 96)
-                s = s[32:128, :, :][:, 32:128, :]
+                s = s[32:128, :, :][:, 32:128, SLICES]
                 # Rescale to [0,1]
                 s = (s - s_min) / (s_max - s_min)
                 self.scans[i] = s

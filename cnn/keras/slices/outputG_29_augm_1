@@ -1,123 +1,790 @@
 Found 923 scans belonging to 2 classes.
 Found 481 scans belonging to 2 classes.
 Epoch 1/2000
-09:56:10: Batch 0050: 16.92 Examples/Second, 3.78 Seconds/Batch
-Epoch 00000: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.00-loss_0.689-acc_0.571.h5
+20:03:07: Batch 0050: 19.97 Examples/Second, 3.20 Seconds/Batch
+Epoch 00000: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.00-loss_0.689-acc_0.569.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-292s - loss: 0.6893 - acc: 0.5710 - val_loss: 0.6520 - val_acc: 0.8150
+251s - loss: 0.6888 - acc: 0.5694 - val_loss: 0.6475 - val_acc: 0.8150
 Epoch 2/2000
-10:01:02: Batch 0050: 16.94 Examples/Second, 3.78 Seconds/Batch
-Epoch 00001: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.01-loss_0.685-acc_0.570.h5
+20:07:20: Batch 0050: 19.74 Examples/Second, 3.24 Seconds/Batch
+Epoch 00001: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.01-loss_0.684-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6848 - acc: 0.5699 - val_loss: 0.6324 - val_acc: 0.8150
+252s - loss: 0.6842 - acc: 0.5699 - val_loss: 0.6282 - val_acc: 0.8150
 Epoch 3/2000
-10:05:54: Batch 0050: 16.93 Examples/Second, 3.78 Seconds/Batch
-Epoch 00002: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.02-loss_0.684-acc_0.570.h5
+20:11:32: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00002: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.02-loss_0.683-acc_0.571.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6837 - acc: 0.5699 - val_loss: 0.6219 - val_acc: 0.8150
+252s - loss: 0.6830 - acc: 0.5712 - val_loss: 0.6187 - val_acc: 0.8150
 Epoch 4/2000
-10:10:46: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
-Epoch 00003: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.03-loss_0.683-acc_0.570.h5
+20:15:45: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00003: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.03-loss_0.684-acc_0.569.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6175 - val_acc: 0.8150
+252s - loss: 0.6835 - acc: 0.5686 - val_loss: 0.6156 - val_acc: 0.8150
 Epoch 5/2000
-10:15:37: Batch 0050: 16.96 Examples/Second, 3.77 Seconds/Batch
+20:19:57: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
 Epoch 00004: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.04-loss_0.683-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6167 - val_acc: 0.8150
+252s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6157 - val_acc: 0.8150
 Epoch 6/2000
-10:20:29: Batch 0050: 16.94 Examples/Second, 3.78 Seconds/Batch
+20:24:10: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
 Epoch 00005: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.05-loss_0.683-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6154 - val_acc: 0.8150
+252s - loss: 0.6830 - acc: 0.5699 - val_loss: 0.6134 - val_acc: 0.8150
 Epoch 7/2000
-10:25:21: Batch 0050: 16.96 Examples/Second, 3.77 Seconds/Batch
+20:28:22: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
 Epoch 00006: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.06-loss_0.683-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6160 - val_acc: 0.8150
+252s - loss: 0.6832 - acc: 0.5699 - val_loss: 0.6148 - val_acc: 0.8150
 Epoch 8/2000
-10:30:13: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
+20:32:35: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
 Epoch 00007: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.07-loss_0.683-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6153 - val_acc: 0.8150
+252s - loss: 0.6829 - acc: 0.5699 - val_loss: 0.6144 - val_acc: 0.8150
 Epoch 9/2000
-10:35:04: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
+20:36:48: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
 Epoch 00008: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.08-loss_0.683-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-292s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6149 - val_acc: 0.8150
+252s - loss: 0.6834 - acc: 0.5699 - val_loss: 0.6160 - val_acc: 0.8150
 Epoch 10/2000
-10:39:56: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
+20:41:00: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
 Epoch 00009: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.09-loss_0.683-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6153 - val_acc: 0.8150
+252s - loss: 0.6828 - acc: 0.5699 - val_loss: 0.6164 - val_acc: 0.8150
 Epoch 11/2000
-10:44:48: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
-Epoch 00010: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.10-loss_0.683-acc_0.570.h5
+20:45:13: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00010: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.10-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-292s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6151 - val_acc: 0.8150
+252s - loss: 0.6825 - acc: 0.5699 - val_loss: 0.6124 - val_acc: 0.8150
 Epoch 12/2000
-10:49:40: Batch 0050: 16.94 Examples/Second, 3.78 Seconds/Batch
-Epoch 00011: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.11-loss_0.683-acc_0.570.h5
+20:49:25: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00011: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.11-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6156 - val_acc: 0.8150
+252s - loss: 0.6825 - acc: 0.5699 - val_loss: 0.6144 - val_acc: 0.8150
 Epoch 13/2000
-10:54:32: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
-Epoch 00012: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.12-loss_0.683-acc_0.570.h5
+20:53:38: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00012: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.12-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6143 - val_acc: 0.8150
+252s - loss: 0.6822 - acc: 0.5699 - val_loss: 0.6085 - val_acc: 0.8150
 Epoch 14/2000
-10:59:23: Batch 0050: 16.96 Examples/Second, 3.77 Seconds/Batch
-Epoch 00013: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.13-loss_0.683-acc_0.570.h5
+20:57:50: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00013: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.13-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6131 - val_acc: 0.8150
+252s - loss: 0.6822 - acc: 0.5699 - val_loss: 0.6115 - val_acc: 0.8150
 Epoch 15/2000
-11:04:15: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
-Epoch 00014: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.14-loss_0.683-acc_0.570.h5
+21:02:03: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00014: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.14-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-292s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6127 - val_acc: 0.8150
+252s - loss: 0.6819 - acc: 0.5699 - val_loss: 0.6084 - val_acc: 0.8150
 Epoch 16/2000
-11:09:07: Batch 0050: 16.95 Examples/Second, 3.78 Seconds/Batch
-Epoch 00015: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.15-loss_0.683-acc_0.570.h5
+21:06:16: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00015: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.15-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6137 - val_acc: 0.8150
+252s - loss: 0.6816 - acc: 0.5699 - val_loss: 0.6118 - val_acc: 0.8150
 Epoch 17/2000
-11:13:58: Batch 0050: 16.95 Examples/Second, 3.77 Seconds/Batch
-Epoch 00016: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.16-loss_0.683-acc_0.570.h5
+21:10:28: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00016: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.16-loss_0.682-acc_0.570.h5
 Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
 Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
 Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
-291s - loss: 0.6833 - acc: 0.5699 - val_loss: 0.6127 - val_acc: 0.8150
+252s - loss: 0.6817 - acc: 0.5699 - val_loss: 0.6083 - val_acc: 0.8150
 Epoch 18/2000
-11:18:50: Batch 0050: 16.94 Examples/Second, 3.78 Seconds/Batch
+21:14:41: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00017: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.17-loss_0.681-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6814 - acc: 0.5699 - val_loss: 0.6092 - val_acc: 0.8150
+Epoch 19/2000
+21:18:53: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00018: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.18-loss_0.682-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6815 - acc: 0.5699 - val_loss: 0.6148 - val_acc: 0.8150
+Epoch 20/2000
+21:23:06: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00019: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.19-loss_0.681-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6806 - acc: 0.5699 - val_loss: 0.6049 - val_acc: 0.8150
+Epoch 21/2000
+21:27:18: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+/home/mhubrich/python-adni/cnn/keras/models/model_multi_threading.py:142: UserWarning: Epoch comprised more than `samples_per_epoch` samples, which might affect learning results. Set `samples_per_epoch` correctly to avoid this warning.
+  warnings.warn('Epoch comprised more than '
+Epoch 00020: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.20-loss_0.681-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+254s - loss: 0.6810 - acc: 0.5696 - val_loss: 0.6134 - val_acc: 0.8150
+Epoch 22/2000
+21:31:31: Batch 0050: 20.00 Examples/Second, 3.20 Seconds/Batch
+Epoch 00021: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.21-loss_0.682-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+253s - loss: 0.6821 - acc: 0.5700 - val_loss: 0.6117 - val_acc: 0.8150
+Epoch 23/2000
+21:35:47: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00022: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.22-loss_0.681-acc_0.571.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6805 - acc: 0.5707 - val_loss: 0.6165 - val_acc: 0.8150
+Epoch 24/2000
+21:39:59: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00023: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.23-loss_0.681-acc_0.569.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6811 - acc: 0.5690 - val_loss: 0.6166 - val_acc: 0.8150
+Epoch 25/2000
+21:44:12: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00024: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.24-loss_0.680-acc_0.569.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6795 - acc: 0.5690 - val_loss: 0.6148 - val_acc: 0.8150
+Epoch 26/2000
+21:48:24: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00025: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.25-loss_0.680-acc_0.571.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6800 - acc: 0.5705 - val_loss: 0.6100 - val_acc: 0.8150
+Epoch 27/2000
+21:52:36: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00026: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.26-loss_0.679-acc_0.569.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6792 - acc: 0.5692 - val_loss: 0.6257 - val_acc: 0.8150
+Epoch 28/2000
+21:56:49: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00027: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.27-loss_0.680-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6799 - acc: 0.5701 - val_loss: 0.6151 - val_acc: 0.8150
+Epoch 29/2000
+22:01:01: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00028: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.28-loss_0.680-acc_0.571.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6804 - acc: 0.5710 - val_loss: 0.6130 - val_acc: 0.8150
+Epoch 30/2000
+22:05:13: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00029: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.29-loss_0.680-acc_0.569.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6802 - acc: 0.5692 - val_loss: 0.6027 - val_acc: 0.8150
+Epoch 31/2000
+22:09:26: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00030: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.30-loss_0.679-acc_0.569.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6785 - acc: 0.5694 - val_loss: 0.6174 - val_acc: 0.8150
+Epoch 32/2000
+22:13:38: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00031: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.31-loss_0.680-acc_0.569.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6796 - acc: 0.5688 - val_loss: 0.6167 - val_acc: 0.8150
+Epoch 33/2000
+22:17:51: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00032: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.32-loss_0.681-acc_0.571.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6807 - acc: 0.5712 - val_loss: 0.6136 - val_acc: 0.8150
+Epoch 34/2000
+22:22:03: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00033: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.33-loss_0.678-acc_0.571.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6778 - acc: 0.5714 - val_loss: 0.5932 - val_acc: 0.8150
+Epoch 35/2000
+22:26:16: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00034: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.34-loss_0.677-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6774 - acc: 0.5788 - val_loss: 0.6138 - val_acc: 0.7734
+Epoch 36/2000
+22:30:28: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00035: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.35-loss_0.680-acc_0.577.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6799 - acc: 0.5772 - val_loss: 0.6042 - val_acc: 0.7942
+Epoch 37/2000
+22:34:40: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00036: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.36-loss_0.681-acc_0.571.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6806 - acc: 0.5705 - val_loss: 0.6098 - val_acc: 0.7921
+Epoch 38/2000
+22:38:53: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00037: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.37-loss_0.678-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6783 - acc: 0.5794 - val_loss: 0.5958 - val_acc: 0.8025
+Epoch 39/2000
+22:43:05: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00038: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.38-loss_0.681-acc_0.577.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6811 - acc: 0.5775 - val_loss: 0.6116 - val_acc: 0.7879
+Epoch 40/2000
+22:47:18: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00039: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.39-loss_0.677-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6769 - acc: 0.5844 - val_loss: 0.5984 - val_acc: 0.7859
+Epoch 41/2000
+22:51:30: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00040: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.40-loss_0.677-acc_0.581.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6773 - acc: 0.5811 - val_loss: 0.6077 - val_acc: 0.7651
+Epoch 42/2000
+22:55:43: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00041: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.41-loss_0.681-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6810 - acc: 0.5785 - val_loss: 0.6096 - val_acc: 0.7838
+Epoch 43/2000
+22:59:55: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00042: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.42-loss_0.679-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6792 - acc: 0.5788 - val_loss: 0.6100 - val_acc: 0.7796
+Epoch 44/2000
+23:04:07: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00043: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.43-loss_0.678-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6782 - acc: 0.5835 - val_loss: 0.6154 - val_acc: 0.7651
+Epoch 45/2000
+23:08:20: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00044: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.44-loss_0.678-acc_0.580.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6784 - acc: 0.5801 - val_loss: 0.6123 - val_acc: 0.7672
+Epoch 46/2000
+23:12:32: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00045: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.45-loss_0.676-acc_0.588.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6763 - acc: 0.5876 - val_loss: 0.6031 - val_acc: 0.7588
+Epoch 47/2000
+23:16:44: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00046: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.46-loss_0.679-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6794 - acc: 0.5794 - val_loss: 0.6063 - val_acc: 0.7692
+Epoch 48/2000
+23:20:57: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00047: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.47-loss_0.680-acc_0.570.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6804 - acc: 0.5703 - val_loss: 0.5993 - val_acc: 0.7963
+Epoch 49/2000
+23:25:09: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00048: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.48-loss_0.680-acc_0.583.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6796 - acc: 0.5829 - val_loss: 0.6150 - val_acc: 0.7651
+Epoch 50/2000
+23:29:21: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00049: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.49-loss_0.677-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6774 - acc: 0.5837 - val_loss: 0.6045 - val_acc: 0.7692
+Epoch 51/2000
+23:33:34: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00050: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.50-loss_0.676-acc_0.594.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6765 - acc: 0.5941 - val_loss: 0.6124 - val_acc: 0.7526
+Epoch 52/2000
+23:37:46: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00051: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.51-loss_0.678-acc_0.589.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6783 - acc: 0.5885 - val_loss: 0.6231 - val_acc: 0.7526
+Epoch 53/2000
+23:41:58: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00052: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.52-loss_0.679-acc_0.577.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6792 - acc: 0.5772 - val_loss: 0.6026 - val_acc: 0.7817
+Epoch 54/2000
+23:46:11: Batch 0050: 19.76 Examples/Second, 3.24 Seconds/Batch
+Epoch 00053: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.53-loss_0.679-acc_0.578.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6789 - acc: 0.5781 - val_loss: 0.6143 - val_acc: 0.7609
+Epoch 55/2000
+23:50:23: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00054: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.54-loss_0.676-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6764 - acc: 0.5896 - val_loss: 0.6092 - val_acc: 0.7588
+Epoch 56/2000
+23:54:36: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Epoch 00055: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.55-loss_0.679-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+252s - loss: 0.6791 - acc: 0.5785 - val_loss: 0.6153 - val_acc: 0.7588
+Epoch 57/2000
+23:58:48: Batch 0050: 19.75 Examples/Second, 3.24 Seconds/Batch
+Traceback (most recent call last):
+  File "train.py", line 102, in <module>
+    hist = train()
+  File "train.py", line 96, in train
+    nb_preprocessing_threads=2)
+  File "/home/mhubrich/python-adni/cnn/keras/models/sequential_multi_threading.py", line 79, in fit_generator
+    nb_threads=nb_preprocessing_threads)
+  File "/home/mhubrich/python-adni/cnn/keras/models/model_multi_threading.py", line 123, in fit_generator
+    class_weight=class_weight)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/keras/engine/training.py", line 1168, in train_on_batch
+    outputs = self.train_function(ins)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/keras/backend/theano_backend.py", line 518, in __call__
+    return self.function(*inputs)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/theano/compile/function_module.py", line 859, in __call__
+    outputs = self.fn()
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/theano/gof/op.py", line 911, in rval
+    def rval(p=p, i=node_input_storage, o=node_output_storage, n=node):
+KeyboardInterrupt
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Epoch 00108: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.108-loss_0.677-acc_0.581.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6772 - acc: 0.5814 - val_loss: 0.6167 - val_acc: 0.7401
+Epoch 110/2000
+19:55:03: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00109: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.109-loss_0.680-acc_0.576.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6802 - acc: 0.5755 - val_loss: 0.6089 - val_acc: 0.7817
+Epoch 111/2000
+19:59:57: Batch 0050: 16.82 Examples/Second, 3.80 Seconds/Batch
+Epoch 00110: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.110-loss_0.676-acc_0.585.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6757 - acc: 0.5846 - val_loss: 0.6004 - val_acc: 0.7672
+Epoch 112/2000
+20:04:51: Batch 0050: 16.82 Examples/Second, 3.81 Seconds/Batch
+Epoch 00111: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.111-loss_0.677-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6775 - acc: 0.5905 - val_loss: 0.5874 - val_acc: 0.8046
+Epoch 113/2000
+20:09:45: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00112: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.112-loss_0.678-acc_0.582.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6785 - acc: 0.5816 - val_loss: 0.6092 - val_acc: 0.7630
+Epoch 114/2000
+20:14:39: Batch 0050: 16.82 Examples/Second, 3.80 Seconds/Batch
+Epoch 00113: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.113-loss_0.676-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6761 - acc: 0.5902 - val_loss: 0.6359 - val_acc: 0.6819
+Epoch 115/2000
+20:19:33: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00114: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.114-loss_0.679-acc_0.579.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6790 - acc: 0.5790 - val_loss: 0.6188 - val_acc: 0.7568
+Epoch 116/2000
+20:24:26: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00115: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.115-loss_0.676-acc_0.587.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6763 - acc: 0.5870 - val_loss: 0.6130 - val_acc: 0.7547
+Epoch 117/2000
+20:29:20: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00116: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.116-loss_0.678-acc_0.583.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+294s - loss: 0.6778 - acc: 0.5829 - val_loss: 0.6093 - val_acc: 0.7651
+Epoch 118/2000
+20:34:14: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00117: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.117-loss_0.678-acc_0.583.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6784 - acc: 0.5831 - val_loss: 0.6039 - val_acc: 0.7796
+Epoch 119/2000
+20:39:07: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00118: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.118-loss_0.675-acc_0.594.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6752 - acc: 0.5941 - val_loss: 0.6079 - val_acc: 0.7568
+Epoch 120/2000
+20:44:01: Batch 0050: 16.86 Examples/Second, 3.80 Seconds/Batch
+Epoch 00119: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.119-loss_0.677-acc_0.585.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6766 - acc: 0.5850 - val_loss: 0.6077 - val_acc: 0.7609
+Epoch 121/2000
+20:48:54: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00120: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.120-loss_0.677-acc_0.588.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6772 - acc: 0.5876 - val_loss: 0.6490 - val_acc: 0.6486
+Epoch 122/2000
+20:53:48: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00121: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.121-loss_0.677-acc_0.582.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6773 - acc: 0.5818 - val_loss: 0.5969 - val_acc: 0.7692
+Epoch 123/2000
+20:58:41: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00122: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.122-loss_0.678-acc_0.583.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6776 - acc: 0.5831 - val_loss: 0.6158 - val_acc: 0.7796
+Epoch 124/2000
+21:03:35: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00123: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.123-loss_0.677-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6767 - acc: 0.5842 - val_loss: 0.6143 - val_acc: 0.7277
+Epoch 125/2000
+21:08:28: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00124: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.124-loss_0.675-acc_0.587.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6753 - acc: 0.5866 - val_loss: 0.6201 - val_acc: 0.7277
+Epoch 126/2000
+21:13:22: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00125: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.125-loss_0.678-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6780 - acc: 0.5837 - val_loss: 0.6061 - val_acc: 0.7651
+Epoch 127/2000
+21:18:15: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00126: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.126-loss_0.679-acc_0.581.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6787 - acc: 0.5809 - val_loss: 0.6025 - val_acc: 0.8025
+Epoch 128/2000
+21:23:09: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00127: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.127-loss_0.678-acc_0.582.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6779 - acc: 0.5822 - val_loss: 0.6283 - val_acc: 0.7173
+Epoch 129/2000
+21:28:02: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00128: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.128-loss_0.677-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6767 - acc: 0.5837 - val_loss: 0.5958 - val_acc: 0.7796
+Epoch 130/2000
+21:32:56: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00129: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.129-loss_0.676-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6765 - acc: 0.5842 - val_loss: 0.6074 - val_acc: 0.7692
+Epoch 131/2000
+21:37:49: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00130: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.130-loss_0.675-acc_0.592.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6754 - acc: 0.5915 - val_loss: 0.5999 - val_acc: 0.7588
+Epoch 132/2000
+21:42:43: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00131: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.131-loss_0.677-acc_0.586.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6767 - acc: 0.5857 - val_loss: 0.6075 - val_acc: 0.7297
+Epoch 133/2000
+21:47:36: Batch 0050: 16.82 Examples/Second, 3.80 Seconds/Batch
+Epoch 00132: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.132-loss_0.676-acc_0.584.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6764 - acc: 0.5844 - val_loss: 0.6147 - val_acc: 0.7277
+Epoch 134/2000
+21:52:30: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00133: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.133-loss_0.678-acc_0.582.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6778 - acc: 0.5820 - val_loss: 0.6249 - val_acc: 0.7089
+Epoch 135/2000
+21:57:23: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00134: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.134-loss_0.676-acc_0.586.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6755 - acc: 0.5859 - val_loss: 0.6126 - val_acc: 0.7380
+Epoch 136/2000
+22:02:17: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00135: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.135-loss_0.676-acc_0.589.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6763 - acc: 0.5885 - val_loss: 0.6124 - val_acc: 0.7526
+Epoch 137/2000
+22:07:10: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00136: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.136-loss_0.676-acc_0.586.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6755 - acc: 0.5863 - val_loss: 0.6125 - val_acc: 0.7277
+Epoch 138/2000
+22:12:04: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00137: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.137-loss_0.676-acc_0.586.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6761 - acc: 0.5857 - val_loss: 0.6125 - val_acc: 0.7256
+Epoch 139/2000
+22:16:57: Batch 0050: 16.86 Examples/Second, 3.80 Seconds/Batch
+Epoch 00138: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.138-loss_0.675-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6752 - acc: 0.5902 - val_loss: 0.6095 - val_acc: 0.7630
+Epoch 140/2000
+22:21:51: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00139: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.139-loss_0.676-acc_0.587.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6760 - acc: 0.5872 - val_loss: 0.6102 - val_acc: 0.7568
+Epoch 141/2000
+22:26:44: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00140: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.140-loss_0.676-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6758 - acc: 0.5905 - val_loss: 0.6274 - val_acc: 0.6944
+Epoch 142/2000
+22:31:38: Batch 0050: 16.86 Examples/Second, 3.80 Seconds/Batch
+Epoch 00141: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.141-loss_0.676-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6757 - acc: 0.5898 - val_loss: 0.6253 - val_acc: 0.7318
+Epoch 143/2000
+22:36:32: Batch 0050: 16.82 Examples/Second, 3.80 Seconds/Batch
+Epoch 00142: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.142-loss_0.676-acc_0.576.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6764 - acc: 0.5762 - val_loss: 0.6092 - val_acc: 0.7505
+Epoch 144/2000
+22:41:25: Batch 0050: 16.82 Examples/Second, 3.81 Seconds/Batch
+Epoch 00143: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.143-loss_0.674-acc_0.596.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+294s - loss: 0.6739 - acc: 0.5957 - val_loss: 0.5946 - val_acc: 0.7734
+Epoch 145/2000
+22:46:19: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00144: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.144-loss_0.675-acc_0.591.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6750 - acc: 0.5911 - val_loss: 0.6113 - val_acc: 0.7505
+Epoch 146/2000
+22:51:12: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00145: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.145-loss_0.676-acc_0.582.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6764 - acc: 0.5816 - val_loss: 0.5875 - val_acc: 0.7692
+Epoch 147/2000
+22:56:06: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00146: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.146-loss_0.677-acc_0.585.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6768 - acc: 0.5848 - val_loss: 0.6128 - val_acc: 0.7235
+Epoch 148/2000
+23:01:00: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00147: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.147-loss_0.678-acc_0.581.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6776 - acc: 0.5811 - val_loss: 0.6236 - val_acc: 0.7193
+Epoch 149/2000
+23:05:53: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00148: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.148-loss_0.676-acc_0.587.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6762 - acc: 0.5866 - val_loss: 0.5825 - val_acc: 0.7963
+Epoch 150/2000
+23:10:47: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00149: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.149-loss_0.676-acc_0.589.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6764 - acc: 0.5885 - val_loss: 0.6052 - val_acc: 0.7484
+Epoch 151/2000
+23:15:40: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00150: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.150-loss_0.677-acc_0.585.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6773 - acc: 0.5850 - val_loss: 0.6066 - val_acc: 0.7651
+Epoch 152/2000
+23:20:34: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00151: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.151-loss_0.672-acc_0.600.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6723 - acc: 0.5996 - val_loss: 0.6075 - val_acc: 0.7484
+Epoch 153/2000
+23:25:28: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00152: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.152-loss_0.674-acc_0.593.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6738 - acc: 0.5935 - val_loss: 0.5958 - val_acc: 0.7505
+Epoch 154/2000
+23:30:21: Batch 0050: 16.85 Examples/Second, 3.80 Seconds/Batch
+Epoch 00153: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.153-loss_0.676-acc_0.586.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6763 - acc: 0.5863 - val_loss: 0.6078 - val_acc: 0.7277
+Epoch 155/2000
+23:35:15: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00154: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.154-loss_0.676-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6758 - acc: 0.5905 - val_loss: 0.6094 - val_acc: 0.7339
+Epoch 156/2000
+23:40:08: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00155: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.155-loss_0.675-acc_0.592.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6746 - acc: 0.5924 - val_loss: 0.5961 - val_acc: 0.7672
+Epoch 157/2000
+23:45:02: Batch 0050: 16.83 Examples/Second, 3.80 Seconds/Batch
+Epoch 00156: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.156-loss_0.676-acc_0.587.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6756 - acc: 0.5874 - val_loss: 0.6125 - val_acc: 0.7277
+Epoch 158/2000
+23:49:55: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00157: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.157-loss_0.674-acc_0.594.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6738 - acc: 0.5937 - val_loss: 0.6348 - val_acc: 0.6819
+Epoch 159/2000
+23:54:49: Batch 0050: 16.84 Examples/Second, 3.80 Seconds/Batch
+Epoch 00158: saving model to /home/mhubrich/checkpoints/adni/slices_G_augm_1/weights.158-loss_0.677-acc_0.590.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/slices_G_augm_1/MySGD_config.p
+293s - loss: 0.6770 - acc: 0.5896 - val_loss: 0.5997 - val_acc: 0.7692
+Epoch 160/2000
+Traceback (most recent call last):
+  File "train.py", line 102, in <module>
+    hist = train()
+  File "train.py", line 96, in train
+    nb_preprocessing_threads=2)
+  File "/home/mhubrich/python-adni/cnn/keras/models/sequential_multi_threading.py", line 79, in fit_generator
+    nb_threads=nb_preprocessing_threads)
+  File "/home/mhubrich/python-adni/cnn/keras/models/model_multi_threading.py", line 123, in fit_generator
+    class_weight=class_weight)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/keras/engine/training.py", line 1168, in train_on_batch
+    outputs = self.train_function(ins)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/keras/backend/theano_backend.py", line 518, in __call__
+    return self.function(*inputs)
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/theano/compile/function_module.py", line 859, in __call__
+    outputs = self.fn()
+  File "/gpfs/fs1/home/mhubrich/keras/lib/python2.7/site-packages/theano/gof/op.py", line 911, in rval
+    def rval(p=p, i=node_input_storage, o=node_output_storage, n=node):
+KeyboardInterrupt
