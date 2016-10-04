@@ -7,7 +7,7 @@ from cnn.keras.d3.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('outputH_avg_1', 'w')
+sys.stdout = sys.stderr = open('outputH_avg_3', 'w')
 
 
 # Training specific parameters
@@ -23,7 +23,7 @@ num_train_samples = 923 * 5
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_1'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_3'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -92,7 +92,7 @@ def train():
         nb_val_samples=num_val_samples,
         callbacks=cbks,
         verbose=2,
-        max_q_size=256,
+        max_q_size=192,
         nb_worker=2,
         pickle_safe=True)
 

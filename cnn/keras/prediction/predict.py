@@ -1,15 +1,15 @@
 import csv
 
-from cnn.keras.models.d3D.model import build_model
+from cnn.keras.models.d3H_avg.model import build_model
 from cnn.keras.prediction.predict_generator import predict_generator
-from cnn.keras.slices.preprocessing.image_processing import inputs
-from cnn.keras.slices.preprocessing.predict_generator import target_size, GRID
-from cnn.keras.slices.train import _split_scans, classes
+from cnn.keras.d3.preprocessing.image_processing import inputs
+from cnn.keras.d3.preprocessing.predict_generator import target_size, GRID
+from cnn.keras.d3.train import _split_scans, classes
 
 
-batch_size = 128
+batch_size = 64
 num_samples = 481 * len(GRID)
-path_weights = '/home/mhubrich/checkpoints/adni/slices_D_21_4/weights.170-loss_0.389-acc_0.827.h5'
+path_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_2/weights.155-loss_0.286-acc_0.895.h5'
 
 
 def predict():
@@ -26,14 +26,14 @@ def predict():
     pred, filenames = predict_generator(model,
                                         test_inputs,
                                         val_samples=num_samples,
-                                        max_q_size=640,
+                                        max_q_size=256,
                                         nb_preprocessing_threads=2)
 
     return pred, filenames
 
 
 def write_submission(predictions, filenames):
-    with open('predictions_slicesD_21_4_170-17_47_3.csv', 'wb') as csvfile:
+    with open('predictions_d3H_avg_2_155-15_22_1.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         for i in xrange(0, len(predictions)):
             tmp = [filenames[i]]

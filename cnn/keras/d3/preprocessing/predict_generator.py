@@ -7,10 +7,11 @@ from utils.sort_scans import sort_groups
 from cnn.keras.d3.preprocessing.scan_iterator import _load_scan
 
 
-target_size = (29, 29, 29)
+target_size = (58, 58, 58)
 #interval = range(17, 78 - target_size[0], 5)
 #interval = range(13, 81 - target_size[0], 2)
-interval = range(17, 78 - target_size[0], 3)
+#interval = range(17, 78 - target_size[0], 3)
+interval = range(0, 96 - target_size[0])
 #interval_x = [46, 47, 48, 49, 50]
 #interval_y = [44, 45, 46, 47, 48]
 #interval_z = [54, 55, 56, 57, 58]

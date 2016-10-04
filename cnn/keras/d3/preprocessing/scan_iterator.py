@@ -9,19 +9,31 @@ from utils.sort_scans import sort_groups
 
 
 def _rand_voxel(target_size):
-    return random.randint(7, 86-target_size[0]), random.randint(3, 92-target_size[1]),\
-           random.randint(15, 80-target_size[2])
+    #return random.randint(7, 86-target_size[0]), random.randint(3, 92-target_size[1]),\
+    #       random.randint(15, 80-target_size[2])
+    return random.randint(0, 96-target_size[0]), random.randint(0, 96-target_size[1]),\
+           random.randint(0, 96-target_size[2])
 
 
 def _load_scan(scan, voxel, target_size, dim_ordering):
     x = scan[voxel[0]:voxel[0]+target_size[0], :, :] \
             [:, voxel[1]:voxel[1]+target_size[1], :] \
             [:, :, voxel[2]:voxel[2]+target_size[2]]
-    if dim_ordering == 'tf':  # old
+    if dim_ordering == 'tf':
         x = np.expand_dims(x, axis=3)
     else:
         x = np.expand_dims(x, axis=0)
     return x
+
+
+def rotate_scan(scan, dim_ordering):
+    scan = np.squeeze(scan)
+    scan = np.rot90(scan, random.randint(0, 3))
+    if dim_ordering == 'tf':
+        scan = np.expand_dims(scan, axis=3)
+    else:
+        scan = np.expand_dims(scan, axis=0)
+    return scan
 
 
 def augment_scan(scan):  # new
@@ -57,6 +69,7 @@ class ScanIterator(Iterator):
         self.class_mode = class_mode
 
         random.seed(seed)
+        np.random.seed(seed)
 
         # first, count the number of samples and classes
         self.nb_sample = 0
@@ -115,8 +128,8 @@ class ScanIterator(Iterator):
                 voxel = self.voxels[j]
             x = _load_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size,
                            dim_ordering=self.dim_ordering)
-            #if self.shuffle:  # new
-            #    x = augment_scan(x)  # new
+            if self.shuffle:  # new
+                x = rotate_scan(x, self.dim_ordering)  # new
             #if self.dim_ordering == 'tf':  # new
             #    x = np.expand_dims(x, axis=3)  # new
             #else:  # new
