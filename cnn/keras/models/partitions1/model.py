@@ -1,5 +1,5 @@
 from keras.models import Sequential
-from cnn.keras.models.slices_merged import d3G
+from cnn.keras.models.partitions1 import d3G
 from keras.layers import Merge
 from keras.layers.core import Dense, Dropout
 
@@ -18,4 +18,3 @@ def build_model(num_classes, input_shape=(1, 29, 29, 29)):
     model.add(Dense(num_classes, activation='softmax'))
 
     return model
-

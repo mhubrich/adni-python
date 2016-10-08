@@ -1,20 +1,22 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.slices_merged.model import build_model
+from cnn.keras.models.partitions1.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
-from cnn.keras.slices_merged.preprocessing.image_processing import inputs
+from cnn.keras.partitions.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('outputG_1', 'w')
+sys.stdout = sys.stderr = open('output1_1', 'w')
 
 
 # Training specific parameters
 target_size = (29, 29, 29)
+partitions = [(15, 47), (48, 80)]
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
+load_all_scans = True
 batch_size = 64
 num_epoch = 2000
 # Number of training samples per epoch
@@ -23,7 +25,7 @@ num_train_samples = 923 * 5
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/slices_merged_G_1'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/partitions1_1'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -62,10 +64,8 @@ def _split_scans():
 def train():
     # Get inputs for training and validation
     scans_train, scans_val = _split_scans()
-    train_inputs1 = inputs(scans_train, target_size, range(18, 47), batch_size, classes, 'train', SEED)
-    train_inputs2 = inputs(scans_train, target_size, range(47, 76), batch_size, classes, 'train', SEED)
-    val_inputs1 = inputs(scans_val, target_size, range(18, 47), batch_size, classes, 'val', SEED)
-    val_inputs2 = inputs(scans_val, target_size, range(47, 76), batch_size, classes, 'val', SEED)
+    train_inputs = inputs(scans_train, target_size, partitions, batch_size, load_all_scans, classes, 'train', SEED)
+    val_inputs = inputs(scans_val, target_size, partitions, batch_size, load_all_scans, classes, 'val', SEED)
 
     # Set up the model
     model = build_model(num_classes=len(classes), input_shape=(1,)+target_size)
@@ -82,19 +82,19 @@ def train():
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(50),
+            callbacks.batch_logger(100),
             callbacks.print_history()]
 
     # Start training
     hist = model.fit_generator(
-        [train_inputs1, train_inputs2],
+        train_inputs,
         samples_per_epoch=num_train_samples,
         nb_epoch=num_epoch,
-        validation_data=[val_inputs1, val_inputs2],
+        validation_data=val_inputs,
         nb_val_samples=num_val_samples,
         callbacks=cbks,
         verbose=2,
-        max_q_size=320,
+        max_q_size=256,
         nb_worker=2,
         pickle_safe=True)
 
@@ -102,5 +102,5 @@ def train():
 
 
 if __name__ == "__main__":
+    print('Partitions: %s' % partitions)
     train()
-

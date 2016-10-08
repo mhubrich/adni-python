@@ -2,53 +2,21 @@ from keras.preprocessing.image import Iterator
 import keras.backend as K
 import numpy as np
 import nibabel as nib
-import random
-from scipy import ndimage
 
 from utils.sort_scans import sort_groups
 
-# SLICES = range(32, 62) # 30
-SLICES = range(37, 58) # 21
-# SLICES = range(32, 61) # 29
-
-def _rand_voxel(target_size, slices):
-    return random.randint(7, 86-target_size[0]), random.randint(3, 92-target_size[1]),\
-           random.randint(0, len(slices)-target_size[2])
-
-
-def _load_scan(scan, voxel, target_size, dim_ordering):
-    x = scan[voxel[0]:voxel[0]+target_size[0], :, :] \
-            [:, voxel[1]:voxel[1]+target_size[1], :] \
-            [:, :, voxel[2]:voxel[2]+target_size[2]]
-    if dim_ordering == 'tf':
-        x = np.expand_dims(x, axis=3)
-    else:
-        x = np.expand_dims(x, axis=0)
-    return x
-
-
-def augment_scan(scan):  # new
-    x = random.random() * 360
-    y = random.random() * 360
-    z = random.random() * 360
-    scan = ndimage.rotate(scan, x, axes=(1, 2), reshape=False, mode='constant', cval=0.0)
-    scan = ndimage.rotate(scan, y, axes=(0, 2), reshape=False, mode='constant', cval=0.0)
-    scan = ndimage.rotate(scan, z, axes=(0, 1), reshape=False, mode='constant', cval=0.0)
-    return scan
-
 
 class ScanIterator(Iterator):
-
     def __init__(self, scans, image_data_generator,
-                 slices, target_size=(10, 10, 10),
+                 target_size=(30, 30, 30), load_all_scans=True,
                  dim_ordering=K.image_dim_ordering,
                  classes=None, class_mode='categorical',
-                 batch_size=64, shuffle=True, seed=None):
+                 batch_size=32, shuffle=True, seed=None):
         self.image_data_generator = image_data_generator
-        self.slices = slices
         self.target_size = tuple(target_size)
-        self.shuffle = shuffle
+        self.load_all_scans = load_all_scans
         self.dim_ordering = dim_ordering
+        self.shuffle = shuffle
         if self.dim_ordering == 'tf':
             self.image_shape = self.target_size + (1,)
         else:
@@ -60,7 +28,7 @@ class ScanIterator(Iterator):
                              '"binary", "sparse", or None.')
         self.class_mode = class_mode
 
-        random.seed(seed)
+        np.random.seed(seed)
 
         # first, count the number of samples and classes
         self.nb_sample = 0
@@ -80,7 +48,10 @@ class ScanIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         self.filenames = []
-        self.scans = np.zeros((self.nb_sample,) + (96, 96, len(slices)), dtype='float32')
+        if self.load_all_scans:
+            self.scans = np.zeros((self.nb_sample,) + (96, 96, 96), dtype='float32')
+        else:
+            self.scans = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         if not self.shuffle:
             self.voxels = []
@@ -90,21 +61,51 @@ class ScanIterator(Iterator):
                 self.classes[i] = self.class_indices[scan.group]
                 assert self.classes[i] is not None, \
                     'Read unknown class: %s' % scan.group
-                # Load scan and convert to numpy array
-                s = nib.load(scan.path).get_data()
-                # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
-                s = np.squeeze(s)
-                s_min, s_max = np.min(s), np.max(s)
-                # Cut slice (160, 160, 96) -> (96, 96, 20)
-                s = s[32:128, :, :][:, 32:128, :][:, :, slices]
-                # Rescale to [0,1]
-                s = (s - s_min) / (s_max - s_min)
-                self.scans[i] = s
-                self.filenames.append(scan.group + '_' + scan.imageID + '_' + scan.subject)
+                if self.load_all_scans:
+                    self.scans[i] = self.load_scan(scan.path)
+                else:
+                    self.scans.append(scan.path)
+                self.filenames.append(self.get_filename(scan))
                 if not self.shuffle:
-                    self.voxels.append(_rand_voxel(self.target_size, self.slices))
+                    self.voxels.append(self.get_voxel(self.target_size))
                 i += 1
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
+
+    def load_scan(self, path):
+        # Load scan and convert to numpy array
+        s = nib.load(path).get_data()
+        # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
+        s = np.squeeze(s)
+        s_min, s_max = np.min(s), np.max(s)
+        # Cut slices: (160, 160, 96) -> (96, 96, 96)
+        s = s[32:128, :, :][:, 32:128, :]
+        # Rescale to [0,1]
+        s = (s - s_min) / (s_max - s_min)
+        return s
+
+    def get_filename(self, scan):
+        return scan.group + '_' + scan.imageID + '_' + scan.subject
+
+    def get_scan(self, scan, load_all_scans, voxel, target_size):
+        if not load_all_scans:
+            scan = self.load_scan(scan)
+        return scan[voxel[0]:voxel[0] + target_size[0], :, :] \
+                   [:, voxel[1]:voxel[1] + target_size[1], :] \
+                   [:, :, voxel[2]:voxel[2] + target_size[2]]
+
+    def expand_dims(self, x, dim_ordering):
+        if dim_ordering == 'tf':
+            return np.expand_dims(x, axis=3)
+        else:
+            return np.expand_dims(x, axis=0)
+
+    def rand_voxel(self, target_size, x=(7, 87), y=(3, 93), z=(15, 81)):
+        # [inclusive, exlusive)
+        return np.random.randint(x[0], x[1]-target_size[0]), np.random.randint(y[0], y[1]-target_size[1]),\
+               np.random.randint(z[0], z[1]-target_size[2])
+
+    def get_voxel(self, target_size):
+        return self.rand_voxel(target_size)
 
     def next(self):
         with self.lock:
@@ -114,13 +115,15 @@ class ScanIterator(Iterator):
         # build batch of image data
         for i, j in enumerate(index_array):
             if self.shuffle:
-                voxel = _rand_voxel(self.target_size, self.slices)
+                voxel = self.rand_voxel(self.target_size)
             else:
                 voxel = self.voxels[j]
-            x = _load_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size,
-                           dim_ordering=self.dim_ordering)
-            # x = self.image_data_generator.random_transform(x)
+            x = self.get_scan(scan=self.scans[j], load_all_scans=self.load_all_scans,
+                              voxel=voxel, target_size=self.target_size)
+            if self.shuffle:
+                x = self.image_data_generator.random_transform(x)
             # x = self.image_data_generator.standardize(x)
+            x = self.expand_dims(x, self.dim_ordering)
             batch_x[i] = x
         # build batch of labels
         if self.class_mode == 'sparse':
@@ -134,4 +137,3 @@ class ScanIterator(Iterator):
         else:
             return batch_x
         return batch_x, batch_y
-
