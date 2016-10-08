@@ -9,10 +9,10 @@ from utils.sort_scans import sort_groups
 
 
 def _rand_voxel(target_size):
-    #return random.randint(7, 86-target_size[0]), random.randint(3, 92-target_size[1]),\
-    #       random.randint(15, 80-target_size[2])
-    return random.randint(0, 96-target_size[0]), random.randint(0, 96-target_size[1]),\
-           random.randint(0, 96-target_size[2])
+    return random.randint(7, 86-target_size[0]), random.randint(3, 92-target_size[1]),\
+           random.randint(15, 80-target_size[2])
+    #return random.randint(0, 96-target_size[0]), random.randint(0, 96-target_size[1]),\
+    #       random.randint(0, 96-target_size[2])
 
 
 def _load_scan(scan, voxel, target_size, dim_ordering):
@@ -128,8 +128,8 @@ class ScanIterator(Iterator):
                 voxel = self.voxels[j]
             x = _load_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size,
                            dim_ordering=self.dim_ordering)
-            if self.shuffle:  # new
-                x = rotate_scan(x, self.dim_ordering)  # new
+            #if self.shuffle:  # new
+            #    x = rotate_scan(x, self.dim_ordering)  # new
             #if self.dim_ordering == 'tf':  # new
             #    x = np.expand_dims(x, axis=3)  # new
             #else:  # new

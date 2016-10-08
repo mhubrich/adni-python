@@ -9,7 +9,7 @@ from cnn.keras.d3.train import _split_scans, classes
 
 batch_size = 64
 num_samples = 481 * len(GRID)
-path_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_2/weights.155-loss_0.286-acc_0.895.h5'
+path_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_3/weights.193-loss_0.363-acc_0.849.h5'
 
 
 def predict():
@@ -33,7 +33,7 @@ def predict():
 
 
 def write_submission(predictions, filenames):
-    with open('predictions_d3H_avg_2_155-15_22_1.csv', 'wb') as csvfile:
+    with open('predictions_d3H_avg_3_193-0_36_4.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         for i in xrange(0, len(predictions)):
             tmp = [filenames[i]]

@@ -1,13 +1,13 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.d3H_avg.model import build_model
+from cnn.keras.models.d3H_avg_reg.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
 from cnn.keras.d3.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('outputH_avg_3', 'w')
+sys.stdout = sys.stderr = open('outputH_avg_reg_2', 'w')
 
 
 # Training specific parameters
@@ -23,11 +23,11 @@ num_train_samples = 923 * 5
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_3'
-path_weights = None
-path_optimizer_weights = None
-path_optimizer_updates = None
-path_optimizer_config = None
+path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_2'
+path_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/weights.865-loss_0.763-acc_0.568.h5'
+path_optimizer_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/MySGD_weights.p'
+path_optimizer_updates = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/MySGD_updates.p'
+path_optimizer_config = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/MySGD_config.p'
 
 
 def _split_scans():
@@ -69,7 +69,7 @@ def train():
     model = build_model(num_classes=len(classes), input_shape=(1,)+target_size)
     config = load_config(path_optimizer_config)
     if config == {}:
-        config['lr'] = 0.001
+        config['lr'] = 0.0001  # 0.001
         config['decay'] = 0.000001
         config['momentum'] = 0.9
     sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)
