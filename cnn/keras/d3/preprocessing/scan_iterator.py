@@ -89,7 +89,7 @@ class ScanIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         self.filenames = []
-        self.scans = np.zeros((self.nb_sample,) + (96, 96, 96), dtype='float32')
+        self.scans = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         if not self.shuffle:
             self.voxels = []
@@ -99,16 +99,7 @@ class ScanIterator(Iterator):
                 self.classes[i] = self.class_indices[scan.group]
                 assert self.classes[i] is not None, \
                     'Read unknown class: %s' % scan.group
-                # Load scan and convert to numpy array
-                s = nib.load(scan.path).get_data()
-                # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
-                s = np.squeeze(s)
-                s_min, s_max = np.min(s), np.max(s)
-                # Cut slice (160, 160, 96) -> (96, 96, 96)
-                s = s[32:128, :, :][:, 32:128, :]
-                # Rescale to [0,1]
-                s = (s - s_min) / (s_max - s_min)
-                self.scans[i] = s
+                self.scans.append(scan.path)
                 self.filenames.append(scan.group + '_' + scan.imageID + '_' + scan.subject)
                 if not self.shuffle:
                     self.voxels.append(_rand_voxel(self.target_size))
@@ -126,7 +117,7 @@ class ScanIterator(Iterator):
                 voxel = _rand_voxel(self.target_size)
             else:
                 voxel = self.voxels[j]
-            x = _load_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size,
+            x = _load_scan(path=self.scans[j], voxel=voxel, target_size=self.target_size,
                            dim_ordering=self.dim_ordering)
             #if self.shuffle:  # new
             #    x = rotate_scan(x, self.dim_ordering)  # new

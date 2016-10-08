@@ -11,16 +11,16 @@ sys.stdout = sys.stderr = open('outputH_avg_reg_2', 'w')
 
 
 # Training specific parameters
-target_size = (58, 58, 58)
+target_size = (29, 29, 29)
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
 batch_size = 64
 num_epoch = 2000
 # Number of training samples per epoch
-num_train_samples = 923 * 5
+num_train_samples = 940 * 5
 # Number of validation samples per epoch
-num_val_samples = 481
+num_val_samples = 464
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
 path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_2'
@@ -80,7 +80,7 @@ def train():
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(50),
+            callbacks.batch_logger(100),
             callbacks.print_history()]
 
     # Start training
