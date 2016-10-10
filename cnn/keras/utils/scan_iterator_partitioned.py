@@ -45,7 +45,7 @@ class ScanIteratorPartitioned(ScanIterator):
         elif self.class_mode == 'binary':
             batch_y = self.classes[index_array].astype('float32')
         elif self.class_mode == 'categorical':
-            batch_y = np.zeros((len(batch_x), self.nb_class), dtype='float32')
+            batch_y = np.zeros((current_batch_size, self.nb_class), dtype='float32')
             for i, label in enumerate(self.classes[index_array]):
                 batch_y[i, label] = 1.
         else:

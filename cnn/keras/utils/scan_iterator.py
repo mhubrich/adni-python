@@ -99,10 +99,13 @@ class ScanIterator(Iterator):
         else:
             return np.expand_dims(x, axis=0)
 
-    def rand_voxel(self, target_size, x=(7, 87), y=(3, 93), z=(15, 81)):
-        # [inclusive, exlusive)
-        return np.random.randint(x[0], x[1]-target_size[0]), np.random.randint(y[0], y[1]-target_size[1]),\
-               np.random.randint(z[0], z[1]-target_size[2])
+    def rand_voxel(self, target_size, x=(7, 86), y=(3, 92), z=(15, 80)):
+        """
+        Ranges x, y and z are [inclusive, inclusive].
+        """
+        # randint is [inclusive, exlusive)
+        return np.random.randint(x[0], x[1]+2-target_size[0]), np.random.randint(y[0], y[1]+2-target_size[1]),\
+               np.random.randint(z[0], z[1]+2-target_size[2])
 
     def get_voxel(self, target_size):
         return self.rand_voxel(target_size)

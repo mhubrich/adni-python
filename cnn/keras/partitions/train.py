@@ -1,18 +1,18 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.partitions1.model import build_model
+from cnn.keras.models.partitions4.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
 from cnn.keras.partitions.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('output1_1', 'w')
+sys.stdout = sys.stderr = open('output4_1', 'w')
 
 
 # Training specific parameters
 target_size = (29, 29, 29)
-partitions = [(15, 47), (48, 80)]
+partitions = [(15, 52), (43, 80)]
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
@@ -25,7 +25,7 @@ num_train_samples = 923 * 5
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/partitions1_1'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/partitions4_1'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -82,7 +82,7 @@ def train():
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(100),
+            callbacks.batch_logger(50),
             callbacks.print_history()]
 
     # Start training
@@ -94,8 +94,8 @@ def train():
         nb_val_samples=num_val_samples,
         callbacks=cbks,
         verbose=2,
-        max_q_size=256,
-        nb_worker=2,
+        max_q_size=320,
+        nb_worker=4,
         pickle_safe=True)
 
     return hist
