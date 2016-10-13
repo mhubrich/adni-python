@@ -1,6 +1,8 @@
+import os
 import numpy as np
 
 from utils.sort_scans import sort_groups
+from utils.load_scans import load_scans
 
 
 def split_scans(scans, split, names, pathOut, classes=None):
@@ -28,8 +30,24 @@ def split_scans(scans, split, names, pathOut, classes=None):
         for g in groups:
             if indices[i] < maxCounts[i]:
 
-
-
-
     if classes is None:
         classes = names
+
+
+def read_imageID(path_ADNI, fname):
+    ret = []
+    with open(fname, 'rb') as f:
+        content = f.readlines()
+    scans = load_scans(path_ADNI)
+    for imageID in content:
+        for scan in scans:
+            if imageID == scan.imageID:
+                ret.append(scan)
+                break
+    return ret
+
+
+def write_imageID(scans, fname):
+    with open(fname, 'wb') as f:
+        for scan in scans:
+            f.write(scan.imageID + os.linesep)
