@@ -6,10 +6,10 @@ from cnn.keras.utils.write_prediction import write_prediction
 
 
 target_size = (29, 29, 29)
-batch_size = 64
+batch_size = 128
 load_all_scans = True
-path_weights = ''
-output_name = ''
+path_weights = '/home/mhubrich/checkpoints/adni/partitions1_2/weights.506-loss_0.399-acc_0.831.h5'
+output_name = 'part1_2_506-5_5'
 
 interval_x = range(7, 86+2 - target_size[0], 5)
 interval_y = range(3, 92+2 - target_size[1], 5)
@@ -34,7 +34,7 @@ def predict():
     pred, filenames = predict_generator(model,
                                         test_inputs,
                                         val_samples=test_inputs.nb_sample,
-                                        max_q_size=256,
+                                        max_q_size=640,
                                         nb_preprocessing_threads=1)
 
     return pred, filenames
@@ -43,3 +43,4 @@ def predict():
 if __name__ == "__main__":
     predictions, filenames = predict()
     write_prediction(output_name, predictions, filenames)
+

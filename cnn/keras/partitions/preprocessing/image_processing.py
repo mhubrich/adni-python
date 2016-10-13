@@ -35,5 +35,5 @@ def inputs(scans, target_size, partitions, batch_size, load_all_scans, classes, 
             seed=seed)
     else:
         return images.flow_from_directory(scans=scans, grid=partitions,
-                                          target_size=(30, 30, 30), load_all_scans=True,
+                                          target_size=target_size, load_all_scans=load_all_scans,
                                           classes=classes, batch_size=batch_size)
