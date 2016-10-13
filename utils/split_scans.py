@@ -29,7 +29,7 @@ def split_scans(scans, split, names, pathOut, classes=None):
     for i in range(split):
         for g in groups:
             if indices[i] < maxCounts[i]:
-
+                maxValue += 1
     if classes is None:
         classes = names
 
@@ -37,7 +37,7 @@ def split_scans(scans, split, names, pathOut, classes=None):
 def read_imageID(path_ADNI, fname):
     ret = []
     with open(fname, 'rb') as f:
-        content = f.readlines()
+        content = [x.strip(os.linesep) for x in f.readlines()]
     scans = load_scans(path_ADNI)
     for imageID in content:
         for scan in scans:
