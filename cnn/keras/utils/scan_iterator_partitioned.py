@@ -27,13 +27,16 @@ class ScanIteratorPartitioned(ScanIterator):
         batch_x = [np.zeros((current_batch_size,) + self.image_shape) for _ in range(len(self.partitions))]
         # build batch of image data
         for i, j in enumerate(index_array):
+            if self.load_all_scans:
+                scan = self.scans[j]
+            else:
+                scan = self.load_scan(self.scans[j])
             for k in range(len(self.partitions)):
                 if self.shuffle:
                     voxel = self.rand_voxel(self.target_size, z=self.partitions[k])
                 else:
                     voxel = self.voxels[j][k]
-                x = self.get_scan(scan=self.scans[j], load_all_scans=self.load_all_scans,
-                                  voxel=voxel, target_size=self.target_size)
+                x = self.get_scan(scan=scan, voxel=voxel, target_size=self.target_size)
                 if self.shuffle:
                     x = self.image_data_generator.random_transform(x)
                 # x = self.image_data_generator.standardize(x)

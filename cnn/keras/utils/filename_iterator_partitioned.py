@@ -17,10 +17,13 @@ class FilenameIteratorPartitioned(FilenameIterator):
         # build batch of image data
         for i, j in enumerate(index_array):
             j_scan, j_voxel = divmod(j, self.len_grid())
+            if self.load_all_scans:
+                scan = self.scans[j_scan]
+            else:
+                scan = self.load_scan(self.scans[j_scan])
             for k in range(len(self.grid)):
                 voxel = self.grid[k][j_voxel]
-                x = self.get_scan(scan=self.scans[j_scan], load_all_scans=self.load_all_scans,
-                                  voxel=voxel, target_size=self.target_size)
+                x = self.get_scan(scan=scan, voxel=voxel, target_size=self.target_size)
                 # x = self.image_data_generator.standardize(x)
                 x = self.expand_dims(x, self.dim_ordering)
                 batch_x[k][i] = x

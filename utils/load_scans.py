@@ -2,6 +2,8 @@ import xml.etree.ElementTree as ET
 import glob
 import os
 
+from utils.config import config
+
 
 class Scan:
     def __init__(self, subject, imageID, gender, age, group, tracer, manufacturer, path):
@@ -19,7 +21,11 @@ def _build_path(base, subject, preprocessing, date, imageID):
     preprocessing = preprocessing.replace(' ', '_')
     date = date.replace(' ', '_')
     date = date.replace(':', '_')
-    path = os.path.join(base, subject, preprocessing, date, imageID, '*.nii*')
+    if config['nii']:
+        ext = '*.nii*'
+    else:
+        ext = '*.npy'
+    path = os.path.join(base, subject, preprocessing, date, imageID, ext)
     path = glob.glob(path)
     assert len(path) == 1, \
         "There are %d scans in directory: %s" % (len(path), path)

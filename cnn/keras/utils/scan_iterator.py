@@ -4,6 +4,7 @@ import numpy as np
 import nibabel as nib
 
 from utils.sort_scans import sort_groups
+from utils.config import config
 
 
 class ScanIterator(Iterator):
@@ -72,22 +73,25 @@ class ScanIterator(Iterator):
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
     def load_scan(self, path):
-        # Load scan and convert to numpy array
-        s = nib.load(path).get_data()
-        # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
-        s = np.squeeze(s)
-        s_min, s_max = np.min(s), np.max(s)
-        # Cut slices: (160, 160, 96) -> (96, 96, 96)
-        s = s[32:128, :, :][:, 32:128, :]
-        # Rescale to [0,1]
-        s = (s - s_min) / (s_max - s_min)
-        return s
+        if config['nii']:
+            # Load scan and convert to numpy array
+            s = nib.load(path).get_data()
+            # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
+            s = np.squeeze(s)
+            s_min, s_max = np.min(s), np.max(s)
+            # Cut slices: (160, 160, 96) -> (96, 96, 96)
+            s = s[32:128, :, :][:, 32:128, :]
+            # Rescale to [0,1]
+            s = (s - s_min) / (s_max - s_min)
+            return s
+        else:
+            return np.load(path)
 
     def get_filename(self, scan):
         return scan.group + '_' + scan.imageID + '_' + scan.subject
 
-    def get_scan(self, scan, load_all_scans, voxel, target_size):
-        if not load_all_scans:
+    def get_scan(self, scan, voxel, target_size):
+        if not isinstance(scan, np.ndarray):
             scan = self.load_scan(scan)
         return scan[voxel[0]:voxel[0] + target_size[0], :, :] \
                    [:, voxel[1]:voxel[1] + target_size[1], :] \
@@ -121,8 +125,7 @@ class ScanIterator(Iterator):
                 voxel = self.rand_voxel(self.target_size)
             else:
                 voxel = self.voxels[j]
-            x = self.get_scan(scan=self.scans[j], load_all_scans=self.load_all_scans,
-                              voxel=voxel, target_size=self.target_size)
+            x = self.get_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size)
             if self.shuffle:
                 x = self.image_data_generator.random_transform(x)
             # x = self.image_data_generator.standardize(x)

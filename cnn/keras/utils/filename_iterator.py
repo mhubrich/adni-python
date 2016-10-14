@@ -4,6 +4,7 @@ import numpy as np
 import nibabel as nib
 
 from utils.sort_scans import sort_groups
+from utils.config import config
 
 
 class FilenameIterator(Iterator):
@@ -54,16 +55,19 @@ class FilenameIterator(Iterator):
         super(FilenameIterator, self).__init__(self.nb_sample, batch_size, False, None)
 
     def load_scan(self, path):
-        # Load scan and convert to numpy array
-        s = nib.load(path).get_data()
-        # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
-        s = np.squeeze(s)
-        s_min, s_max = np.min(s), np.max(s)
-        # Cut slices: (160, 160, 96) -> (96, 96, 96)
-        s = s[32:128, :, :][:, 32:128, :]
-        # Rescale to [0,1]
-        s = (s - s_min) / (s_max - s_min)
-        return s
+        if config['nii']:
+            # Load scan and convert to numpy array
+            s = nib.load(path).get_data()
+            # Remove empty dimension: (160, 160, 96, 1) -> (160, 160, 96)
+            s = np.squeeze(s)
+            s_min, s_max = np.min(s), np.max(s)
+            # Cut slices: (160, 160, 96) -> (96, 96, 96)
+            s = s[32:128, :, :][:, 32:128, :]
+            # Rescale to [0,1]
+            s = (s - s_min) / (s_max - s_min)
+            return s
+        else:
+            return np.load(path)
 
     def get_filename(self, scan):
         return scan.group + '_' + scan.imageID + '_' + scan.subject
@@ -71,8 +75,8 @@ class FilenameIterator(Iterator):
     def get_voxel_str(self, voxel):
         return str(voxel[0]) + '_' + str(voxel[1]) + '_' + str(voxel[2])
 
-    def get_scan(self, scan, load_all_scans, voxel, target_size):
-        if not load_all_scans:
+    def get_scan(self, scan, voxel, target_size):
+        if not isinstance(scan, np.ndarray):
             scan = self.load_scan(scan)
         return scan[voxel[0]:voxel[0] + target_size[0], :, :] \
                    [:, voxel[1]:voxel[1] + target_size[1], :] \
@@ -97,8 +101,7 @@ class FilenameIterator(Iterator):
         for i, j in enumerate(index_array):
             j_scan, j_voxel = divmod(j, self.len_grid())
             voxel = self.grid[j_voxel]
-            x = self.get_scan(scan=self.scans[j_scan], load_all_scans=self.load_all_scans,
-                              voxel=voxel, target_size=self.target_size)
+            x = self.get_scan(scan=self.scans[j_scan], voxel=voxel, target_size=self.target_size)
             # x = self.image_data_generator.standardize(x)
             x = self.expand_dims(x, self.dim_ordering)
             batch_x[i] = x

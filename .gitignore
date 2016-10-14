@@ -9,3 +9,6 @@
 
 # no output files because they can differ on MOGON and KARWATH
 output*
+
+# every local repository has its own config file
+config.p
