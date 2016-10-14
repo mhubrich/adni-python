@@ -5,7 +5,7 @@
 
 # due to large file size
 *.h5
-/cnn/keras/prediction/*.csv
+*.csv
 
 # no output files because they can differ on MOGON and KARWATH
 output*
