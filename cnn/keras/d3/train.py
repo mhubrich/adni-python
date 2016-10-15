@@ -1,13 +1,13 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.d3H_avg_reg.model import build_model
+from cnn.keras.models.d3G.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
 from cnn.keras.d3.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('outputH_avg_reg_2', 'w')
+sys.stdout = sys.stderr = open('output', 'w')
 
 
 # Training specific parameters
@@ -16,18 +16,19 @@ FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
 batch_size = 64
+load_all_scans = True
 num_epoch = 2000
 # Number of training samples per epoch
-num_train_samples = 940 * 5
+num_train_samples = 827 * 5
 # Number of validation samples per epoch
-num_val_samples = 464
+num_val_samples = 452
 # Paths
-path_ADNI = '/home/mhubrich/ADNI'
+path_ADNI = '/home/mhubrich/ADNI_intnorm_npy'
 path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_2'
-path_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/weights.865-loss_0.763-acc_0.568.h5'
-path_optimizer_weights = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/MySGD_weights.p'
-path_optimizer_updates = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/MySGD_updates.p'
-path_optimizer_config = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_1/MySGD_config.p'
+path_weights = None
+path_optimizer_weights = None
+path_optimizer_updates = None
+path_optimizer_config = None
 
 
 def _split_scans():
@@ -62,14 +63,14 @@ def _split_scans():
 def train():
     # Get inputs for training and validation
     scans_train, scans_val = _split_scans()
-    train_inputs = inputs(scans_train, target_size, batch_size, classes, 'train', SEED)
-    val_inputs = inputs(scans_val, target_size, batch_size, classes, 'val', SEED)
+    train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
+    val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
     # Set up the model
     model = build_model(num_classes=len(classes), input_shape=(1,)+target_size)
     config = load_config(path_optimizer_config)
     if config == {}:
-        config['lr'] = 0.0001  # 0.001
+        config['lr'] = 0.001
         config['decay'] = 0.000001
         config['momentum'] = 0.9
     sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)
@@ -101,4 +102,3 @@ def train():
 
 if __name__ == "__main__":
     train()
-
