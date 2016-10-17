@@ -48,7 +48,6 @@ class ScanIterator(Iterator):
         print('Found %d scans belonging to %d classes.' % (self.nb_sample, self.nb_class))
 
         # second, build an index of the images in the different class subfolders
-        self.filenames = []
         if self.load_all_scans:
             self.scans = np.zeros((self.nb_sample,) + (91, 109, 91), dtype='float32')
         else:
@@ -66,7 +65,6 @@ class ScanIterator(Iterator):
                     self.scans[i] = self.load_scan(scan.path)
                 else:
                     self.scans.append(scan.path)
-                self.filenames.append(self.get_filename(scan))
                 if not self.shuffle:
                     self.voxels.append(self.get_voxel(self.target_size))
                 i += 1
@@ -84,9 +82,6 @@ class ScanIterator(Iterator):
             return s
         else:
             return np.load(path)
-
-    def get_filename(self, scan):
-        return scan.group + '_' + scan.imageID + '_' + scan.subject
 
     def get_scan(self, scan, voxel, target_size):
         if not isinstance(scan, np.ndarray):

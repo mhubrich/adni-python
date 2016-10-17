@@ -7,27 +7,27 @@ from cnn.keras.autoencoder.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('output_3', 'w')
+sys.stdout = sys.stderr = open('output_intnorm_1', 'w')
 
 
 # Training specific parameters
-target_size = (96, 96, 96)
+target_size = (44, 52, 44)
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 1
+batch_size = 8
 num_epoch = 2000
 # Number of training samples per epoch
 num_train_samples = 923
 # Number of validation samples per epoch
 num_val_samples = 481
 # Paths
-path_ADNI = '/home/mhubrich/ADNI'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/auto3D_3'
-path_weights = '/home/mhubrich/checkpoints/adni/auto3D_2/weights.45-loss_0.447-acc_0.779.h5'
-path_optimizer_weights = '/home/mhubrich/checkpoints/adni/auto3D_2/MySGD_weights.p'
-path_optimizer_updates = '/home/mhubrich/checkpoints/adni/auto3D_2/MySGD_updates.p'
-path_optimizer_config = '/home/mhubrich/checkpoints/adni/auto3D_2/MySGD_config.p'
+path_ADNI = '/home/mhubrich/ADNI_intnorm_npy'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/auto3D_intnorm_1'
+path_weights = None
+path_optimizer_weights = None
+path_optimizer_updates = None
+path_optimizer_config = None
 
 
 def _split_scans():
@@ -73,27 +73,27 @@ def train():
         config['decay'] = 0.000001
         config['momentum'] = 0.9
     sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)
-    model.compile(loss='binary_crossentropy', optimizer='adadelta', metrics=['accuracy'])
+    model.compile(loss='mse', optimizer='adadelta', metrics=['accuracy'])
     if path_weights:
         model.load_weights(path_weights)
 
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(800),
+            callbacks.batch_logger(600),
             callbacks.print_history()]
 
     # Start training
     hist = model.fit_generator(
         train_inputs,
-        samples_per_epoch=num_train_samples,
+        samples_per_epoch=train_inputs.nb_sample,
         nb_epoch=num_epoch,
         validation_data=val_inputs,
-        nb_val_samples=num_val_samples,
+        nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         verbose=2,
-        max_q_size=16,
-        nb_worker=2,
+        max_q_size=8,
+        nb_worker=1,
         pickle_safe=True)
 
     return hist
@@ -101,4 +101,3 @@ def train():
 
 if __name__ == "__main__":
     hist = train()
-

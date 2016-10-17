@@ -4,7 +4,7 @@ from cnn.keras.autoencoder.preprocessing.scan_iterator import ScanIterator
 
 class ScanDataGenerator(ImageDataGenerator):
     def flow_from_directory(self, scans,
-                            target_size=(96, 96, 96), color_mode='grayscale',
+                            target_size=(44, 52, 44), color_mode='grayscale',
                             classes=None, class_mode='categorical',
                             batch_size=32, shuffle=True, seed=None,
                             save_to_dir=None, save_prefix=None, save_format=None):
