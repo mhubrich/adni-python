@@ -1,7 +1,7 @@
 import keras.backend as K
 import numpy as np
 
-from cnn.keras.utils.scan_iterator import ScanIterator as Iterator
+from cnn.keras.utils.scan_iterator_intnorm import ScanIterator as Iterator
 
 
 class ScanIterator(Iterator):
