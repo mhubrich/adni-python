@@ -1,17 +1,18 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.d3G.model import build_model
+from cnn.keras.models.d3G_avg.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
 from cnn.keras.d3.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
+from utils.split_scans import read_imageID
 import sys
-sys.stdout = sys.stderr = open('output', 'w')
+sys.stdout = sys.stderr = open('outputG_intnorm_avg_1', 'w')
 
 
 # Training specific parameters
-target_size = (29, 29, 29)
+target_size = (31, 31, 31)
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
@@ -24,7 +25,7 @@ num_train_samples = 827 * 5
 num_val_samples = 452
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_npy'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/d3H_avg_reg_2'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/d3G_intnorm_avg_1'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -62,7 +63,8 @@ def _split_scans():
 
 def train():
     # Get inputs for training and validation
-    scans_train, scans_val = _split_scans()
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/train_intnorm')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/val_intnorm')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
@@ -81,7 +83,7 @@ def train():
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(100),
+            callbacks.batch_logger(35),
             callbacks.print_history()]
 
     # Start training

@@ -101,7 +101,8 @@ class ScanIterator(Iterator):
         else:
             return np.expand_dims(x, axis=0)
 
-    def rand_voxel(self, target_size, x=(0, 90), y=(0, 108), z=(0, 90)):
+    # old: x=(0, 90), y=(0, 108), z=(0, 90)
+    def rand_voxel(self, target_size, x=(5, 82), y=(8, 100), z=(0, 82)):
         """
         Ranges x, y and z are [inclusive, inclusive].
         """
