@@ -19,7 +19,7 @@ def build_model(num_classes, input_shape=(1, 29, 29, 29)):
     model.add(Convolution3D(128, 3, 3, 3, activation='relu'))
     model.add(Convolution3D(128, 3, 3, 3, activation='relu'))
     model.add(Convolution3D(128, 3, 3, 3, activation='relu'))
-    model.add(Convolution3D(64, 1, 1, 1, activation='relu'))
+    #model.add(Convolution3D(64, 1, 1, 1, activation='relu'))
 
     model.add(Flatten())
     model.add(Dense(512, activation='relu'))

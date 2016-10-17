@@ -16,8 +16,8 @@ target_size = (31, 31, 31)
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 64
-load_all_scans = True
+batch_size = 32
+load_all_scans = False
 num_epoch = 2000
 # Number of training samples per epoch
 num_train_samples = 827 * 5
@@ -95,8 +95,8 @@ def train():
         nb_val_samples=num_val_samples,
         callbacks=cbks,
         verbose=2,
-        max_q_size=192,
-        nb_worker=2,
+        max_q_size=32,
+        nb_worker=1,
         pickle_safe=True)
 
     return hist
