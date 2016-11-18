@@ -58,14 +58,15 @@ class ScanIterator(Iterator):
                 assert self.classes[i] is not None, \
                     'Read unknown class: %s' % scan.group
                 if self.load_all_scans:
-                    self.scans[i] = self.load_scan(scan.path)
+                    self.scans[i] = self.get_scan(scan.path)
                 else:
                     self.scans.append(scan.path)
                 i += 1
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
     def load_scan(self, path):
-            return np.load(path)
+        x = np.load(path)
+        return x[np.nonzero(x)]
 
     def get_scan(self, scan):
         if not isinstance(scan, np.ndarray):
@@ -85,12 +86,7 @@ class ScanIterator(Iterator):
         batch_x = np.zeros((current_batch_size,) + self.target_size)
         # build batch of image data
         for i, j in enumerate(index_array):
-            x = self.get_scan(self.scans[j])
-            #if self.shuffle:
-            #    x = self.image_data_generator.random_transform(x)
-            x = x[np.nonzero(x)]
-            #x = self.expand_dims(x, self.dim_ordering)
-            batch_x[i] = x
+            batch_x[i] = self.get_scan(self.scans[j])
         # build batch of labels
         if self.class_mode == 'sparse':
             batch_y = self.classes[index_array]

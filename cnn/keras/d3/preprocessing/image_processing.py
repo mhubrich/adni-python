@@ -38,3 +38,4 @@ def inputs(scans, target_size, batch_size, load_all_scans, classes, method, seed
         return images.flow_from_directory(scans=scans, grid=seed,
                                           target_size=target_size, load_all_scans=load_all_scans,
                                           classes=classes, batch_size=batch_size)
+

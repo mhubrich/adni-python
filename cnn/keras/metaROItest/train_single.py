@@ -1,42 +1,41 @@
-from keras.optimizers import SGD
 from cnn.keras import callbacks
-from cnn.keras.models.metaROI2.model_single5 import build_model
-from cnn.keras.optimizers import load_config, MySGD
+from keras.optimizers import SGD
+from cnn.keras.models.metaROI5.model_single import build_model
 from cnn.keras.metaROItest.image_processing import inputs
 from utils.split_scans import read_imageID
+import sys
+
+
+logfile = str(sys.argv[1])
+checkpoints = str(sys.argv[2])
+file1 = str(sys.argv[3])
+file2 = str(sys.argv[4])
+
+sys.stdout = sys.stderr = open(logfile, 'w')
 
 
 # Training specific parameters
-target_size = (6, 6, 6)
+target_size = (5, 5, 5)
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 32
-load_all_scans = False
-num_epoch = 2000
+batch_size = 128
+load_all_scans = True
+num_epoch = 9999
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_metaROI2'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/metaROI2_CV3f'
+path_ADNI = '/home/mhubrich/ADNI_intnorm_metaROI5'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/' + checkpoints
 path_weights = None
-path_optimizer_weights = None
-path_optimizer_updates = None
-path_optimizer_config = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/CV2/3_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/CV2/3_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/' + file1)
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/' + file2)
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
     # Set up the model
     model = build_model()
-    config = load_config(path_optimizer_config)
-    if config == {}:
-        config['lr'] = 0.001
-        config['decay'] = 0.000001
-        config['momentum'] = 0.9
-    #sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)
     sgd = SGD(lr=0.001, decay=0.000001, momentum=0.9, nesterov=True)
     model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     if path_weights:
@@ -44,10 +43,8 @@ def train():
 
     # Define callbacks
     cbks = [callbacks.print_history(),
-            callbacks.save_model(path_checkpoints)]
-            #callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True)]
-            #callbacks.batch_logger(70),
-            #[callbacks.print_history()]
+            callbacks.flush(),
+            callbacks.save_model(path_checkpoints, max_files=3)]
 
     # Start training
     model.fit_generator(
@@ -58,10 +55,11 @@ def train():
         nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         verbose=2,
-        max_q_size=32,
+        max_q_size=128,
         nb_worker=1,
         pickle_safe=True)
 
 
 if __name__ == "__main__":
     train()
+

@@ -47,9 +47,17 @@ class ScanIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         if self.load_all_scans:
-            self.scans = np.zeros((self.nb_sample,) + (6, 6, 6), dtype='float32')
+            self.scans1 = np.zeros((self.nb_sample,) + (8, 8, 8), dtype='float32')
+            self.scans2 = np.zeros((self.nb_sample,) + (6, 6, 6), dtype='float32')
+            self.scans3 = np.zeros((self.nb_sample,) + (10, 10, 10), dtype='float32')
+            self.scans4 = np.zeros((self.nb_sample,) + (13, 13, 13), dtype='float32')
+            self.scans5 = np.zeros((self.nb_sample,) + (5, 5, 5), dtype='float32')
         else:
-            self.scans = []
+            self.scans1 = []
+            self.scans2 = []
+            self.scans3 = []
+            self.scans4 = []
+            self.scans5 = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         i = 0
         for c in classes:
@@ -58,9 +66,17 @@ class ScanIterator(Iterator):
                 assert self.classes[i] is not None, \
                     'Read unknown class: %s' % scan.group
                 if self.load_all_scans:
-                    self.scans[i] = self.load_scan(scan.path)
+                    self.scans1[i] = self.load_scan(scan.path)
+                    self.scans2[i] = self.load_scan(scan.path.replace('metaROI1', 'metaROI2'))
+                    self.scans3[i] = self.load_scan(scan.path.replace('metaROI1', 'metaROI3'))
+                    self.scans4[i] = self.load_scan(scan.path.replace('metaROI1', 'metaROI4'))
+                    self.scans5[i] = self.load_scan(scan.path.replace('metaROI1', 'metaROI5'))
                 else:
-                    self.scans.append(scan.path)
+                    self.scans1.append(scan.path)
+                    self.scans2.append(scan.path.replace('metaROI1', 'metaROI2'))
+                    self.scans3.append(scan.path.replace('metaROI1', 'metaROI3'))
+                    self.scans4.append(scan.path.replace('metaROI1', 'metaROI4'))
+                    self.scans5.append(scan.path.replace('metaROI1', 'metaROI5'))
                 i += 1
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
@@ -69,7 +85,7 @@ class ScanIterator(Iterator):
 
     def get_scan(self, scan):
         if not isinstance(scan, np.ndarray):
-            scan = self.load_scan(scan)
+            return self.load_scan(scan)
         return scan
 
     def expand_dims(self, x, dim_ordering):
@@ -95,27 +111,23 @@ class ScanIterator(Iterator):
         diff = np.zeros((current_batch_size,) + (5,))
         # build batch of image data
         for i, j in enumerate(index_array):
-            x1 = np.load(self.scans[j])
-            x2 = np.load(self.scans[j].replace('metaROI1', 'metaROI2'))
-            x3 = np.load(self.scans[j].replace('metaROI1', 'metaROI3'))
-            x4 = np.load(self.scans[j].replace('metaROI1', 'metaROI4'))
-            x5 = np.load(self.scans[j].replace('metaROI1', 'metaROI5'))
-            diff_1[i] = (0.73041594 - np.mean(x1[np.nonzero(x1)]) + 0.16005278) / (0.41822448 + 0.16005278)
-            diff_2[i] = (0.67505538 - np.mean(x2[np.nonzero(x2)]) + 0.13958335) / (0.32063761 + 0.13958335)
-            diff_3[i] = (0.75825769 - np.mean(x3[np.nonzero(x3)]) + 0.16636729) / (0.45490789 + 0.16636729)
-            diff_4[i] = (0.70375049 - np.mean(x4[np.nonzero(x4)]) + 0.15894139) / (0.41179273 + 0.15894139)
-            diff_5[i] = (0.66046154 - np.mean(x5[np.nonzero(x5)]) + 0.15360254) / (0.29526761 + 0.15360254)
-            diff[i,0] = diff_1[i]
-            diff[i,1] = diff_2[i]
-            diff[i,2] = diff_3[i]
-            diff[i,3] = diff_4[i]
-            diff[i,4] = diff_5[i]
+            x1 = self.get_scan(self.scans1[j])
+            x2 = self.get_scan(self.scans2[j])
+            x3 = self.get_scan(self.scans3[j])
+            x4 = self.get_scan(self.scans4[j])
+            x5 = self.get_scan(self.scans5[j])
+            diff_1[i] = diff[i,0] = (0.73041594 - np.mean(x1[np.nonzero(x1)]) + 0.16005278) / (0.41822448 + 0.16005278)
+            diff_2[i] = diff[i,1] = (0.67505538 - np.mean(x2[np.nonzero(x2)]) + 0.13958335) / (0.32063761 + 0.13958335)
+            diff_3[i] = diff[i,2] = (0.75825769 - np.mean(x3[np.nonzero(x3)]) + 0.16636729) / (0.45490789 + 0.16636729)
+            diff_4[i] = diff[i,3] = (0.70375049 - np.mean(x4[np.nonzero(x4)]) + 0.15894139) / (0.41179273 + 0.15894139)
+            diff_5[i] = diff[i,4] = (0.66046154 - np.mean(x5[np.nonzero(x5)]) + 0.15360254) / (0.29526761 + 0.15360254)
             if self.shuffle:
-                x1 = self.image_data_generator.random_transform(x1)
-                x2 = self.image_data_generator.random_transform(x2)
-                x3 = self.image_data_generator.random_transform(x3)
-                x4 = self.image_data_generator.random_transform(x4)
-                x5 = self.image_data_generator.random_transform(x5)
+                #rot = np.random.randint(4)
+                x1 = self.image_data_generator.random_transform(x1, np.random.randint(4))
+                x2 = self.image_data_generator.random_transform(x2, np.random.randint(4))
+                x3 = self.image_data_generator.random_transform(x3, np.random.randint(4))
+                x4 = self.image_data_generator.random_transform(x4, np.random.randint(4))
+                x5 = self.image_data_generator.random_transform(x5, np.random.randint(4))
             x1 = self.expand_dims(x1, self.dim_ordering)
             x2 = self.expand_dims(x2, self.dim_ordering)
             x3 = self.expand_dims(x3, self.dim_ordering)

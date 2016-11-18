@@ -4,7 +4,7 @@ import pickle
 
 def save_config(path=None):
     config = {'nii': False,
-              'ADNI': '/home/mhubrich/ADNI_intnorm_npy',
+              'ADNI': '/home/mhubrich/ADNI_npy',
               'load_all_scans': True
               }
     if path is None:

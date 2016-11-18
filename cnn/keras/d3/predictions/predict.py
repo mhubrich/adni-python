@@ -7,10 +7,10 @@ from utils.split_scans import read_imageID
 
 classes = ['Normal', 'AD']
 target_size = (29, 29, 29)
-batch_size = 16
-load_all_scans = False
-path_weights = '/home/mhubrich/weights.14-loss_0.401-acc_0.816.h5'
-output_name = 'G_intnorm_pos_11_14-11_47_4.csv'
+batch_size = 128
+load_all_scans = True
+path_weights = '/home/mhubrich/checkpoints/adni/d3G_intnorm_pos_diff_mean_1/weights.521-loss_0.445-acc_0.792.h5'
+output_name = 'G_intnorm_pos_diff_mean_1_521-11_47_4.csv'
 
 interval = range(11, 78 - target_size[0], 4)
 grid = [(x, y, z) for x in interval for y in interval for z in interval]
@@ -30,7 +30,7 @@ def predict():
     pred, filenames = predict_generator(model,
                                         test_inputs,
                                         val_samples=test_inputs.nb_sample,
-                                        max_q_size=16,
+                                        max_q_size=128,
                                         nb_preprocessing_threads=1)
 
     return pred, filenames

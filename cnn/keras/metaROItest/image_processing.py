@@ -1,4 +1,5 @@
-from cnn.keras.metaROItest.scan_generator_rotate import ScanGenerator
+from cnn.keras.metaROItest.scan_generator import ScanGenerator
+from cnn.keras.metaROItest.predict_iterator_diff import PredictIterator
 
 
 def _image_processing(method):
@@ -34,6 +35,5 @@ def inputs(scans, target_size, batch_size, load_all_scans, classes, method, seed
             shuffle=shuffle,
             seed=seed)
     else:
-        return images.flow_from_directory(scans=scans, grid=seed,
-                                          target_size=target_size, load_all_scans=load_all_scans,
-                                          classes=classes, batch_size=batch_size)
+        return PredictIterator(scans=scans, load_all_scans=load_all_scans,
+                              classes=classes, batch_size=batch_size)

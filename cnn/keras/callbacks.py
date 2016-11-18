@@ -68,13 +68,6 @@ def save_optimizer(optimizer, path_dir, save_only_last=False):
     return _OptimizerSaver(optimizer, path_dir, save_only_last=save_only_last, verbose=VERBOSITY)
 
 
-def early_stopping(num_epochs):
-    return EarlyStopping(
-        monitor='val_acc',
-        patience=num_epochs,
-        verbose=VERBOSITY)
-
-
 class _LearningRate:
     def __init__(self, lr, decay_rate, decay_epochs):
         self.lr = lr
@@ -256,7 +249,62 @@ def save_model(path_dir, monitor=['val_loss', 'val_acc'], verbose=0,
                save_best_only=True, max_files=5, save_weights_only=False):
     if not os.path.exists(path_dir):
         os.makedirs(path_dir)
-    return _MyModelCheckpoint(os.path.join(path_dir, 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}.h5'),
+    return _MyModelCheckpoint(os.path.join(path_dir, 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}-val_loss_{val_loss:.4f}-val_acc_{val_acc:.4f}.h5'),
                               monitor=monitor, verbose=verbose, save_best_only=save_best_only,
                               max_files=max_files, save_weights_only=save_weights_only)
+
+
+class _Flush(Callback):
+    def on_epoch_begin(self, epoch, logs={}):
+        sys.stdout.flush()
+
+
+def flush():
+    return _Flush()
+
+
+class _TrainAccStopping(Callback):
+    '''Stop training when trainings accuracy is greater than a threshold.
+    # Arguments
+        max_acc: Threshold to stop training.
+        patience: number of epochs with trainings accuracy greater than
+            'max_acc' after which training will be stopped.
+        verbose: verbosity mode.
+    '''
+    def __init__(self, max_acc=0.95, patience=0, verbose=0):
+        super(_TrainAccStopping, self).__init__()
+        self.monitor = 'acc'
+        self.monitor_op = np.greater
+        self.max_acc = max_acc
+        self.patience = patience
+        self.wait = 0
+        self.stopped_epoch = 0
+        self.verbose = verbose
+
+    def on_train_begin(self, logs={}):
+        self.wait = 0
+
+    def on_epoch_end(self, epoch, logs={}):
+        current = logs.get(self.monitor)
+        if current is None:
+            warnings.warn('Early stopping requires %s available!' %
+                          (self.monitor), RuntimeWarning)
+
+        if self.monitor_op(current, self.max_acc):
+            if self.wait >= self.patience:
+                self.stopped_epoch = epoch
+                self.model.stop_training = True
+            self.wait += 1
+        else:
+            self.wait = 0
+
+    def on_train_end(self, logs={}):
+        if self.stopped_epoch > 0 and self.verbose > 0:
+            print('Epoch %05d: early stopping' % (self.stopped_epoch))
+
+
+def early_stopping(max_acc=0.95, patience=5, verbose=VERBOSITY):
+    return _TrainAccStopping(max_acc=max_acc,
+                             patience=patience,
+                             verbose=verbose)
 

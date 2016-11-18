@@ -6,24 +6,18 @@ from keras.regularizers import l2
 
 def build_model(input_shape=(1, 5, 5, 5)):
 	model = Sequential()
-        model.add(GaussianNoise(0.001, input_shape=input_shape))
-	model.add(Convolution3D(64, 3, 3, 3, activation='relu', border_mode='same', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.1))
-	model.add(Convolution3D(128, 3, 3, 3, activation='relu', border_mode='same', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.1))
-	model.add(Convolution3D(256, 3, 3, 3, activation='relu', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.1))
-	model.add(Convolution3D(512, 3, 3, 3, activation='relu', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.1))
-	model.add(Flatten())
+        model.add(GaussianNoise(0.001, input_shape=input_shape, name='ROI5_noise1'))
+	model.add(Convolution3D(128, 3, 3, 3, activation='relu', W_regularizer=l2(0.0001), name='ROI5_conv1'))
+        model.add(Dropout(0.1, name='ROI5_dropout1'))
+	model.add(Convolution3D(256, 3, 3, 3, activation='relu', W_regularizer=l2(0.0001), name='ROI5_conv2'))
+        model.add(Dropout(0.1, name='ROI5_dropout2'))
+	model.add(Flatten(name='ROI5_flatten1'))
 
-        model.add(Dense(512, activation='relu', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.2))
-        model.add(Dense(256, activation='relu', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.2))
-        model.add(Dense(128, activation='relu', W_regularizer=l2(0.0001)))
-        model.add(Dropout(0.2))
-        model.add(Dense(2, activation='softmax', W_regularizer=l2(0.0001)))
+        model.add(Dense(128, activation='relu', W_regularizer=l2(0.0001), name='ROI5_dense1'))
+        model.add(Dropout(0.2, name='ROI5_dropout3'))
+        model.add(Dense(128, activation='relu', W_regularizer=l2(0.0001), name='ROI5_dense2'))
+        model.add(Dropout(0.2, name='ROI5_dropout4'))
+        model.add(Dense(2, activation='softmax', W_regularizer=l2(0.0001), name='ROI5_dense3'))
 
 	return model
 

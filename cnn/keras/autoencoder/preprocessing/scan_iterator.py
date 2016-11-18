@@ -19,9 +19,12 @@ class ScanIterator(Iterator):
     def get_scan(self, scan, voxel, target_size):
         if not isinstance(scan, np.ndarray):
             scan = self.load_scan(scan)
-        return scan[47:, :, :] \
-                   [:, 57:, :] \
-                   [:, :, 47:]
+        return scan[45:87, :, :] \
+                   [:, 54:96, :] \
+                   [:, :, 45:87]
+        #return scan[23:67, :, :] \
+        #           [:, 29:81, :] \
+        #           [:, :, 23:67]
 
     def next(self):
         with self.lock:

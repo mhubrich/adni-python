@@ -8,6 +8,7 @@ def build_model():
     model = Sequential()
     model.add(GaussianNoise(0.001, input_shape=(35,)))
     model.add(Dense(70, activation='relu', W_regularizer=l2(0.0001)))
+
     model.add(Dropout(0.15))
     model.add(Dense(70, activation='relu', W_regularizer=l2(0.0001)))
     model.add(Dropout(0.15))

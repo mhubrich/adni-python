@@ -1,17 +1,17 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.auto3D.model import build_model
+from cnn.keras.models.auto3DA.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
 from cnn.keras.autoencoder.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-#sys.stdout = sys.stderr = open('output_intnorm_1', 'w')
+sys.stdout = sys.stderr = open('output_A_sgd_1', 'w')
 
 
 # Training specific parameters
-target_size = (44, 52, 44)
+target_size = (42, 42, 42)
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
@@ -23,7 +23,7 @@ num_train_samples = 923
 num_val_samples = 481
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_npy'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/auto3D_intnorm_1'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/auto3DA_sgd_1'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -69,11 +69,11 @@ def train():
     model = build_model(input_shape=(1,)+target_size)
     config = load_config(path_optimizer_config)
     if config == {}:
-        config['lr'] = 0.001
+        config['lr'] = 0.01
         config['decay'] = 0.000001
         config['momentum'] = 0.9
     sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)
-    model.compile(loss='mse', optimizer='adadelta', metrics=['accuracy'])
+    model.compile(loss='mse', optimizer=sgd, metrics=['accuracy'])
     if path_weights:
         model.load_weights(path_weights)
 
@@ -101,3 +101,4 @@ def train():
 
 if __name__ == "__main__":
     hist = train()
+
