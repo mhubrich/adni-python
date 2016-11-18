@@ -7,7 +7,7 @@ from cnn.keras.autoencoder.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 import sys
-sys.stdout = sys.stderr = open('output_intnorm_1', 'w')
+#sys.stdout = sys.stderr = open('output_intnorm_1', 'w')
 
 
 # Training specific parameters
@@ -15,8 +15,8 @@ target_size = (44, 52, 44)
 FRACTION_TRAIN = 0.8
 SEED = 42  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 8
-num_epoch = 2000
+batch_size = 4
+num_epoch = 1500
 # Number of training samples per epoch
 num_train_samples = 923
 # Number of validation samples per epoch
@@ -80,7 +80,7 @@ def train():
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(600),
+            callbacks.batch_logger(60),
             callbacks.print_history()]
 
     # Start training
@@ -92,7 +92,7 @@ def train():
         nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         verbose=2,
-        max_q_size=8,
+        max_q_size=4,
         nb_worker=1,
         pickle_safe=True)
 

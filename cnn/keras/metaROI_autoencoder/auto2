@@ -1,0 +1,2166 @@
+Found 827 scans belonging to 2 classes.
+Found 452 scans belonging to 2 classes.
+Epoch 1/1500
+16:58:32: Batch 0110: 147.17 Examples/Second, 0.03 Seconds/Batch
+Epoch 00000: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.00-loss_0.142-acc_0.100.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.1417 - acc: 0.0999 - val_loss: 0.1415 - val_acc: 0.0746
+Epoch 2/1500
+16:58:41: Batch 0110: 140.58 Examples/Second, 0.03 Seconds/Batch
+Epoch 00001: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.01-loss_0.132-acc_0.066.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.1320 - acc: 0.0659 - val_loss: 0.1352 - val_acc: 0.0762
+Epoch 3/1500
+16:58:51: Batch 0110: 125.42 Examples/Second, 0.03 Seconds/Batch
+Epoch 00002: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.02-loss_0.126-acc_0.099.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.1256 - acc: 0.0989 - val_loss: 0.1290 - val_acc: 0.1158
+Epoch 4/1500
+16:59:00: Batch 0110: 125.40 Examples/Second, 0.03 Seconds/Batch
+Epoch 00003: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.03-loss_0.117-acc_0.124.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.1173 - acc: 0.1235 - val_loss: 0.1168 - val_acc: 0.0904
+Epoch 5/1500
+16:59:09: Batch 0110: 125.71 Examples/Second, 0.03 Seconds/Batch
+Epoch 00004: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.04-loss_0.097-acc_0.108.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0975 - acc: 0.1083 - val_loss: 0.0842 - val_acc: 0.1072
+Epoch 6/1500
+16:59:18: Batch 0110: 131.76 Examples/Second, 0.03 Seconds/Batch
+Epoch 00005: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.05-loss_0.063-acc_0.147.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0625 - acc: 0.1475 - val_loss: 0.0488 - val_acc: 0.1795
+Epoch 7/1500
+16:59:26: Batch 0110: 151.81 Examples/Second, 0.03 Seconds/Batch
+Epoch 00006: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.06-loss_0.041-acc_0.199.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+8s - loss: 0.0414 - acc: 0.1987 - val_loss: 0.0373 - val_acc: 0.1950
+Epoch 8/1500
+16:59:35: Batch 0110: 149.89 Examples/Second, 0.03 Seconds/Batch
+Epoch 00007: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.07-loss_0.035-acc_0.189.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+8s - loss: 0.0347 - acc: 0.1889 - val_loss: 0.0327 - val_acc: 0.1764
+Epoch 9/1500
+16:59:44: Batch 0110: 144.59 Examples/Second, 0.03 Seconds/Batch
+Epoch 00008: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.08-loss_0.029-acc_0.197.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0293 - acc: 0.1974 - val_loss: 0.0269 - val_acc: 0.1817
+Epoch 10/1500
+16:59:54: Batch 0110: 123.53 Examples/Second, 0.03 Seconds/Batch
+Epoch 00009: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.09-loss_0.024-acc_0.177.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0236 - acc: 0.1769 - val_loss: 0.0213 - val_acc: 0.1702
+Epoch 11/1500
+17:00:03: Batch 0110: 116.75 Examples/Second, 0.03 Seconds/Batch
+Epoch 00010: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.10-loss_0.019-acc_0.180.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0187 - acc: 0.1800 - val_loss: 0.0172 - val_acc: 0.1916
+Epoch 12/1500
+17:00:12: Batch 0110: 126.19 Examples/Second, 0.03 Seconds/Batch
+Epoch 00011: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.11-loss_0.015-acc_0.175.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0155 - acc: 0.1750 - val_loss: 0.0143 - val_acc: 0.1741
+Epoch 13/1500
+17:00:21: Batch 0110: 131.30 Examples/Second, 0.03 Seconds/Batch
+Epoch 00012: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.12-loss_0.013-acc_0.166.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 0.0134 - acc: 0.1660 - val_loss: 0.0124 - val_acc: 0.1638
+Epoch 14/1500
+17:00:30: Batch 0110: 148.24 Examples/Second, 0.03 Seconds/Batch
+Epoch 00013: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.13-loss_0.012-acc_0.158.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0116 - acc: 0.1576 - val_loss: 0.0110 - val_acc: 0.1577
+Epoch 15/1500
+17:00:42: Batch 0110: 117.36 Examples/Second, 0.03 Seconds/Batch
+Epoch 00014: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.14-loss_0.010-acc_0.167.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0102 - acc: 0.1670 - val_loss: 0.0094 - val_acc: 0.1846
+Epoch 16/1500
+17:00:54: Batch 0110: 100.83 Examples/Second, 0.04 Seconds/Batch
+Epoch 00015: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.15-loss_0.009-acc_0.173.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0089 - acc: 0.1734 - val_loss: 0.0081 - val_acc: 0.1766
+Epoch 17/1500
+17:01:06: Batch 0110: 92.49 Examples/Second, 0.04 Seconds/Batch
+Epoch 00016: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.16-loss_0.008-acc_0.179.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0078 - acc: 0.1788 - val_loss: 0.0072 - val_acc: 0.1841
+Epoch 18/1500
+17:01:18: Batch 0110: 92.28 Examples/Second, 0.04 Seconds/Batch
+Epoch 00017: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.17-loss_0.007-acc_0.181.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0069 - acc: 0.1808 - val_loss: 0.0062 - val_acc: 0.1888
+Epoch 19/1500
+17:01:29: Batch 0110: 95.32 Examples/Second, 0.04 Seconds/Batch
+Epoch 00018: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.18-loss_0.006-acc_0.185.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0062 - acc: 0.1851 - val_loss: 0.0056 - val_acc: 0.1826
+Epoch 20/1500
+17:01:41: Batch 0110: 102.39 Examples/Second, 0.04 Seconds/Batch
+Epoch 00019: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.19-loss_0.006-acc_0.183.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0055 - acc: 0.1832 - val_loss: 0.0053 - val_acc: 0.1844
+Epoch 21/1500
+17:01:52: Batch 0110: 118.30 Examples/Second, 0.03 Seconds/Batch
+Epoch 00020: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.20-loss_0.005-acc_0.180.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0050 - acc: 0.1805 - val_loss: 0.0043 - val_acc: 0.1764
+Epoch 22/1500
+17:02:04: Batch 0110: 113.62 Examples/Second, 0.04 Seconds/Batch
+Epoch 00021: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.21-loss_0.005-acc_0.181.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0046 - acc: 0.1812 - val_loss: 0.0040 - val_acc: 0.1689
+Epoch 23/1500
+17:02:16: Batch 0110: 97.70 Examples/Second, 0.04 Seconds/Batch
+Epoch 00022: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.22-loss_0.004-acc_0.187.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+12s - loss: 0.0042 - acc: 0.1870 - val_loss: 0.0035 - val_acc: 0.1907
+Epoch 24/1500
+17:02:29: Batch 0110: 90.42 Examples/Second, 0.04 Seconds/Batch
+Epoch 00023: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.23-loss_0.004-acc_0.198.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0039 - acc: 0.1979 - val_loss: 0.0032 - val_acc: 0.2042
+Epoch 25/1500
+17:02:40: Batch 0110: 92.52 Examples/Second, 0.04 Seconds/Batch
+Epoch 00024: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.24-loss_0.004-acc_0.201.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0036 - acc: 0.2006 - val_loss: 0.0029 - val_acc: 0.2126
+Epoch 26/1500
+17:02:52: Batch 0110: 101.71 Examples/Second, 0.04 Seconds/Batch
+Epoch 00025: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.25-loss_0.003-acc_0.209.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0033 - acc: 0.2095 - val_loss: 0.0028 - val_acc: 0.2055
+Epoch 27/1500
+17:03:03: Batch 0110: 116.16 Examples/Second, 0.03 Seconds/Batch
+Epoch 00026: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.26-loss_0.003-acc_0.211.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0031 - acc: 0.2107 - val_loss: 0.0031 - val_acc: 0.1994
+Epoch 28/1500
+17:03:15: Batch 0110: 110.81 Examples/Second, 0.04 Seconds/Batch
+Epoch 00027: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.27-loss_0.003-acc_0.211.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0029 - acc: 0.2108 - val_loss: 0.0050 - val_acc: 0.1910
+Epoch 29/1500
+17:03:28: Batch 0110: 94.99 Examples/Second, 0.04 Seconds/Batch
+Epoch 00028: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.28-loss_0.003-acc_0.213.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0030 - acc: 0.2133 - val_loss: 0.0021 - val_acc: 0.2159
+Epoch 30/1500
+17:03:39: Batch 0110: 90.55 Examples/Second, 0.04 Seconds/Batch
+Epoch 00029: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.29-loss_0.003-acc_0.220.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0027 - acc: 0.2204 - val_loss: 0.0055 - val_acc: 0.1879
+Epoch 31/1500
+17:03:51: Batch 0110: 93.07 Examples/Second, 0.04 Seconds/Batch
+Epoch 00030: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.30-loss_0.003-acc_0.226.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0027 - acc: 0.2259 - val_loss: 0.0020 - val_acc: 0.2369
+Epoch 32/1500
+17:04:03: Batch 0110: 98.43 Examples/Second, 0.04 Seconds/Batch
+Epoch 00031: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.31-loss_0.003-acc_0.229.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0025 - acc: 0.2287 - val_loss: 0.0032 - val_acc: 0.2567
+Epoch 33/1500
+17:04:14: Batch 0110: 111.50 Examples/Second, 0.04 Seconds/Batch
+Epoch 00032: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.32-loss_0.002-acc_0.230.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0024 - acc: 0.2298 - val_loss: 0.0038 - val_acc: 0.2534
+Epoch 34/1500
+17:04:25: Batch 0110: 121.12 Examples/Second, 0.03 Seconds/Batch
+Epoch 00033: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.33-loss_0.002-acc_0.233.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0024 - acc: 0.2329 - val_loss: 0.0017 - val_acc: 0.2323
+Epoch 35/1500
+17:04:37: Batch 0110: 110.58 Examples/Second, 0.04 Seconds/Batch
+Epoch 00034: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.34-loss_0.002-acc_0.234.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0023 - acc: 0.2344 - val_loss: 0.0017 - val_acc: 0.2407
+Epoch 36/1500
+17:04:49: Batch 0110: 91.59 Examples/Second, 0.04 Seconds/Batch
+Epoch 00035: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.35-loss_0.002-acc_0.242.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0020 - acc: 0.2417 - val_loss: 0.0014 - val_acc: 0.2480
+Epoch 37/1500
+17:05:01: Batch 0110: 90.04 Examples/Second, 0.04 Seconds/Batch
+Epoch 00036: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.36-loss_0.002-acc_0.244.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0021 - acc: 0.2439 - val_loss: 0.0015 - val_acc: 0.2331
+Epoch 38/1500
+17:05:13: Batch 0110: 92.35 Examples/Second, 0.04 Seconds/Batch
+Epoch 00037: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.37-loss_0.002-acc_0.246.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0020 - acc: 0.2464 - val_loss: 0.0018 - val_acc: 0.2680
+Epoch 39/1500
+17:05:24: Batch 0110: 97.35 Examples/Second, 0.04 Seconds/Batch
+Epoch 00038: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.38-loss_0.002-acc_0.249.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0018 - acc: 0.2489 - val_loss: 0.0014 - val_acc: 0.2506
+Epoch 40/1500
+17:05:36: Batch 0110: 109.78 Examples/Second, 0.04 Seconds/Batch
+Epoch 00039: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.39-loss_0.002-acc_0.252.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0017 - acc: 0.2522 - val_loss: 0.0014 - val_acc: 0.2740
+Epoch 41/1500
+17:05:47: Batch 0110: 124.94 Examples/Second, 0.03 Seconds/Batch
+Epoch 00040: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.40-loss_0.002-acc_0.255.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0019 - acc: 0.2552 - val_loss: 0.0014 - val_acc: 0.2457
+Epoch 42/1500
+17:05:59: Batch 0110: 115.33 Examples/Second, 0.03 Seconds/Batch
+Epoch 00041: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.41-loss_0.002-acc_0.254.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0018 - acc: 0.2544 - val_loss: 0.0012 - val_acc: 0.2635
+Epoch 43/1500
+17:06:11: Batch 0110: 101.33 Examples/Second, 0.04 Seconds/Batch
+Epoch 00042: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.42-loss_0.002-acc_0.256.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0017 - acc: 0.2555 - val_loss: 0.0013 - val_acc: 0.2574
+Epoch 44/1500
+17:06:23: Batch 0110: 90.83 Examples/Second, 0.04 Seconds/Batch
+Epoch 00043: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.43-loss_0.002-acc_0.258.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0016 - acc: 0.2578 - val_loss: 0.0012 - val_acc: 0.2497
+Epoch 45/1500
+17:06:35: Batch 0110: 90.82 Examples/Second, 0.04 Seconds/Batch
+Epoch 00044: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.44-loss_0.002-acc_0.259.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0017 - acc: 0.2593 - val_loss: 0.0018 - val_acc: 0.2393
+Epoch 46/1500
+17:06:46: Batch 0110: 92.26 Examples/Second, 0.04 Seconds/Batch
+Epoch 00045: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.45-loss_0.002-acc_0.261.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0017 - acc: 0.2614 - val_loss: 0.0013 - val_acc: 0.2528
+Epoch 47/1500
+17:06:58: Batch 0110: 98.27 Examples/Second, 0.04 Seconds/Batch
+Epoch 00046: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.46-loss_0.002-acc_0.261.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0016 - acc: 0.2609 - val_loss: 0.0011 - val_acc: 0.2575
+Epoch 48/1500
+17:07:09: Batch 0110: 109.86 Examples/Second, 0.04 Seconds/Batch
+Epoch 00047: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.47-loss_0.002-acc_0.265.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0016 - acc: 0.2645 - val_loss: 0.0011 - val_acc: 0.2678
+Epoch 49/1500
+17:07:20: Batch 0110: 119.63 Examples/Second, 0.03 Seconds/Batch
+Epoch 00048: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.48-loss_0.002-acc_0.263.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0016 - acc: 0.2628 - val_loss: 0.0013 - val_acc: 0.2407
+Epoch 50/1500
+17:07:32: Batch 0110: 110.96 Examples/Second, 0.04 Seconds/Batch
+Epoch 00049: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.49-loss_0.001-acc_0.265.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0015 - acc: 0.2646 - val_loss: 0.0010 - val_acc: 0.2797
+Epoch 51/1500
+17:07:45: Batch 0110: 91.81 Examples/Second, 0.04 Seconds/Batch
+Epoch 00050: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.50-loss_0.001-acc_0.266.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0015 - acc: 0.2658 - val_loss: 0.0018 - val_acc: 0.2356
+Epoch 52/1500
+17:07:57: Batch 0110: 89.28 Examples/Second, 0.04 Seconds/Batch
+Epoch 00051: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.51-loss_0.001-acc_0.269.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0014 - acc: 0.2688 - val_loss: 0.0011 - val_acc: 0.2493
+Epoch 53/1500
+17:08:08: Batch 0110: 91.14 Examples/Second, 0.04 Seconds/Batch
+Epoch 00052: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.52-loss_0.001-acc_0.273.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0013 - acc: 0.2733 - val_loss: 0.0014 - val_acc: 0.3024
+Epoch 54/1500
+17:08:20: Batch 0110: 95.85 Examples/Second, 0.04 Seconds/Batch
+Epoch 00053: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.53-loss_0.001-acc_0.274.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0013 - acc: 0.2741 - val_loss: 0.0021 - val_acc: 0.3183
+Epoch 55/1500
+17:08:31: Batch 0110: 106.32 Examples/Second, 0.04 Seconds/Batch
+Epoch 00054: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.54-loss_0.001-acc_0.275.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0013 - acc: 0.2748 - val_loss: 9.2505e-04 - val_acc: 0.2833
+Epoch 56/1500
+17:08:42: Batch 0110: 123.50 Examples/Second, 0.03 Seconds/Batch
+Epoch 00055: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.55-loss_0.001-acc_0.278.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0012 - acc: 0.2783 - val_loss: 0.0023 - val_acc: 0.3679
+Epoch 57/1500
+17:08:54: Batch 0110: 117.25 Examples/Second, 0.03 Seconds/Batch
+Epoch 00056: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.56-loss_0.001-acc_0.285.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0012 - acc: 0.2848 - val_loss: 0.0023 - val_acc: 0.3121
+Epoch 58/1500
+17:09:06: Batch 0110: 99.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00057: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.57-loss_0.001-acc_0.289.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0012 - acc: 0.2890 - val_loss: 9.0249e-04 - val_acc: 0.2756
+Epoch 59/1500
+17:09:19: Batch 0110: 90.33 Examples/Second, 0.04 Seconds/Batch
+Epoch 00058: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.58-loss_0.001-acc_0.291.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0012 - acc: 0.2907 - val_loss: 0.0018 - val_acc: 0.2561
+Epoch 60/1500
+17:09:30: Batch 0110: 89.57 Examples/Second, 0.04 Seconds/Batch
+Epoch 00059: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.59-loss_0.001-acc_0.294.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.2942 - val_loss: 0.0025 - val_acc: 0.2617
+Epoch 61/1500
+17:09:42: Batch 0110: 92.86 Examples/Second, 0.04 Seconds/Batch
+Epoch 00060: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.60-loss_0.001-acc_0.296.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.2964 - val_loss: 0.0010 - val_acc: 0.3283
+Epoch 62/1500
+17:09:53: Batch 0110: 99.10 Examples/Second, 0.04 Seconds/Batch
+Epoch 00061: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.61-loss_0.001-acc_0.302.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.3019 - val_loss: 9.1007e-04 - val_acc: 0.2936
+Epoch 63/1500
+17:10:04: Batch 0110: 116.05 Examples/Second, 0.03 Seconds/Batch
+Epoch 00062: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.62-loss_0.001-acc_0.308.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.3079 - val_loss: 8.3644e-04 - val_acc: 0.2930
+Epoch 64/1500
+17:10:16: Batch 0110: 124.68 Examples/Second, 0.03 Seconds/Batch
+Epoch 00063: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.63-loss_0.001-acc_0.312.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0010 - acc: 0.3116 - val_loss: 9.7223e-04 - val_acc: 0.2824
+Epoch 65/1500
+17:10:27: Batch 0110: 116.18 Examples/Second, 0.03 Seconds/Batch
+Epoch 00064: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.64-loss_0.001-acc_0.318.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.3175 - val_loss: 7.8812e-04 - val_acc: 0.3471
+Epoch 66/1500
+17:10:40: Batch 0110: 96.62 Examples/Second, 0.04 Seconds/Batch
+Epoch 00065: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.65-loss_0.001-acc_0.325.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.3252 - val_loss: 7.8461e-04 - val_acc: 0.3286
+Epoch 67/1500
+17:10:52: Batch 0110: 90.76 Examples/Second, 0.04 Seconds/Batch
+Epoch 00066: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.66-loss_0.001-acc_0.327.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0010 - acc: 0.3270 - val_loss: 7.7455e-04 - val_acc: 0.3644
+Epoch 68/1500
+17:11:03: Batch 0110: 90.70 Examples/Second, 0.04 Seconds/Batch
+Epoch 00067: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.67-loss_0.001-acc_0.330.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0011 - acc: 0.3305 - val_loss: 0.0011 - val_acc: 0.3356
+Epoch 69/1500
+17:11:15: Batch 0110: 93.92 Examples/Second, 0.04 Seconds/Batch
+Epoch 00068: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.68-loss_0.001-acc_0.331.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 9.5738e-04 - acc: 0.3311 - val_loss: 8.0359e-04 - val_acc: 0.3123
+Epoch 70/1500
+17:11:26: Batch 0110: 99.67 Examples/Second, 0.04 Seconds/Batch
+Epoch 00069: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.69-loss_0.001-acc_0.333.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 0.0010 - acc: 0.3330 - val_loss: 9.5911e-04 - val_acc: 0.3640
+Epoch 71/1500
+17:11:37: Batch 0110: 115.95 Examples/Second, 0.03 Seconds/Batch
+Epoch 00070: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.70-loss_0.001-acc_0.341.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 9.1887e-04 - acc: 0.3410 - val_loss: 8.4362e-04 - val_acc: 0.3036
+Epoch 72/1500
+17:11:49: Batch 0110: 123.45 Examples/Second, 0.03 Seconds/Batch
+Epoch 00071: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.71-loss_0.001-acc_0.342.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 9.6405e-04 - acc: 0.3417 - val_loss: 8.8061e-04 - val_acc: 0.4031
+Epoch 73/1500
+17:12:01: Batch 0110: 112.65 Examples/Second, 0.04 Seconds/Batch
+Epoch 00072: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.72-loss_0.001-acc_0.344.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 9.5691e-04 - acc: 0.3437 - val_loss: 0.0013 - val_acc: 0.4163
+Epoch 74/1500
+17:12:13: Batch 0110: 98.89 Examples/Second, 0.04 Seconds/Batch
+Epoch 00073: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.73-loss_0.001-acc_0.343.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 9.6278e-04 - acc: 0.3429 - val_loss: 0.0017 - val_acc: 0.3203
+Epoch 75/1500
+17:12:25: Batch 0110: 90.92 Examples/Second, 0.04 Seconds/Batch
+Epoch 00074: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.74-loss_0.001-acc_0.347.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.6013e-04 - acc: 0.3466 - val_loss: 8.1251e-04 - val_acc: 0.3580
+Epoch 76/1500
+17:12:37: Batch 0110: 90.37 Examples/Second, 0.04 Seconds/Batch
+Epoch 00075: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.75-loss_0.001-acc_0.349.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.8625e-04 - acc: 0.3494 - val_loss: 7.4508e-04 - val_acc: 0.3448
+Epoch 77/1500
+17:12:48: Batch 0110: 91.10 Examples/Second, 0.04 Seconds/Batch
+Epoch 00076: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.76-loss_0.001-acc_0.354.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 9.2203e-04 - acc: 0.3542 - val_loss: 7.9989e-04 - val_acc: 0.3763
+Epoch 78/1500
+17:13:00: Batch 0110: 96.07 Examples/Second, 0.04 Seconds/Batch
+Epoch 00077: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.77-loss_0.001-acc_0.357.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.5851e-04 - acc: 0.3571 - val_loss: 0.0012 - val_acc: 0.3256
+Epoch 79/1500
+17:13:11: Batch 0110: 103.62 Examples/Second, 0.04 Seconds/Batch
+Epoch 00078: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.78-loss_0.001-acc_0.358.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.8352e-04 - acc: 0.3575 - val_loss: 7.0205e-04 - val_acc: 0.3424
+Epoch 80/1500
+17:13:22: Batch 0110: 121.27 Examples/Second, 0.03 Seconds/Batch
+Epoch 00079: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.79-loss_0.001-acc_0.362.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.3543e-04 - acc: 0.3618 - val_loss: 0.0019 - val_acc: 0.3041
+Epoch 81/1500
+17:13:33: Batch 0110: 124.05 Examples/Second, 0.03 Seconds/Batch
+Epoch 00080: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.80-loss_0.001-acc_0.359.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.2998e-04 - acc: 0.3592 - val_loss: 7.1341e-04 - val_acc: 0.3811
+Epoch 82/1500
+17:13:45: Batch 0110: 114.62 Examples/Second, 0.03 Seconds/Batch
+Epoch 00081: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.81-loss_0.001-acc_0.364.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.5355e-04 - acc: 0.3636 - val_loss: 7.2716e-04 - val_acc: 0.4268
+Epoch 83/1500
+17:13:57: Batch 0110: 95.39 Examples/Second, 0.04 Seconds/Batch
+Epoch 00082: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.82-loss_0.001-acc_0.370.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.3762e-04 - acc: 0.3704 - val_loss: 9.0335e-04 - val_acc: 0.3346
+Epoch 84/1500
+17:14:09: Batch 0110: 91.71 Examples/Second, 0.04 Seconds/Batch
+Epoch 00083: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.83-loss_0.001-acc_0.369.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.9046e-04 - acc: 0.3685 - val_loss: 8.1493e-04 - val_acc: 0.4335
+Epoch 85/1500
+17:14:21: Batch 0110: 90.34 Examples/Second, 0.04 Seconds/Batch
+Epoch 00084: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.84-loss_0.001-acc_0.372.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.7082e-04 - acc: 0.3721 - val_loss: 8.9467e-04 - val_acc: 0.4181
+Epoch 86/1500
+17:14:33: Batch 0110: 93.29 Examples/Second, 0.04 Seconds/Batch
+Epoch 00085: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.85-loss_0.001-acc_0.372.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.1216e-04 - acc: 0.3724 - val_loss: 7.3314e-04 - val_acc: 0.3668
+Epoch 87/1500
+17:14:44: Batch 0110: 98.74 Examples/Second, 0.04 Seconds/Batch
+Epoch 00086: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.86-loss_0.001-acc_0.374.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.7573e-04 - acc: 0.3740 - val_loss: 9.3481e-04 - val_acc: 0.4284
+Epoch 88/1500
+17:14:55: Batch 0110: 111.24 Examples/Second, 0.04 Seconds/Batch
+Epoch 00087: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.87-loss_0.001-acc_0.373.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.6798e-04 - acc: 0.3732 - val_loss: 7.8975e-04 - val_acc: 0.4215
+Epoch 89/1500
+17:15:07: Batch 0110: 126.78 Examples/Second, 0.03 Seconds/Batch
+Epoch 00088: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.88-loss_0.001-acc_0.376.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.8287e-04 - acc: 0.3761 - val_loss: 6.5846e-04 - val_acc: 0.3662
+Epoch 90/1500
+17:15:18: Batch 0110: 117.77 Examples/Second, 0.03 Seconds/Batch
+Epoch 00089: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.89-loss_0.001-acc_0.375.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.9744e-04 - acc: 0.3747 - val_loss: 7.2888e-04 - val_acc: 0.3629
+Epoch 91/1500
+17:15:30: Batch 0110: 102.62 Examples/Second, 0.04 Seconds/Batch
+Epoch 00090: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.90-loss_0.001-acc_0.380.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.4924e-04 - acc: 0.3800 - val_loss: 7.5464e-04 - val_acc: 0.3666
+Epoch 92/1500
+17:15:43: Batch 0110: 90.79 Examples/Second, 0.04 Seconds/Batch
+Epoch 00091: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.91-loss_0.001-acc_0.382.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.4213e-04 - acc: 0.3820 - val_loss: 6.3279e-04 - val_acc: 0.4078
+Epoch 93/1500
+17:15:54: Batch 0110: 91.70 Examples/Second, 0.04 Seconds/Batch
+Epoch 00092: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.92-loss_0.001-acc_0.381.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.4557e-04 - acc: 0.3811 - val_loss: 8.4459e-04 - val_acc: 0.3749
+Epoch 94/1500
+17:16:06: Batch 0110: 91.43 Examples/Second, 0.04 Seconds/Batch
+Epoch 00093: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.93-loss_0.001-acc_0.386.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.4541e-04 - acc: 0.3863 - val_loss: 8.8036e-04 - val_acc: 0.3999
+Epoch 95/1500
+17:16:17: Batch 0110: 95.03 Examples/Second, 0.04 Seconds/Batch
+Epoch 00094: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.94-loss_0.001-acc_0.383.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.8098e-04 - acc: 0.3833 - val_loss: 7.7539e-04 - val_acc: 0.3748
+Epoch 96/1500
+17:16:29: Batch 0110: 103.49 Examples/Second, 0.04 Seconds/Batch
+Epoch 00095: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.95-loss_0.001-acc_0.384.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.3922e-04 - acc: 0.3839 - val_loss: 9.0490e-04 - val_acc: 0.4478
+Epoch 97/1500
+17:16:40: Batch 0110: 121.39 Examples/Second, 0.03 Seconds/Batch
+Epoch 00096: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.96-loss_0.001-acc_0.388.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.1120e-04 - acc: 0.3882 - val_loss: 6.6404e-04 - val_acc: 0.3925
+Epoch 98/1500
+17:16:51: Batch 0110: 118.53 Examples/Second, 0.03 Seconds/Batch
+Epoch 00097: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.97-loss_0.001-acc_0.386.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 8.0939e-04 - acc: 0.3862 - val_loss: 7.1877e-04 - val_acc: 0.3838
+Epoch 99/1500
+17:17:04: Batch 0110: 105.37 Examples/Second, 0.04 Seconds/Batch
+Epoch 00098: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.98-loss_0.001-acc_0.388.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.1142e-04 - acc: 0.3879 - val_loss: 6.2064e-04 - val_acc: 0.4098
+Epoch 100/1500
+17:17:16: Batch 0110: 90.50 Examples/Second, 0.04 Seconds/Batch
+Epoch 00099: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.99-loss_0.001-acc_0.389.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.3668e-04 - acc: 0.3886 - val_loss: 6.5754e-04 - val_acc: 0.3598
+Epoch 101/1500
+17:17:28: Batch 0110: 91.53 Examples/Second, 0.04 Seconds/Batch
+Epoch 00100: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.100-loss_0.001-acc_0.388.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.1009e-04 - acc: 0.3880 - val_loss: 0.0011 - val_acc: 0.4558
+Epoch 102/1500
+17:17:39: Batch 0110: 91.56 Examples/Second, 0.04 Seconds/Batch
+Epoch 00101: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.101-loss_0.001-acc_0.387.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.6542e-04 - acc: 0.3871 - val_loss: 0.0010 - val_acc: 0.4368
+Epoch 103/1500
+17:17:51: Batch 0110: 96.03 Examples/Second, 0.04 Seconds/Batch
+Epoch 00102: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.102-loss_0.001-acc_0.391.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.0331e-04 - acc: 0.3909 - val_loss: 6.8029e-04 - val_acc: 0.3766
+Epoch 104/1500
+17:18:02: Batch 0110: 104.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00103: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.103-loss_0.001-acc_0.387.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.5409e-04 - acc: 0.3869 - val_loss: 7.3957e-04 - val_acc: 0.4277
+Epoch 105/1500
+17:18:13: Batch 0110: 124.22 Examples/Second, 0.03 Seconds/Batch
+Epoch 00104: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.104-loss_0.001-acc_0.392.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.1842e-04 - acc: 0.3921 - val_loss: 7.6411e-04 - val_acc: 0.3724
+Epoch 106/1500
+17:18:25: Batch 0110: 117.87 Examples/Second, 0.03 Seconds/Batch
+Epoch 00105: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.105-loss_0.001-acc_0.393.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.7099e-04 - acc: 0.3929 - val_loss: 6.8025e-04 - val_acc: 0.4123
+Epoch 107/1500
+17:18:37: Batch 0110: 105.23 Examples/Second, 0.04 Seconds/Batch
+Epoch 00106: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.106-loss_0.001-acc_0.392.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.8960e-04 - acc: 0.3918 - val_loss: 6.2339e-04 - val_acc: 0.4286
+Epoch 108/1500
+17:18:49: Batch 0110: 89.50 Examples/Second, 0.04 Seconds/Batch
+Epoch 00107: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.107-loss_0.001-acc_0.395.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.7812e-04 - acc: 0.3948 - val_loss: 6.9497e-04 - val_acc: 0.3846
+Epoch 109/1500
+17:19:01: Batch 0110: 90.80 Examples/Second, 0.04 Seconds/Batch
+Epoch 00108: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.108-loss_0.001-acc_0.394.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.1437e-04 - acc: 0.3945 - val_loss: 9.4629e-04 - val_acc: 0.4605
+Epoch 110/1500
+17:19:13: Batch 0110: 90.85 Examples/Second, 0.04 Seconds/Batch
+Epoch 00109: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.109-loss_0.001-acc_0.399.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.7640e-04 - acc: 0.3992 - val_loss: 7.1988e-04 - val_acc: 0.3896
+Epoch 111/1500
+17:19:24: Batch 0110: 95.15 Examples/Second, 0.04 Seconds/Batch
+Epoch 00110: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.110-loss_0.001-acc_0.395.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 7.0057e-04 - acc: 0.3946 - val_loss: 6.3741e-04 - val_acc: 0.3898
+Epoch 112/1500
+17:19:35: Batch 0110: 105.07 Examples/Second, 0.04 Seconds/Batch
+Epoch 00111: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.111-loss_0.001-acc_0.396.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.6703e-04 - acc: 0.3964 - val_loss: 6.3938e-04 - val_acc: 0.4228
+Epoch 113/1500
+17:19:46: Batch 0110: 124.79 Examples/Second, 0.03 Seconds/Batch
+Epoch 00112: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.112-loss_0.001-acc_0.397.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.5263e-04 - acc: 0.3966 - val_loss: 6.3943e-04 - val_acc: 0.4115
+Epoch 114/1500
+17:19:58: Batch 0110: 122.66 Examples/Second, 0.03 Seconds/Batch
+Epoch 00113: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.113-loss_0.001-acc_0.398.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.7433e-04 - acc: 0.3982 - val_loss: 6.3962e-04 - val_acc: 0.3871
+Epoch 115/1500
+17:20:10: Batch 0110: 112.21 Examples/Second, 0.04 Seconds/Batch
+Epoch 00114: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.114-loss_0.001-acc_0.396.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.9224e-04 - acc: 0.3962 - val_loss: 6.3058e-04 - val_acc: 0.4020
+Epoch 116/1500
+17:20:22: Batch 0110: 91.76 Examples/Second, 0.04 Seconds/Batch
+Epoch 00115: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.115-loss_0.001-acc_0.394.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.5533e-04 - acc: 0.3944 - val_loss: 9.1501e-04 - val_acc: 0.3647
+Epoch 117/1500
+17:20:34: Batch 0110: 90.36 Examples/Second, 0.04 Seconds/Batch
+Epoch 00116: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.116-loss_0.001-acc_0.397.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.6015e-04 - acc: 0.3972 - val_loss: 8.6752e-04 - val_acc: 0.3913
+Epoch 118/1500
+17:20:46: Batch 0110: 88.53 Examples/Second, 0.05 Seconds/Batch
+Epoch 00117: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.117-loss_0.001-acc_0.398.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.7757e-04 - acc: 0.3981 - val_loss: 6.2381e-04 - val_acc: 0.4023
+Epoch 119/1500
+17:20:57: Batch 0110: 94.92 Examples/Second, 0.04 Seconds/Batch
+Epoch 00118: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.118-loss_0.001-acc_0.398.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.6521e-04 - acc: 0.3981 - val_loss: 6.9698e-04 - val_acc: 0.4419
+Epoch 120/1500
+17:21:09: Batch 0110: 99.76 Examples/Second, 0.04 Seconds/Batch
+Epoch 00119: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.119-loss_0.001-acc_0.400.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.4666e-04 - acc: 0.3997 - val_loss: 6.4728e-04 - val_acc: 0.4257
+Epoch 121/1500
+17:21:20: Batch 0110: 116.47 Examples/Second, 0.03 Seconds/Batch
+Epoch 00120: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.120-loss_0.001-acc_0.397.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.7535e-04 - acc: 0.3967 - val_loss: 6.5079e-04 - val_acc: 0.4356
+Epoch 122/1500
+17:21:31: Batch 0110: 126.13 Examples/Second, 0.03 Seconds/Batch
+Epoch 00121: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.121-loss_0.001-acc_0.401.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.2532e-04 - acc: 0.4012 - val_loss: 6.4776e-04 - val_acc: 0.3921
+Epoch 123/1500
+17:21:43: Batch 0110: 117.00 Examples/Second, 0.03 Seconds/Batch
+Epoch 00122: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.122-loss_0.001-acc_0.398.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.6603e-04 - acc: 0.3980 - val_loss: 6.6646e-04 - val_acc: 0.4442
+Epoch 124/1500
+17:21:55: Batch 0110: 97.38 Examples/Second, 0.04 Seconds/Batch
+Epoch 00123: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.123-loss_0.001-acc_0.402.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.5765e-04 - acc: 0.4015 - val_loss: 6.5204e-04 - val_acc: 0.4100
+Epoch 125/1500
+17:22:07: Batch 0110: 90.34 Examples/Second, 0.04 Seconds/Batch
+Epoch 00124: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.124-loss_0.001-acc_0.400.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.4922e-04 - acc: 0.4005 - val_loss: 6.1332e-04 - val_acc: 0.3900
+Epoch 126/1500
+17:22:19: Batch 0110: 90.61 Examples/Second, 0.04 Seconds/Batch
+Epoch 00125: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.125-loss_0.001-acc_0.402.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.4388e-04 - acc: 0.4024 - val_loss: 9.0819e-04 - val_acc: 0.3568
+Epoch 127/1500
+17:22:30: Batch 0110: 92.58 Examples/Second, 0.04 Seconds/Batch
+Epoch 00126: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.126-loss_0.001-acc_0.399.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.4808e-04 - acc: 0.3991 - val_loss: 8.3824e-04 - val_acc: 0.4662
+Epoch 128/1500
+17:22:42: Batch 0110: 98.29 Examples/Second, 0.04 Seconds/Batch
+Epoch 00127: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.127-loss_0.001-acc_0.402.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.5732e-04 - acc: 0.4018 - val_loss: 5.9640e-04 - val_acc: 0.4362
+Epoch 129/1500
+17:22:53: Batch 0110: 109.40 Examples/Second, 0.04 Seconds/Batch
+Epoch 00128: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.128-loss_0.001-acc_0.401.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.1949e-04 - acc: 0.4006 - val_loss: 6.1838e-04 - val_acc: 0.4422
+Epoch 130/1500
+17:23:04: Batch 0110: 125.87 Examples/Second, 0.03 Seconds/Batch
+Epoch 00129: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.129-loss_0.001-acc_0.404.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.4953e-04 - acc: 0.4038 - val_loss: 6.2921e-04 - val_acc: 0.4031
+Epoch 131/1500
+17:23:16: Batch 0110: 119.89 Examples/Second, 0.03 Seconds/Batch
+Epoch 00130: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.130-loss_0.001-acc_0.403.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.1908e-04 - acc: 0.4032 - val_loss: 0.0012 - val_acc: 0.3630
+Epoch 132/1500
+17:23:28: Batch 0110: 104.98 Examples/Second, 0.04 Seconds/Batch
+Epoch 00131: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.131-loss_0.001-acc_0.401.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.3041e-04 - acc: 0.4013 - val_loss: 6.4755e-04 - val_acc: 0.4024
+Epoch 133/1500
+17:23:40: Batch 0110: 91.18 Examples/Second, 0.04 Seconds/Batch
+Epoch 00132: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.132-loss_0.001-acc_0.404.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.1891e-04 - acc: 0.4037 - val_loss: 6.8314e-04 - val_acc: 0.4203
+Epoch 134/1500
+17:23:52: Batch 0110: 90.60 Examples/Second, 0.04 Seconds/Batch
+Epoch 00133: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.133-loss_0.001-acc_0.403.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.2633e-04 - acc: 0.4028 - val_loss: 6.6702e-04 - val_acc: 0.4393
+Epoch 135/1500
+17:24:03: Batch 0110: 91.13 Examples/Second, 0.04 Seconds/Batch
+Epoch 00134: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.134-loss_0.001-acc_0.401.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0932e-04 - acc: 0.4006 - val_loss: 7.1806e-04 - val_acc: 0.4698
+Epoch 136/1500
+17:24:15: Batch 0110: 93.65 Examples/Second, 0.04 Seconds/Batch
+Epoch 00135: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.135-loss_0.001-acc_0.406.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.2606e-04 - acc: 0.4057 - val_loss: 7.7771e-04 - val_acc: 0.3748
+Epoch 137/1500
+17:24:26: Batch 0110: 98.45 Examples/Second, 0.04 Seconds/Batch
+Epoch 00136: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.136-loss_0.001-acc_0.402.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.3530e-04 - acc: 0.4018 - val_loss: 7.2554e-04 - val_acc: 0.4441
+Epoch 138/1500
+17:24:37: Batch 0110: 110.56 Examples/Second, 0.04 Seconds/Batch
+Epoch 00137: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.137-loss_0.001-acc_0.405.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.4289e-04 - acc: 0.4051 - val_loss: 6.4355e-04 - val_acc: 0.4390
+Epoch 139/1500
+17:24:48: Batch 0110: 126.76 Examples/Second, 0.03 Seconds/Batch
+Epoch 00138: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.138-loss_0.001-acc_0.405.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8985e-04 - acc: 0.4046 - val_loss: 7.3886e-04 - val_acc: 0.4656
+Epoch 140/1500
+17:25:00: Batch 0110: 116.54 Examples/Second, 0.03 Seconds/Batch
+Epoch 00139: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.139-loss_0.001-acc_0.406.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.2834e-04 - acc: 0.4056 - val_loss: 7.2224e-04 - val_acc: 0.4489
+Epoch 141/1500
+17:25:12: Batch 0110: 101.50 Examples/Second, 0.04 Seconds/Batch
+Epoch 00140: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.140-loss_0.001-acc_0.401.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.3014e-04 - acc: 0.4006 - val_loss: 8.4995e-04 - val_acc: 0.4538
+Epoch 142/1500
+17:25:25: Batch 0110: 90.48 Examples/Second, 0.04 Seconds/Batch
+Epoch 00141: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.141-loss_0.001-acc_0.405.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0495e-04 - acc: 0.4049 - val_loss: 6.0268e-04 - val_acc: 0.4546
+Epoch 143/1500
+17:25:36: Batch 0110: 90.86 Examples/Second, 0.04 Seconds/Batch
+Epoch 00142: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.142-loss_0.001-acc_0.405.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0960e-04 - acc: 0.4048 - val_loss: 8.8788e-04 - val_acc: 0.4489
+Epoch 144/1500
+17:25:48: Batch 0110: 90.92 Examples/Second, 0.04 Seconds/Batch
+Epoch 00143: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.143-loss_0.001-acc_0.404.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.3681e-04 - acc: 0.4042 - val_loss: 6.0222e-04 - val_acc: 0.4075
+Epoch 145/1500
+17:25:59: Batch 0110: 97.09 Examples/Second, 0.04 Seconds/Batch
+Epoch 00144: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.144-loss_0.001-acc_0.401.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.3641e-04 - acc: 0.4015 - val_loss: 8.5587e-04 - val_acc: 0.4663
+Epoch 146/1500
+17:26:11: Batch 0110: 108.34 Examples/Second, 0.04 Seconds/Batch
+Epoch 00145: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.145-loss_0.001-acc_0.405.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.1158e-04 - acc: 0.4047 - val_loss: 8.1691e-04 - val_acc: 0.4484
+Epoch 147/1500
+17:26:22: Batch 0110: 128.47 Examples/Second, 0.03 Seconds/Batch
+Epoch 00146: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.146-loss_0.001-acc_0.403.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.1058e-04 - acc: 0.4035 - val_loss: 5.9728e-04 - val_acc: 0.4275
+Epoch 148/1500
+17:26:33: Batch 0110: 120.75 Examples/Second, 0.03 Seconds/Batch
+Epoch 00147: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.147-loss_0.001-acc_0.404.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8854e-04 - acc: 0.4040 - val_loss: 8.1737e-04 - val_acc: 0.3927
+Epoch 149/1500
+17:26:45: Batch 0110: 111.16 Examples/Second, 0.04 Seconds/Batch
+Epoch 00148: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.148-loss_0.001-acc_0.406.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0267e-04 - acc: 0.4062 - val_loss: 0.0011 - val_acc: 0.3821
+Epoch 150/1500
+17:26:58: Batch 0110: 91.15 Examples/Second, 0.04 Seconds/Batch
+Epoch 00149: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.149-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0007e-04 - acc: 0.4081 - val_loss: 5.6529e-04 - val_acc: 0.4348
+Epoch 151/1500
+17:27:09: Batch 0110: 90.40 Examples/Second, 0.04 Seconds/Batch
+Epoch 00150: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.150-loss_0.001-acc_0.407.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8577e-04 - acc: 0.4069 - val_loss: 6.7287e-04 - val_acc: 0.3840
+Epoch 152/1500
+17:27:21: Batch 0110: 90.48 Examples/Second, 0.04 Seconds/Batch
+Epoch 00151: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.151-loss_0.001-acc_0.407.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0750e-04 - acc: 0.4074 - val_loss: 6.8133e-04 - val_acc: 0.4280
+Epoch 153/1500
+17:27:33: Batch 0110: 94.35 Examples/Second, 0.04 Seconds/Batch
+Epoch 00152: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.152-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.9606e-04 - acc: 0.4077 - val_loss: 0.0012 - val_acc: 0.4696
+Epoch 154/1500
+17:27:44: Batch 0110: 98.71 Examples/Second, 0.04 Seconds/Batch
+Epoch 00153: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.153-loss_0.001-acc_0.404.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.9823e-04 - acc: 0.4041 - val_loss: 5.8091e-04 - val_acc: 0.4251
+Epoch 155/1500
+17:27:55: Batch 0110: 109.43 Examples/Second, 0.04 Seconds/Batch
+Epoch 00154: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.154-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0067e-04 - acc: 0.4084 - val_loss: 7.0484e-04 - val_acc: 0.4112
+Epoch 156/1500
+17:28:06: Batch 0110: 127.97 Examples/Second, 0.03 Seconds/Batch
+Epoch 00155: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.155-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0717e-04 - acc: 0.4081 - val_loss: 6.1968e-04 - val_acc: 0.3955
+Epoch 157/1500
+17:28:18: Batch 0110: 117.10 Examples/Second, 0.03 Seconds/Batch
+Epoch 00156: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.156-loss_0.001-acc_0.406.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0089e-04 - acc: 0.4058 - val_loss: 5.8183e-04 - val_acc: 0.4287
+Epoch 158/1500
+17:28:30: Batch 0110: 99.83 Examples/Second, 0.04 Seconds/Batch
+Epoch 00157: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.157-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7085e-04 - acc: 0.4095 - val_loss: 8.5202e-04 - val_acc: 0.4636
+Epoch 159/1500
+17:28:42: Batch 0110: 89.57 Examples/Second, 0.04 Seconds/Batch
+Epoch 00158: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.158-loss_0.001-acc_0.407.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0833e-04 - acc: 0.4070 - val_loss: 5.8077e-04 - val_acc: 0.4059
+Epoch 160/1500
+17:28:54: Batch 0110: 90.13 Examples/Second, 0.04 Seconds/Batch
+Epoch 00159: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.159-loss_0.001-acc_0.404.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 6.0366e-04 - acc: 0.4042 - val_loss: 6.5022e-04 - val_acc: 0.4295
+Epoch 161/1500
+17:29:06: Batch 0110: 93.27 Examples/Second, 0.04 Seconds/Batch
+Epoch 00160: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.160-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.9461e-04 - acc: 0.4090 - val_loss: 5.5834e-04 - val_acc: 0.4413
+Epoch 162/1500
+17:29:17: Batch 0110: 100.19 Examples/Second, 0.04 Seconds/Batch
+Epoch 00161: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.161-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7627e-04 - acc: 0.4090 - val_loss: 5.7895e-04 - val_acc: 0.4140
+Epoch 163/1500
+17:29:28: Batch 0110: 116.77 Examples/Second, 0.03 Seconds/Batch
+Epoch 00162: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.162-loss_0.001-acc_0.407.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8739e-04 - acc: 0.4072 - val_loss: 5.7184e-04 - val_acc: 0.4147
+Epoch 164/1500
+17:29:40: Batch 0110: 120.59 Examples/Second, 0.03 Seconds/Batch
+Epoch 00163: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.163-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.9422e-04 - acc: 0.4077 - val_loss: 5.9631e-04 - val_acc: 0.4056
+Epoch 165/1500
+17:29:52: Batch 0110: 107.93 Examples/Second, 0.04 Seconds/Batch
+Epoch 00164: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.164-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.9609e-04 - acc: 0.4079 - val_loss: 5.9894e-04 - val_acc: 0.4018
+Epoch 166/1500
+17:30:04: Batch 0110: 90.95 Examples/Second, 0.04 Seconds/Batch
+Epoch 00165: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.165-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7464e-04 - acc: 0.4086 - val_loss: 7.4515e-04 - val_acc: 0.4542
+Epoch 167/1500
+17:30:16: Batch 0110: 91.56 Examples/Second, 0.04 Seconds/Batch
+Epoch 00166: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.166-loss_0.001-acc_0.407.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.9081e-04 - acc: 0.4066 - val_loss: 5.8124e-04 - val_acc: 0.4240
+Epoch 168/1500
+17:30:28: Batch 0110: 90.97 Examples/Second, 0.04 Seconds/Batch
+Epoch 00167: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.167-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8376e-04 - acc: 0.4088 - val_loss: 6.0984e-04 - val_acc: 0.4042
+Epoch 169/1500
+17:30:39: Batch 0110: 94.77 Examples/Second, 0.04 Seconds/Batch
+Epoch 00168: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.168-loss_0.001-acc_0.406.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8818e-04 - acc: 0.4065 - val_loss: 5.8788e-04 - val_acc: 0.4102
+Epoch 170/1500
+17:30:51: Batch 0110: 104.34 Examples/Second, 0.04 Seconds/Batch
+Epoch 00169: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.169-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8838e-04 - acc: 0.4107 - val_loss: 5.8263e-04 - val_acc: 0.4067
+Epoch 171/1500
+17:31:02: Batch 0110: 124.12 Examples/Second, 0.03 Seconds/Batch
+Epoch 00170: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.170-loss_0.001-acc_0.407.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8427e-04 - acc: 0.4068 - val_loss: 5.9161e-04 - val_acc: 0.4221
+Epoch 172/1500
+17:31:13: Batch 0110: 121.06 Examples/Second, 0.03 Seconds/Batch
+Epoch 00171: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.171-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8058e-04 - acc: 0.4120 - val_loss: 6.6459e-04 - val_acc: 0.4538
+Epoch 173/1500
+17:31:25: Batch 0110: 109.61 Examples/Second, 0.04 Seconds/Batch
+Epoch 00172: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.172-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8112e-04 - acc: 0.4106 - val_loss: 5.6971e-04 - val_acc: 0.4358
+Epoch 174/1500
+17:31:38: Batch 0110: 90.57 Examples/Second, 0.04 Seconds/Batch
+Epoch 00173: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.173-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6702e-04 - acc: 0.4083 - val_loss: 6.2629e-04 - val_acc: 0.4129
+Epoch 175/1500
+17:31:49: Batch 0110: 90.35 Examples/Second, 0.04 Seconds/Batch
+Epoch 00174: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.174-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7320e-04 - acc: 0.4113 - val_loss: 7.3284e-04 - val_acc: 0.4168
+Epoch 176/1500
+17:32:01: Batch 0110: 91.25 Examples/Second, 0.04 Seconds/Batch
+Epoch 00175: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.175-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7619e-04 - acc: 0.4079 - val_loss: 6.6988e-04 - val_acc: 0.4465
+Epoch 177/1500
+17:32:13: Batch 0110: 94.80 Examples/Second, 0.04 Seconds/Batch
+Epoch 00176: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.176-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8135e-04 - acc: 0.4096 - val_loss: 5.7257e-04 - val_acc: 0.4089
+Epoch 178/1500
+17:32:24: Batch 0110: 99.64 Examples/Second, 0.04 Seconds/Batch
+Epoch 00177: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.177-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6765e-04 - acc: 0.4079 - val_loss: 5.7193e-04 - val_acc: 0.4114
+Epoch 179/1500
+17:32:35: Batch 0110: 115.68 Examples/Second, 0.03 Seconds/Batch
+Epoch 00178: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.178-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8229e-04 - acc: 0.4096 - val_loss: 6.1754e-04 - val_acc: 0.4018
+Epoch 180/1500
+17:32:46: Batch 0110: 126.00 Examples/Second, 0.03 Seconds/Batch
+Epoch 00179: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.179-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6508e-04 - acc: 0.4105 - val_loss: 6.3335e-04 - val_acc: 0.4493
+Epoch 181/1500
+17:32:58: Batch 0110: 118.67 Examples/Second, 0.03 Seconds/Batch
+Epoch 00180: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.180-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6654e-04 - acc: 0.4086 - val_loss: 5.8887e-04 - val_acc: 0.4315
+Epoch 182/1500
+17:33:10: Batch 0110: 99.94 Examples/Second, 0.04 Seconds/Batch
+Epoch 00181: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.181-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6631e-04 - acc: 0.4115 - val_loss: 6.6339e-04 - val_acc: 0.4524
+Epoch 183/1500
+17:33:22: Batch 0110: 91.95 Examples/Second, 0.04 Seconds/Batch
+Epoch 00182: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.182-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5586e-04 - acc: 0.4103 - val_loss: 5.9901e-04 - val_acc: 0.4216
+Epoch 184/1500
+17:33:34: Batch 0110: 90.38 Examples/Second, 0.04 Seconds/Batch
+Epoch 00183: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.183-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6712e-04 - acc: 0.4096 - val_loss: 5.8009e-04 - val_acc: 0.4479
+Epoch 185/1500
+17:33:46: Batch 0110: 89.62 Examples/Second, 0.04 Seconds/Batch
+Epoch 00184: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.184-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6874e-04 - acc: 0.4115 - val_loss: 5.9302e-04 - val_acc: 0.4225
+Epoch 186/1500
+17:33:57: Batch 0110: 94.61 Examples/Second, 0.04 Seconds/Batch
+Epoch 00185: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.185-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5965e-04 - acc: 0.4094 - val_loss: 6.3093e-04 - val_acc: 0.4073
+Epoch 187/1500
+17:34:09: Batch 0110: 101.16 Examples/Second, 0.04 Seconds/Batch
+Epoch 00186: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.186-loss_0.001-acc_0.408.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6502e-04 - acc: 0.4082 - val_loss: 5.7854e-04 - val_acc: 0.4568
+Epoch 188/1500
+17:34:19: Batch 0110: 121.11 Examples/Second, 0.03 Seconds/Batch
+Epoch 00187: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.187-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5622e-04 - acc: 0.4105 - val_loss: 6.5604e-04 - val_acc: 0.4215
+Epoch 189/1500
+17:34:31: Batch 0110: 121.87 Examples/Second, 0.03 Seconds/Batch
+Epoch 00188: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.188-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7407e-04 - acc: 0.4105 - val_loss: 6.8974e-04 - val_acc: 0.3981
+Epoch 190/1500
+17:34:43: Batch 0110: 111.10 Examples/Second, 0.04 Seconds/Batch
+Epoch 00189: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.189-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5586e-04 - acc: 0.4115 - val_loss: 5.6661e-04 - val_acc: 0.4066
+Epoch 191/1500
+17:34:55: Batch 0110: 92.53 Examples/Second, 0.04 Seconds/Batch
+Epoch 00190: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.190-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6481e-04 - acc: 0.4115 - val_loss: 5.6391e-04 - val_acc: 0.4144
+Epoch 192/1500
+17:35:07: Batch 0110: 91.40 Examples/Second, 0.04 Seconds/Batch
+Epoch 00191: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.191-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5873e-04 - acc: 0.4101 - val_loss: 8.5882e-04 - val_acc: 0.4642
+Epoch 193/1500
+17:35:19: Batch 0110: 90.94 Examples/Second, 0.04 Seconds/Batch
+Epoch 00192: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.192-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.8510e-04 - acc: 0.4118 - val_loss: 6.0679e-04 - val_acc: 0.4115
+Epoch 194/1500
+17:35:30: Batch 0110: 92.58 Examples/Second, 0.04 Seconds/Batch
+Epoch 00193: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.193-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6923e-04 - acc: 0.4107 - val_loss: 8.1141e-04 - val_acc: 0.4549
+Epoch 195/1500
+17:35:42: Batch 0110: 98.92 Examples/Second, 0.04 Seconds/Batch
+Epoch 00194: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.194-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6505e-04 - acc: 0.4108 - val_loss: 7.0659e-04 - val_acc: 0.4527
+Epoch 196/1500
+17:35:53: Batch 0110: 111.76 Examples/Second, 0.04 Seconds/Batch
+Epoch 00195: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.195-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5771e-04 - acc: 0.4126 - val_loss: 6.1444e-04 - val_acc: 0.4269
+Epoch 197/1500
+17:36:04: Batch 0110: 125.72 Examples/Second, 0.03 Seconds/Batch
+Epoch 00196: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.196-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7388e-04 - acc: 0.4122 - val_loss: 7.3134e-04 - val_acc: 0.4504
+Epoch 198/1500
+17:36:16: Batch 0110: 116.46 Examples/Second, 0.03 Seconds/Batch
+Epoch 00197: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.197-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6853e-04 - acc: 0.4136 - val_loss: 6.9681e-04 - val_acc: 0.3892
+Epoch 199/1500
+17:36:28: Batch 0110: 102.96 Examples/Second, 0.04 Seconds/Batch
+Epoch 00198: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.198-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.7005e-04 - acc: 0.4101 - val_loss: 6.0793e-04 - val_acc: 0.4394
+Epoch 200/1500
+17:36:40: Batch 0110: 91.77 Examples/Second, 0.04 Seconds/Batch
+Epoch 00199: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.199-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6084e-04 - acc: 0.4120 - val_loss: 6.9982e-04 - val_acc: 0.4059
+Epoch 201/1500
+17:36:52: Batch 0110: 91.47 Examples/Second, 0.04 Seconds/Batch
+Epoch 00200: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.200-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5065e-04 - acc: 0.4108 - val_loss: 6.2498e-04 - val_acc: 0.4270
+Epoch 202/1500
+17:37:03: Batch 0110: 91.74 Examples/Second, 0.04 Seconds/Batch
+Epoch 00201: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.201-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5685e-04 - acc: 0.4119 - val_loss: 6.3940e-04 - val_acc: 0.4303
+Epoch 203/1500
+17:37:15: Batch 0110: 96.25 Examples/Second, 0.04 Seconds/Batch
+Epoch 00202: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.202-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6053e-04 - acc: 0.4133 - val_loss: 6.2499e-04 - val_acc: 0.4089
+Epoch 204/1500
+17:37:26: Batch 0110: 108.60 Examples/Second, 0.04 Seconds/Batch
+Epoch 00203: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.203-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5660e-04 - acc: 0.4111 - val_loss: 6.2846e-04 - val_acc: 0.4317
+Epoch 205/1500
+17:37:37: Batch 0110: 126.77 Examples/Second, 0.03 Seconds/Batch
+Epoch 00204: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.204-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5239e-04 - acc: 0.4118 - val_loss: 5.9274e-04 - val_acc: 0.4330
+Epoch 206/1500
+17:37:49: Batch 0110: 117.52 Examples/Second, 0.03 Seconds/Batch
+Epoch 00205: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.205-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5216e-04 - acc: 0.4121 - val_loss: 5.7328e-04 - val_acc: 0.4340
+Epoch 207/1500
+17:38:01: Batch 0110: 103.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00206: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.206-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6505e-04 - acc: 0.4106 - val_loss: 6.3451e-04 - val_acc: 0.4442
+Epoch 208/1500
+17:38:13: Batch 0110: 91.40 Examples/Second, 0.04 Seconds/Batch
+Epoch 00207: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.207-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6213e-04 - acc: 0.4116 - val_loss: 6.5113e-04 - val_acc: 0.4463
+Epoch 209/1500
+17:38:25: Batch 0110: 91.23 Examples/Second, 0.04 Seconds/Batch
+Epoch 00208: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.208-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5569e-04 - acc: 0.4127 - val_loss: 6.7652e-04 - val_acc: 0.3953
+Epoch 210/1500
+17:38:37: Batch 0110: 92.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00209: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.209-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5728e-04 - acc: 0.4090 - val_loss: 6.6536e-04 - val_acc: 0.3987
+Epoch 211/1500
+17:38:48: Batch 0110: 96.49 Examples/Second, 0.04 Seconds/Batch
+Epoch 00210: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.210-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4914e-04 - acc: 0.4146 - val_loss: 5.4697e-04 - val_acc: 0.4452
+Epoch 212/1500
+17:38:59: Batch 0110: 104.33 Examples/Second, 0.04 Seconds/Batch
+Epoch 00211: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.211-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5895e-04 - acc: 0.4111 - val_loss: 6.9332e-04 - val_acc: 0.4708
+Epoch 213/1500
+17:39:10: Batch 0110: 125.40 Examples/Second, 0.03 Seconds/Batch
+Epoch 00212: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.212-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4727e-04 - acc: 0.4112 - val_loss: 6.0584e-04 - val_acc: 0.4475
+Epoch 214/1500
+17:39:22: Batch 0110: 118.30 Examples/Second, 0.03 Seconds/Batch
+Epoch 00213: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.213-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4507e-04 - acc: 0.4112 - val_loss: 8.7423e-04 - val_acc: 0.3744
+Epoch 215/1500
+17:39:34: Batch 0110: 107.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00214: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.214-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5499e-04 - acc: 0.4111 - val_loss: 5.7173e-04 - val_acc: 0.4136
+Epoch 216/1500
+17:39:46: Batch 0110: 91.33 Examples/Second, 0.04 Seconds/Batch
+Epoch 00215: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.215-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6127e-04 - acc: 0.4108 - val_loss: 6.4212e-04 - val_acc: 0.4081
+Epoch 217/1500
+17:39:58: Batch 0110: 91.35 Examples/Second, 0.04 Seconds/Batch
+Epoch 00216: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.216-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3791e-04 - acc: 0.4124 - val_loss: 6.0680e-04 - val_acc: 0.4340
+Epoch 218/1500
+17:40:10: Batch 0110: 89.33 Examples/Second, 0.04 Seconds/Batch
+Epoch 00217: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.217-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4710e-04 - acc: 0.4102 - val_loss: 6.7920e-04 - val_acc: 0.4178
+Epoch 219/1500
+17:40:21: Batch 0110: 95.13 Examples/Second, 0.04 Seconds/Batch
+Epoch 00218: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.218-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4643e-04 - acc: 0.4109 - val_loss: 8.5752e-04 - val_acc: 0.4527
+Epoch 220/1500
+17:40:33: Batch 0110: 104.49 Examples/Second, 0.04 Seconds/Batch
+Epoch 00219: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.219-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.6144e-04 - acc: 0.4107 - val_loss: 7.5796e-04 - val_acc: 0.3954
+Epoch 221/1500
+17:40:44: Batch 0110: 124.36 Examples/Second, 0.03 Seconds/Batch
+Epoch 00220: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.220-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5049e-04 - acc: 0.4117 - val_loss: 7.4006e-04 - val_acc: 0.4034
+Epoch 222/1500
+17:40:55: Batch 0110: 122.92 Examples/Second, 0.03 Seconds/Batch
+Epoch 00221: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.221-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3962e-04 - acc: 0.4125 - val_loss: 6.3910e-04 - val_acc: 0.4065
+Epoch 223/1500
+17:41:07: Batch 0110: 113.23 Examples/Second, 0.04 Seconds/Batch
+Epoch 00222: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.222-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3848e-04 - acc: 0.4129 - val_loss: 5.5968e-04 - val_acc: 0.4321
+Epoch 224/1500
+17:41:20: Batch 0110: 92.90 Examples/Second, 0.04 Seconds/Batch
+Epoch 00223: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.223-loss_0.001-acc_0.409.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5889e-04 - acc: 0.4093 - val_loss: 5.7286e-04 - val_acc: 0.4082
+Epoch 225/1500
+17:41:31: Batch 0110: 91.03 Examples/Second, 0.04 Seconds/Batch
+Epoch 00224: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.224-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3526e-04 - acc: 0.4129 - val_loss: 5.9869e-04 - val_acc: 0.4435
+Epoch 226/1500
+17:41:43: Batch 0110: 89.89 Examples/Second, 0.04 Seconds/Batch
+Epoch 00225: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.225-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4440e-04 - acc: 0.4133 - val_loss: 5.7143e-04 - val_acc: 0.4122
+Epoch 227/1500
+17:41:55: Batch 0110: 97.01 Examples/Second, 0.04 Seconds/Batch
+Epoch 00226: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.226-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+10s - loss: 5.4714e-04 - acc: 0.4129 - val_loss: 5.7063e-04 - val_acc: 0.4114
+Epoch 228/1500
+17:42:03: Batch 0110: 134.68 Examples/Second, 0.03 Seconds/Batch
+Epoch 00227: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.227-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.4074e-04 - acc: 0.4107 - val_loss: 8.4000e-04 - val_acc: 0.3887
+Epoch 229/1500
+17:42:12: Batch 0110: 150.40 Examples/Second, 0.03 Seconds/Batch
+Epoch 00228: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.228-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.5052e-04 - acc: 0.4102 - val_loss: 5.8693e-04 - val_acc: 0.4375
+Epoch 230/1500
+17:42:22: Batch 0110: 144.54 Examples/Second, 0.03 Seconds/Batch
+Epoch 00229: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.229-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.3528e-04 - acc: 0.4130 - val_loss: 5.8845e-04 - val_acc: 0.4081
+Epoch 231/1500
+17:42:31: Batch 0110: 130.58 Examples/Second, 0.03 Seconds/Batch
+Epoch 00230: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.230-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.4616e-04 - acc: 0.4150 - val_loss: 5.6982e-04 - val_acc: 0.4169
+Epoch 232/1500
+17:42:41: Batch 0110: 116.45 Examples/Second, 0.03 Seconds/Batch
+Epoch 00231: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.231-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.4704e-04 - acc: 0.4126 - val_loss: 6.9181e-04 - val_acc: 0.3974
+Epoch 233/1500
+17:42:50: Batch 0110: 120.76 Examples/Second, 0.03 Seconds/Batch
+Epoch 00232: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.232-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.5237e-04 - acc: 0.4126 - val_loss: 5.7572e-04 - val_acc: 0.4561
+Epoch 234/1500
+17:42:59: Batch 0110: 127.42 Examples/Second, 0.03 Seconds/Batch
+Epoch 00233: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.233-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+9s - loss: 5.4671e-04 - acc: 0.4115 - val_loss: 5.8921e-04 - val_acc: 0.4135
+Epoch 235/1500
+17:43:08: Batch 0110: 141.60 Examples/Second, 0.03 Seconds/Batch
+Epoch 00234: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.234-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+10s - loss: 5.4737e-04 - acc: 0.4107 - val_loss: 5.9749e-04 - val_acc: 0.4143
+Epoch 236/1500
+17:43:19: Batch 0110: 124.60 Examples/Second, 0.03 Seconds/Batch
+Epoch 00235: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.235-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4112e-04 - acc: 0.4127 - val_loss: 6.1380e-04 - val_acc: 0.4695
+Epoch 237/1500
+17:43:31: Batch 0110: 113.04 Examples/Second, 0.04 Seconds/Batch
+Epoch 00236: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.236-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5570e-04 - acc: 0.4100 - val_loss: 6.0642e-04 - val_acc: 0.3967
+Epoch 238/1500
+17:43:44: Batch 0110: 93.63 Examples/Second, 0.04 Seconds/Batch
+Epoch 00237: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.237-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4935e-04 - acc: 0.4127 - val_loss: 5.8403e-04 - val_acc: 0.4295
+Epoch 239/1500
+17:43:56: Batch 0110: 90.77 Examples/Second, 0.04 Seconds/Batch
+Epoch 00238: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.238-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3416e-04 - acc: 0.4120 - val_loss: 5.6686e-04 - val_acc: 0.4046
+Epoch 240/1500
+17:44:07: Batch 0110: 90.79 Examples/Second, 0.04 Seconds/Batch
+Epoch 00239: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.239-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4621e-04 - acc: 0.4123 - val_loss: 6.7315e-04 - val_acc: 0.4513
+Epoch 241/1500
+17:44:19: Batch 0110: 93.22 Examples/Second, 0.04 Seconds/Batch
+Epoch 00240: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.240-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3764e-04 - acc: 0.4130 - val_loss: 6.6877e-04 - val_acc: 0.4084
+Epoch 242/1500
+17:44:30: Batch 0110: 99.42 Examples/Second, 0.04 Seconds/Batch
+Epoch 00241: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.241-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3340e-04 - acc: 0.4114 - val_loss: 6.5629e-04 - val_acc: 0.4635
+Epoch 243/1500
+17:44:41: Batch 0110: 117.57 Examples/Second, 0.03 Seconds/Batch
+Epoch 00242: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.242-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.5310e-04 - acc: 0.4134 - val_loss: 5.5798e-04 - val_acc: 0.4462
+Epoch 244/1500
+17:44:53: Batch 0110: 124.35 Examples/Second, 0.03 Seconds/Batch
+Epoch 00243: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.243-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4531e-04 - acc: 0.4126 - val_loss: 5.7908e-04 - val_acc: 0.4073
+Epoch 245/1500
+17:45:04: Batch 0110: 118.96 Examples/Second, 0.03 Seconds/Batch
+Epoch 00244: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.244-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4475e-04 - acc: 0.4139 - val_loss: 5.9067e-04 - val_acc: 0.3987
+Epoch 246/1500
+17:45:17: Batch 0110: 100.45 Examples/Second, 0.04 Seconds/Batch
+Epoch 00245: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.245-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4297e-04 - acc: 0.4120 - val_loss: 5.4115e-04 - val_acc: 0.4215
+Epoch 247/1500
+17:45:29: Batch 0110: 91.14 Examples/Second, 0.04 Seconds/Batch
+Epoch 00246: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.246-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2904e-04 - acc: 0.4131 - val_loss: 6.4617e-04 - val_acc: 0.4600
+Epoch 248/1500
+17:45:40: Batch 0110: 90.67 Examples/Second, 0.04 Seconds/Batch
+Epoch 00247: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.247-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3455e-04 - acc: 0.4134 - val_loss: 5.6559e-04 - val_acc: 0.4232
+Epoch 249/1500
+17:45:52: Batch 0110: 91.35 Examples/Second, 0.04 Seconds/Batch
+Epoch 00248: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.248-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3729e-04 - acc: 0.4124 - val_loss: 5.9560e-04 - val_acc: 0.4180
+Epoch 250/1500
+17:46:03: Batch 0110: 96.03 Examples/Second, 0.04 Seconds/Batch
+Epoch 00249: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.249-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3291e-04 - acc: 0.4126 - val_loss: 6.2890e-04 - val_acc: 0.4113
+Epoch 251/1500
+17:46:15: Batch 0110: 100.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00250: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.250-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4736e-04 - acc: 0.4118 - val_loss: 6.0235e-04 - val_acc: 0.3983
+Epoch 252/1500
+17:46:26: Batch 0110: 117.67 Examples/Second, 0.03 Seconds/Batch
+Epoch 00251: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.251-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3373e-04 - acc: 0.4127 - val_loss: 5.8036e-04 - val_acc: 0.4453
+Epoch 253/1500
+17:46:37: Batch 0110: 120.87 Examples/Second, 0.03 Seconds/Batch
+Epoch 00252: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.252-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3296e-04 - acc: 0.4117 - val_loss: 8.2413e-04 - val_acc: 0.3911
+Epoch 254/1500
+17:46:49: Batch 0110: 112.90 Examples/Second, 0.04 Seconds/Batch
+Epoch 00253: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.253-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3019e-04 - acc: 0.4120 - val_loss: 5.4131e-04 - val_acc: 0.4327
+Epoch 255/1500
+17:47:02: Batch 0110: 93.25 Examples/Second, 0.04 Seconds/Batch
+Epoch 00254: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.254-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3944e-04 - acc: 0.4128 - val_loss: 5.5942e-04 - val_acc: 0.4031
+Epoch 256/1500
+17:47:14: Batch 0110: 89.33 Examples/Second, 0.04 Seconds/Batch
+Epoch 00255: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.255-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4049e-04 - acc: 0.4120 - val_loss: 6.6172e-04 - val_acc: 0.4351
+Epoch 257/1500
+17:47:25: Batch 0110: 90.65 Examples/Second, 0.04 Seconds/Batch
+Epoch 00256: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.256-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4413e-04 - acc: 0.4119 - val_loss: 6.3070e-04 - val_acc: 0.4268
+Epoch 258/1500
+17:47:37: Batch 0110: 93.65 Examples/Second, 0.04 Seconds/Batch
+Epoch 00257: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.257-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4359e-04 - acc: 0.4108 - val_loss: 5.7798e-04 - val_acc: 0.4205
+Epoch 259/1500
+17:47:48: Batch 0110: 98.38 Examples/Second, 0.04 Seconds/Batch
+Epoch 00258: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.258-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3412e-04 - acc: 0.4126 - val_loss: 5.4564e-04 - val_acc: 0.4504
+Epoch 260/1500
+17:47:59: Batch 0110: 113.89 Examples/Second, 0.04 Seconds/Batch
+Epoch 00259: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.259-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3503e-04 - acc: 0.4128 - val_loss: 5.8894e-04 - val_acc: 0.4686
+Epoch 261/1500
+17:48:10: Batch 0110: 126.79 Examples/Second, 0.03 Seconds/Batch
+Epoch 00260: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.260-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.4086e-04 - acc: 0.4139 - val_loss: 5.6148e-04 - val_acc: 0.4491
+Epoch 262/1500
+17:48:22: Batch 0110: 115.32 Examples/Second, 0.03 Seconds/Batch
+Epoch 00261: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.261-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3292e-04 - acc: 0.4109 - val_loss: 6.5919e-04 - val_acc: 0.4047
+Epoch 263/1500
+17:48:35: Batch 0110: 97.57 Examples/Second, 0.04 Seconds/Batch
+Epoch 00262: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.262-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3846e-04 - acc: 0.4124 - val_loss: 5.7875e-04 - val_acc: 0.4088
+Epoch 264/1500
+17:48:47: Batch 0110: 90.08 Examples/Second, 0.04 Seconds/Batch
+Epoch 00263: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.263-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3226e-04 - acc: 0.4138 - val_loss: 5.6069e-04 - val_acc: 0.4221
+Epoch 265/1500
+17:48:58: Batch 0110: 89.94 Examples/Second, 0.04 Seconds/Batch
+Epoch 00264: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.264-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2931e-04 - acc: 0.4150 - val_loss: 5.6033e-04 - val_acc: 0.4515
+Epoch 266/1500
+17:49:10: Batch 0110: 91.14 Examples/Second, 0.04 Seconds/Batch
+Epoch 00265: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.265-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2950e-04 - acc: 0.4121 - val_loss: 6.2009e-04 - val_acc: 0.4450
+Epoch 267/1500
+17:49:21: Batch 0110: 95.34 Examples/Second, 0.04 Seconds/Batch
+Epoch 00266: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.266-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3382e-04 - acc: 0.4119 - val_loss: 5.4934e-04 - val_acc: 0.4409
+Epoch 268/1500
+17:49:33: Batch 0110: 103.22 Examples/Second, 0.04 Seconds/Batch
+Epoch 00267: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.267-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2600e-04 - acc: 0.4144 - val_loss: 5.8908e-04 - val_acc: 0.4088
+Epoch 269/1500
+17:49:44: Batch 0110: 123.94 Examples/Second, 0.03 Seconds/Batch
+Epoch 00268: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.268-loss_0.001-acc_0.416.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3244e-04 - acc: 0.4156 - val_loss: 5.3615e-04 - val_acc: 0.4058
+Epoch 270/1500
+17:49:55: Batch 0110: 120.55 Examples/Second, 0.03 Seconds/Batch
+Epoch 00269: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.269-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3074e-04 - acc: 0.4140 - val_loss: 6.0433e-04 - val_acc: 0.4164
+Epoch 271/1500
+17:50:07: Batch 0110: 111.46 Examples/Second, 0.04 Seconds/Batch
+Epoch 00270: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.270-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3337e-04 - acc: 0.4131 - val_loss: 5.4901e-04 - val_acc: 0.4319
+Epoch 272/1500
+17:50:20: Batch 0110: 90.98 Examples/Second, 0.04 Seconds/Batch
+Epoch 00271: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.271-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3844e-04 - acc: 0.4118 - val_loss: 6.0372e-04 - val_acc: 0.4440
+Epoch 273/1500
+17:50:31: Batch 0110: 91.08 Examples/Second, 0.04 Seconds/Batch
+Epoch 00272: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.272-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2056e-04 - acc: 0.4128 - val_loss: 5.7700e-04 - val_acc: 0.4260
+Epoch 274/1500
+17:50:43: Batch 0110: 91.62 Examples/Second, 0.04 Seconds/Batch
+Epoch 00273: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.273-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3213e-04 - acc: 0.4134 - val_loss: 5.5070e-04 - val_acc: 0.4142
+Epoch 275/1500
+17:50:54: Batch 0110: 95.23 Examples/Second, 0.04 Seconds/Batch
+Epoch 00274: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.274-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3855e-04 - acc: 0.4127 - val_loss: 6.1653e-04 - val_acc: 0.4206
+Epoch 276/1500
+17:51:06: Batch 0110: 100.69 Examples/Second, 0.04 Seconds/Batch
+Epoch 00275: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.275-loss_0.001-acc_0.417.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2654e-04 - acc: 0.4172 - val_loss: 5.9406e-04 - val_acc: 0.3924
+Epoch 277/1500
+17:51:17: Batch 0110: 118.76 Examples/Second, 0.03 Seconds/Batch
+Epoch 00276: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.276-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3038e-04 - acc: 0.4106 - val_loss: 6.3377e-04 - val_acc: 0.4629
+Epoch 278/1500
+17:51:28: Batch 0110: 124.52 Examples/Second, 0.03 Seconds/Batch
+Epoch 00277: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.277-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2745e-04 - acc: 0.4118 - val_loss: 5.6797e-04 - val_acc: 0.4434
+Epoch 279/1500
+17:51:40: Batch 0110: 113.22 Examples/Second, 0.04 Seconds/Batch
+Epoch 00278: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.278-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2168e-04 - acc: 0.4128 - val_loss: 5.9835e-04 - val_acc: 0.4253
+Epoch 280/1500
+17:51:52: Batch 0110: 97.71 Examples/Second, 0.04 Seconds/Batch
+Epoch 00279: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.279-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3107e-04 - acc: 0.4145 - val_loss: 5.6584e-04 - val_acc: 0.4101
+Epoch 281/1500
+17:52:05: Batch 0110: 89.45 Examples/Second, 0.04 Seconds/Batch
+Epoch 00280: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.280-loss_0.001-acc_0.411.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2576e-04 - acc: 0.4113 - val_loss: 6.0823e-04 - val_acc: 0.4218
+Epoch 282/1500
+17:52:16: Batch 0110: 91.21 Examples/Second, 0.04 Seconds/Batch
+Epoch 00281: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.281-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3624e-04 - acc: 0.4121 - val_loss: 6.5290e-04 - val_acc: 0.4693
+Epoch 283/1500
+17:52:28: Batch 0110: 94.14 Examples/Second, 0.04 Seconds/Batch
+Epoch 00282: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.282-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3471e-04 - acc: 0.4154 - val_loss: 5.8922e-04 - val_acc: 0.4080
+Epoch 284/1500
+17:52:39: Batch 0110: 101.03 Examples/Second, 0.04 Seconds/Batch
+Epoch 00283: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.283-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2536e-04 - acc: 0.4133 - val_loss: 6.6462e-04 - val_acc: 0.4248
+Epoch 285/1500
+17:52:50: Batch 0110: 113.20 Examples/Second, 0.04 Seconds/Batch
+Epoch 00284: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.284-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.2763e-04 - acc: 0.4134 - val_loss: 6.1381e-04 - val_acc: 0.4619
+Epoch 286/1500
+17:53:02: Batch 0110: 118.89 Examples/Second, 0.03 Seconds/Batch
+Epoch 00285: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.285-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+11s - loss: 5.3565e-04 - acc: 0.4097 - val_loss: 5.4823e-04 - val_acc: 0.4159
+Epoch 287/1500
+17:53:14: Batch 0110: 102.52 Examples/Second, 0.04 Seconds/Batch
+Epoch 00286: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.286-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+13s - loss: 5.2395e-04 - acc: 0.4127 - val_loss: 5.9612e-04 - val_acc: 0.4391
+Epoch 288/1500
+17:53:29: Batch 0110: 76.23 Examples/Second, 0.05 Seconds/Batch
+Epoch 00287: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.287-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+15s - loss: 5.1994e-04 - acc: 0.4146 - val_loss: 5.7888e-04 - val_acc: 0.4323
+Epoch 289/1500
+17:53:44: Batch 0110: 72.50 Examples/Second, 0.06 Seconds/Batch
+Epoch 00288: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.288-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2007e-04 - acc: 0.4128 - val_loss: 6.8502e-04 - val_acc: 0.4074
+Epoch 290/1500
+17:53:59: Batch 0110: 71.82 Examples/Second, 0.06 Seconds/Batch
+Epoch 00289: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.289-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+15s - loss: 5.2425e-04 - acc: 0.4146 - val_loss: 6.1132e-04 - val_acc: 0.4112
+Epoch 291/1500
+17:54:14: Batch 0110: 80.00 Examples/Second, 0.05 Seconds/Batch
+Epoch 00290: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.290-loss_0.001-acc_0.410.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2396e-04 - acc: 0.4104 - val_loss: 5.6663e-04 - val_acc: 0.4219
+Epoch 292/1500
+17:54:28: Batch 0110: 94.07 Examples/Second, 0.04 Seconds/Batch
+Epoch 00291: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.291-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2594e-04 - acc: 0.4154 - val_loss: 6.0505e-04 - val_acc: 0.4209
+Epoch 293/1500
+17:54:43: Batch 0110: 89.32 Examples/Second, 0.04 Seconds/Batch
+Epoch 00292: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.292-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.3344e-04 - acc: 0.4138 - val_loss: 5.7426e-04 - val_acc: 0.4697
+Epoch 294/1500
+17:54:59: Batch 0110: 72.13 Examples/Second, 0.06 Seconds/Batch
+Epoch 00293: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.293-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1872e-04 - acc: 0.4117 - val_loss: 6.5652e-04 - val_acc: 0.4326
+Epoch 295/1500
+17:55:14: Batch 0110: 69.76 Examples/Second, 0.06 Seconds/Batch
+Epoch 00294: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.294-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+15s - loss: 5.3851e-04 - acc: 0.4133 - val_loss: 6.0012e-04 - val_acc: 0.4105
+Epoch 296/1500
+17:55:29: Batch 0110: 74.28 Examples/Second, 0.05 Seconds/Batch
+Epoch 00295: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.295-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+15s - loss: 5.2434e-04 - acc: 0.4124 - val_loss: 5.4129e-04 - val_acc: 0.4360
+Epoch 297/1500
+17:55:44: Batch 0110: 76.52 Examples/Second, 0.05 Seconds/Batch
+Epoch 00296: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.296-loss_0.001-acc_0.416.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1777e-04 - acc: 0.4156 - val_loss: 5.8246e-04 - val_acc: 0.4449
+Epoch 298/1500
+17:55:58: Batch 0110: 77.12 Examples/Second, 0.05 Seconds/Batch
+Epoch 00297: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.297-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+15s - loss: 5.2697e-04 - acc: 0.4151 - val_loss: 5.8001e-04 - val_acc: 0.4419
+Epoch 299/1500
+17:56:13: Batch 0110: 85.16 Examples/Second, 0.05 Seconds/Batch
+Epoch 00298: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.298-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1566e-04 - acc: 0.4151 - val_loss: 6.2761e-04 - val_acc: 0.4063
+Epoch 300/1500
+17:56:28: Batch 0110: 86.66 Examples/Second, 0.05 Seconds/Batch
+Epoch 00299: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.299-loss_0.001-acc_0.416.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1524e-04 - acc: 0.4164 - val_loss: 5.8831e-04 - val_acc: 0.4036
+Epoch 301/1500
+17:56:44: Batch 0110: 75.49 Examples/Second, 0.05 Seconds/Batch
+Epoch 00300: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.300-loss_0.001-acc_0.413.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2008e-04 - acc: 0.4127 - val_loss: 5.5102e-04 - val_acc: 0.4032
+Epoch 302/1500
+17:56:59: Batch 0110: 69.73 Examples/Second, 0.06 Seconds/Batch
+Epoch 00301: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.301-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2347e-04 - acc: 0.4142 - val_loss: 6.4845e-04 - val_acc: 0.4419
+Epoch 303/1500
+17:57:14: Batch 0110: 69.58 Examples/Second, 0.06 Seconds/Batch
+Epoch 00302: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.302-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2163e-04 - acc: 0.4150 - val_loss: 6.3212e-04 - val_acc: 0.3950
+Epoch 304/1500
+17:57:28: Batch 0110: 73.44 Examples/Second, 0.05 Seconds/Batch
+Epoch 00303: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.303-loss_0.001-acc_0.412.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1703e-04 - acc: 0.4120 - val_loss: 6.4869e-04 - val_acc: 0.4618
+Epoch 305/1500
+17:57:43: Batch 0110: 82.39 Examples/Second, 0.05 Seconds/Batch
+Epoch 00304: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.304-loss_0.001-acc_0.414.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1581e-04 - acc: 0.4138 - val_loss: 6.5692e-04 - val_acc: 0.3904
+Epoch 306/1500
+17:57:57: Batch 0110: 90.98 Examples/Second, 0.04 Seconds/Batch
+Epoch 00305: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.305-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.2015e-04 - acc: 0.4148 - val_loss: 5.7180e-04 - val_acc: 0.4226
+Epoch 307/1500
+17:58:12: Batch 0110: 83.50 Examples/Second, 0.05 Seconds/Batch
+Epoch 00306: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.306-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1687e-04 - acc: 0.4151 - val_loss: 6.2076e-04 - val_acc: 0.4120
+Epoch 308/1500
+17:58:27: Batch 0110: 79.94 Examples/Second, 0.05 Seconds/Batch
+Epoch 00307: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.307-loss_0.001-acc_0.416.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+14s - loss: 5.1072e-04 - acc: 0.4164 - val_loss: 5.5811e-04 - val_acc: 0.4361
+Epoch 309/1500
+17:58:42: Batch 0110: 74.41 Examples/Second, 0.05 Seconds/Batch
+Epoch 00308: saving model to /home/mhubrich/checkpoints/adni/metaROI_auto1_2/weights.308-loss_0.001-acc_0.415.h5
+Saved weights of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_weights.p
+Saved updates of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_updates.p
+Saved config of optimizer: /home/mhubrich/checkpoints/adni/metaROI_auto1_2/MySGD_config.p
+15s - loss: 5.1593e-04 - acc: 0.4147 - val_loss: 5.9353e-04 - val_acc: 0.4712
+Epoch 310/1500

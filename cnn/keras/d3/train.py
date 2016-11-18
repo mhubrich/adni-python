@@ -1,20 +1,20 @@
 import random
 
 from cnn.keras import callbacks
-from cnn.keras.models.d3G_avg.model import build_model
+from cnn.keras.models.d3G_pos.model import build_model
 from cnn.keras.optimizers import load_config, MySGD
 from cnn.keras.d3.preprocessing.image_processing import inputs
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 from utils.split_scans import read_imageID
 import sys
-sys.stdout = sys.stderr = open('outputG_intnorm_avg_1', 'w')
+#sys.stdout = sys.stderr = open('outputG_intnorm_avg_1', 'w')
 
 
 # Training specific parameters
-target_size = (31, 31, 31)
+target_size = (29, 29, 29)
 FRACTION_TRAIN = 0.8
-SEED = 42  # To deactivate seed, set to None
+SEED = 1  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
 batch_size = 32
 load_all_scans = False
@@ -24,8 +24,8 @@ num_train_samples = 827 * 5
 # Number of validation samples per epoch
 num_val_samples = 452
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_npy'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/d3G_intnorm_avg_1'
+path_ADNI = '/home/mhubrich/ADNI_intnorm_diff'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/d3G_intnorm_diff_2'
 path_weights = None
 path_optimizer_weights = None
 path_optimizer_updates = None
@@ -72,7 +72,7 @@ def train():
     model = build_model(num_classes=len(classes), input_shape=(1,)+target_size)
     config = load_config(path_optimizer_config)
     if config == {}:
-        config['lr'] = 0.001
+        config['lr'] = 0.0001
         config['decay'] = 0.000001
         config['momentum'] = 0.9
     sgd = MySGD(config, path_optimizer_weights, path_optimizer_updates)
@@ -83,7 +83,7 @@ def train():
     # Define callbacks
     cbks = [callbacks.checkpoint(path_checkpoints),
             callbacks.save_optimizer(sgd, path_checkpoints, save_only_last=True),
-            callbacks.batch_logger(35),
+            callbacks.batch_logger(70),
             callbacks.print_history()]
 
     # Start training

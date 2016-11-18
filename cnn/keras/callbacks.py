@@ -5,6 +5,7 @@ from keras.callbacks import Callback, ModelCheckpoint, EarlyStopping, LearningRa
 import os
 import time
 import sys
+import numpy as np
 
 VERBOSITY = 1
 
@@ -163,3 +164,99 @@ class _HistoryPrinter(Callback):
 
 def print_history():
     return _HistoryPrinter(VERBOSITY)
+
+
+class _MyModelCheckpoint(Callback):
+    '''Save the model after every epoch.
+    `filepath` can contain named formatting options,
+    which will be filled the value of `epoch` and
+    keys in `logs` (passed in `on_epoch_end`).
+    For example: if `filepath` is `weights.{epoch:02d}-{val_loss:.2f}.hdf5`,
+    then multiple files will be save with the epoch number and
+    the validation loss.
+    # Arguments
+        filepath: string, path to save the model file.
+        monitor: list of quantities to monitor.
+        verbose: verbosity mode, 0 or 1.
+        save_best_only: if `save_best_only=True`,
+            the 'max_files' latest best models according to
+            the quantity monitored will not be overwritten.
+        max_files: if `save_best_only=True`, then only 'max_files' files
+            per quantity will be kept.
+        save_weights_only: if True, then only the model's weights will be
+            saved (`model.save_weights(filepath)`), else the full model
+            is saved (`model.save(filepath)`).
+    '''
+    def __init__(self, filepath, monitor=['val_loss', 'val_acc'], verbose=0,
+                 save_best_only=True, max_files=5, save_weights_only=False):
+        super(_MyModelCheckpoint, self).__init__()
+        self.monitor = monitor
+        self.verbose = verbose
+        self.filepath = filepath
+        self.save_best_only = save_best_only
+        self.max_files = max_files
+        self.save_weights_only = save_weights_only
+        self.monitor_op = []
+        self.reverse = []
+        self.best = np.zeros((len(self.monitor), self.max_files), dtype=np.float64)
+        self.files = np.empty((len(self.monitor), self.max_files), dtype=np.object)
+        for i in range(len(self.monitor)):
+            if 'acc' in self.monitor[i]:
+                self.monitor_op.append(np.greater)
+                self.best[i].fill(-np.Inf)
+                self.reverse.append(True)
+            else:
+                self.monitor_op.append(np.less)
+                self.best[i].fill(np.Inf)
+                self.reverse.append(False)
+
+    def on_epoch_end(self, epoch, logs={}):
+        filepath = self.filepath.format(epoch=epoch, **logs)
+        if self.save_best_only:
+            for i in range(len(self.monitor)):
+                current = logs.get(self.monitor[i])
+                if current is None:
+                    warnings.warn('Can save best model only with %s available, '
+                                  'skipping.' % (self.monitor[i]), RuntimeWarning)
+                else:
+                    if self.monitor_op[i](current, self.best[i][-1]):
+                        if self.verbose > 0:
+                            print('Epoch %05d: %s improved from %0.5f to %0.5f,'
+                                  ' saving model to %s'
+                                  % (epoch, self.monitor[i], self.best[i][-1],
+                                     current, filepath))
+                        if len(np.extract(self.files == filepath, self.files)) == 0:
+                            if self.save_weights_only:
+                                self.model.save_weights(filepath, overwrite=True)
+                            else:
+                                self.model.save(filepath, overwrite=True)
+                        if self.files[i][-1] is not None and len(np.extract(self.files == self.files[i][-1], self.files)) < 2:
+                            os.remove(self.files[i][-1])
+                        self.best[i][-1] = current
+                        self.files[i][-1] = filepath
+                        indices = np.argsort(self.best[i])
+                        if self.reverse[i]:
+                            indices = indices[::-1]
+                        self.best[i] = self.best[i][indices]
+                        self.files[i] = self.files[i][indices]
+                    else:
+                        if self.verbose > 0:
+                            print('Epoch %05d: %s did not improve' %
+                                  (epoch, self.monitor[i]))
+        else:
+            if self.verbose > 0:
+                print('Epoch %05d: saving model to %s' % (epoch, filepath))
+            if self.save_weights_only:
+                self.model.save_weights(filepath, overwrite=True)
+            else:
+                self.model.save(filepath, overwrite=True)
+
+
+def save_model(path_dir, monitor=['val_loss', 'val_acc'], verbose=0,
+               save_best_only=True, max_files=5, save_weights_only=False):
+    if not os.path.exists(path_dir):
+        os.makedirs(path_dir)
+    return _MyModelCheckpoint(os.path.join(path_dir, 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}.h5'),
+                              monitor=monitor, verbose=verbose, save_best_only=save_best_only,
+                              max_files=max_files, save_weights_only=save_weights_only)
+

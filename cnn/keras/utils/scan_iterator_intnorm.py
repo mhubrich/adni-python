@@ -49,7 +49,7 @@ class ScanIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         if self.load_all_scans:
-            self.scans = np.zeros((self.nb_sample,) + (91, 109, 91), dtype='float32')
+            self.scans = np.zeros((self.nb_sample,) + (88, 108, 88), dtype='float32')
         else:
             self.scans = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
@@ -97,7 +97,7 @@ class ScanIterator(Iterator):
             return np.expand_dims(x, axis=0)
 
     # old: x=(0, 90), y=(0, 108), z=(0, 90)
-    def rand_voxel(self, target_size, x=(5, 82), y=(8, 100), z=(0, 82)):
+    def rand_voxel(self, target_size, x=(5, 83), y=(5, 102), z=(5, 83)):
         """
         Ranges x, y and z are [inclusive, inclusive].
         """
@@ -120,8 +120,8 @@ class ScanIterator(Iterator):
             else:
                 voxel = self.voxels[j]
             x = self.get_scan(scan=self.scans[j], voxel=voxel, target_size=self.target_size)
-            if self.shuffle:
-                x = self.image_data_generator.random_transform(x)
+            # if self.shuffle:
+            #    x = self.image_data_generator.random_transform(x)
             # x = self.image_data_generator.standardize(x)
             x = self.expand_dims(x, self.dim_ordering)
             batch_x[i] = x
