@@ -5,7 +5,7 @@ from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
 import sys
-sys.stdout = sys.stderr = open('output_balanced_2', 'w')
+sys.stdout = sys.stderr = open('output_test_10', 'w')
 
 
 # Training specific parameters
@@ -17,14 +17,14 @@ load_all_scans = True
 num_epoch = 1000
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_balanced_2'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_test_10'
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/CV/2_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/CV/2_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/train_intnorm')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/val_intnorm')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
@@ -45,7 +45,7 @@ def train():
     cbks = [callbacks.print_history(),
             callbacks.flush(),
             callbacks.early_stopping(max_acc=0.95, patience=5),
-            callbacks.save_model(path_checkpoints, max_files=5)]
+            callbacks.save_model(path_checkpoints, max_files=3)]
 
     g, _ = sort_groups(scans_train)
 
@@ -58,7 +58,7 @@ def train():
         nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         #class_weight={0:max(len(g['Normal']), len(g['AD']))/float(len(g['Normal'])),
-        #              1:2*max(len(g['Normal']), len(g['AD']))/float(len(g['AD']))},
+        #              1:max(len(g['Normal']), len(g['AD']))/float(len(g['AD']))},
         verbose=2,
         max_q_size=128,
         nb_worker=1,
