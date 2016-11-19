@@ -1,37 +1,8 @@
 import os
-import numpy as np
+from sklearn.model_selection import StratifiedKFold, train_test_split
 
-from utils.sort_scans import sort_groups
 from utils.load_scans import load_scans
-
-
-def split_scans(scans, split, names, pathOut, classes=None):
-    assert sum(split) == 1.0, \
-        "Sum of splits is not equal to 1.0."
-    assert len(split) == len(names), \
-        "Number of splits is not equal to number of provided names."
-    
-    imageID_split = []
-    for _ in split:
-        imageID_split.append([])
-    
-    maxValue = 999999999
-    maxCounts = np.full(len(split), maxValue, dtype=np.int)
-    
-    groups, names = sort_groups(scans)
-    minGroup = maxValue
-    for g in groups:
-        if len(g) < minGroup:
-            minGroup = len(g)
-    maxCounts[0] = minGroup * split[0]
-    
-    indices = np.zeros(len(groups), dtype=np.int)
-    for i in range(split):
-        for g in groups:
-            if indices[i] < maxCounts[i]:
-                maxValue += 1
-    if classes is None:
-        classes = names
+from utils.sort_scans import sort_subjects
 
 
 def read_imageID(path_ADNI, fname):
@@ -51,3 +22,24 @@ def write_imageID(scans, fname):
     with open(fname, 'wb') as f:
         for scan in scans:
             f.write(scan.imageID + os.linesep)
+
+
+def CV(scans, k, val_split, classes, path, seed=None):
+    subjects, subject_names = sort_subjects(scans)
+    x, y = [], []
+    for n in subject_names:
+        if subjects[n][0].group in classes:
+            x.append(n)
+            y.append(classes.index(subjects[n][0].group))
+    skf = StratifiedKFold(n_splits=k, random_state=seed, shuffle=True)
+    fold = 0
+    for index, test_index in skf.split(x, y):
+        fold += 1
+        # First, use set 'index' to generate train and val sets
+        y_index = [y[i] for i in index]
+        train_index, val_index = train_test_split(index, stratify=y_index, test_size=val_split, random_state=seed)
+        # Save train, val and test sets
+        write_imageID([s for i in train_index for s in subjects[x[i]]], os.path.join(path, str(fold) + '_train'))
+        write_imageID([s for i in val_index for s in subjects[x[i]]], os.path.join(path, str(fold) + '_val'))
+        write_imageID([s for i in test_index for s in subjects[x[i]]], os.path.join(path, str(fold) + '_test'))
+
