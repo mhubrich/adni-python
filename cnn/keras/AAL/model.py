@@ -16,9 +16,9 @@ def build_model(num_classes):
     model3 = mod3()
     model4 = mod4()
     model5 = mod5()
-    #model_diff = mod_diff()
+    model_diff = mod_diff()
 
-    merged = Merge([model1, model2, model3, model4, model5], mode='concat')
+    merged = Merge([model1, model2, model3, model4, model5, model_diff], mode='concat')
 
     model = Sequential()
     model.add(merged)

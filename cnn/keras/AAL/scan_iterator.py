@@ -3,7 +3,7 @@ import keras.backend as K
 import numpy as np
 
 from utils.sort_scans import sort_groups
-from cnn.keras.AAL.balanced_class_iterator import BalancedClassIterator
+#from cnn.keras.AAL.balanced_class_iterator import BalancedClassIterator
 
 
 class ScanIterator(Iterator):

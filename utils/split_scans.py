@@ -1,5 +1,5 @@
 import os
-from sklearn.model_selection import StratifiedKFold, train_test_split
+#from sklearn.model_selection import StratifiedKFold, train_test_split
 
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects

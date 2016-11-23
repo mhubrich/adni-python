@@ -1,12 +1,11 @@
 from keras.models import load_model
 from cnn.keras import callbacks
-from cnn.keras.metrics import fmeasure
 from keras.optimizers import SGD
 from cnn.keras.AAL.model import build_model
 from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
-#import sys
+import sys
 #sys.stdout = sys.stderr = open('output_test_10', 'w')
 
 fold = str(sys.argv[1])
@@ -20,14 +19,14 @@ load_all_scans = False
 num_epoch = 500
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_balanced_weights_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_first_weights_CV' + fold
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold +'_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_first_NC/' + fold +'_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_first_NC/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
@@ -35,7 +34,7 @@ def train():
     if path_weights is None:
         model = build_model(2)
         sgd = SGD(lr=0.001, decay=0.000001, momentum=0.9, nesterov=True)
-        model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy', fmeasure])
+        model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     else:
         model = load_model(path_weights)
     #model.load_weights('/home/mhubrich/checkpoints/adni/AAL64_CV_10/model.0150-loss_0.468-acc_0.819-val_loss_0.3542-val_acc_0.8852.h5', by_name=True)

@@ -3,6 +3,7 @@ import keras.backend as K
 import numpy as np
 
 from utils.sort_scans import sort_groups
+#from cnn.keras.AAL.balanced_class_iterator import BalancedClassIterator
 
 
 class ScanIterator(Iterator):
@@ -60,6 +61,7 @@ class ScanIterator(Iterator):
             self.scans5 = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         self.diff = np.zeros((self.nb_sample, 5), dtype=np.float32)
+        class_pos = [0]
         i = 0
         for c in classes:
             for scan in groups[c]:
@@ -80,6 +82,7 @@ class ScanIterator(Iterator):
                     self.scans5.append(scan.path.replace('AAL64', 'AAL61'))
                 self.diff[i] = np.load(scan.path.replace('AAL64', 'AAL_diff'))
                 i += 1
+            class_pos.append(i)
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
     def load_scan(self, path):
@@ -113,13 +116,12 @@ class ScanIterator(Iterator):
             x3 = self.get_scan(self.scans3[j])
             x4 = self.get_scan(self.scans4[j])
             x5 = self.get_scan(self.scans5[j])
-            if self.shuffle:
-                #rot = np.random.randint(4)
-                x1 = self.image_data_generator.random_transform(x1, np.random.randint(4))
-                x2 = self.image_data_generator.random_transform(x2, np.random.randint(4))
-                x3 = self.image_data_generator.random_transform(x3, np.random.randint(4))
-                x4 = self.image_data_generator.random_transform(x4, np.random.randint(4))
-                x5 = self.image_data_generator.random_transform(x5, np.random.randint(4))
+            #if self.shuffle:
+            #    x1 = self.image_data_generator.random_transform(x1, np.random.randint(4))
+            #    x2 = self.image_data_generator.random_transform(x2, np.random.randint(4))
+            #    x3 = self.image_data_generator.random_transform(x3, np.random.randint(4))
+            #    x4 = self.image_data_generator.random_transform(x4, np.random.randint(4))
+            #    x5 = self.image_data_generator.random_transform(x5, np.random.randint(4))
             x1 = self.expand_dims(x1, self.dim_ordering)
             x2 = self.expand_dims(x2, self.dim_ordering)
             x3 = self.expand_dims(x3, self.dim_ordering)

@@ -3,9 +3,10 @@ import keras.backend as K
 import numpy as np
 
 from utils.sort_scans import sort_groups
+from cnn.keras.AAL.balanced_class_iterator import BalancedClassIterator
 
 
-class ScanIterator(Iterator):
+class ScanIterator(BalancedClassIterator):
     def __init__(self, scans, image_data_generator,
                  target_size=(13, 13, 13), load_all_scans=False,
                  dim_ordering=K.image_dim_ordering,
@@ -48,6 +49,7 @@ class ScanIterator(Iterator):
         # second, build an index of the images in the different class subfolders
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
         self.diff = np.zeros((self.nb_sample, 5), dtype=np.float32)
+        class_pos = [0]
         i = 0
         for c in classes:
             for scan in groups[c]:
@@ -56,7 +58,8 @@ class ScanIterator(Iterator):
                     'Read unknown class: %s' % scan.group
                 self.diff[i] = np.load(scan.path)
                 i += 1
-        super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
+            class_pos.append(i)
+        super(ScanIterator, self).__init__(class_pos, self.nb_sample, batch_size, shuffle, seed)
 
     def load_scan(self, path):
             return np.load(path)

@@ -6,7 +6,7 @@ from cnn.keras.AAL.model import build_model
 from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
-#import sys
+import sys
 #sys.stdout = sys.stderr = open('output_test_10', 'w')
 
 fold = str(sys.argv[1])
@@ -20,7 +20,7 @@ load_all_scans = False
 num_epoch = 500
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_balanced_weights_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_weights2_CV' + fold
 path_weights = None
 
 
@@ -35,7 +35,7 @@ def train():
     if path_weights is None:
         model = build_model(2)
         sgd = SGD(lr=0.001, decay=0.000001, momentum=0.9, nesterov=True)
-        model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy', fmeasure])
+        model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     else:
         model = load_model(path_weights)
     #model.load_weights('/home/mhubrich/checkpoints/adni/AAL64_CV_10/model.0150-loss_0.468-acc_0.819-val_loss_0.3542-val_acc_0.8852.h5', by_name=True)
@@ -62,7 +62,7 @@ def train():
         nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         class_weight={0:max(len(g['Normal']), len(g['AD']))/float(len(g['Normal'])),
-                      1:max(len(g['Normal']), len(g['AD']))/float(len(g['AD']))},
+                      1:2*max(len(g['Normal']), len(g['AD']))/float(len(g['AD']))},
         verbose=2,
         max_q_size=32,
         nb_worker=1,

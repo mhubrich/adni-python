@@ -50,6 +50,7 @@ def _parse_scan_info(base, filename):
     age = nodeStudy.find('subjectAge').text
     assert age is not None, \
         "Could not find age in: %s" % filename
+    age = float(age)
     for subjectInfo in nodeSubject.findall('subjectInfo'):
         if subjectInfo.attrib['item'] == 'DX Group':
             group = subjectInfo.text

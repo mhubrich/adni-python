@@ -1,5 +1,5 @@
 from keras.preprocessing.image import ImageDataGenerator
-from cnn.keras.AAL.scan_iterator import ScanIterator
+from cnn.keras.AAL.scan_iterator_diff import ScanIterator
 
 
 class ScanGenerator(ImageDataGenerator):
