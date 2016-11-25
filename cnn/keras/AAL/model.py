@@ -1,9 +1,9 @@
 from keras.models import Sequential
-from cnn.keras.models.AAL64.model_single5_conv import build_model as mod1
-from cnn.keras.models.AAL65.model_single7_conv import build_model as mod2
-from cnn.keras.models.AAL34.model_single8_conv import build_model as mod3
-from cnn.keras.models.AAL35.model_single9_conv import build_model as mod4
-from cnn.keras.models.AAL61.model_single9_conv import build_model as mod5
+from cnn.keras.models.AAL64.model_single4_conv import build_model as mod1
+from cnn.keras.models.AAL65.model_single5_conv import build_model as mod2
+from cnn.keras.models.AAL34.model_single7_conv import build_model as mod3
+from cnn.keras.models.AAL35.model_single8_conv import build_model as mod4
+from cnn.keras.models.AAL61.model_single5_conv import build_model as mod5
 from cnn.keras.AAL.diff_model import build_model as mod_diff
 from keras.layers import Merge
 from keras.layers.core import Dense, Dropout

@@ -3,10 +3,10 @@ import keras.backend as K
 import numpy as np
 
 from utils.sort_scans import sort_groups
-from cnn.keras.AAL.balanced_class_iterator import BalancedClassIterator
+#from cnn.keras.AAL.balanced_class_iterator import BalancedClassIterator
 
 
-class ScanIterator(BalancedClassIterator):
+class ScanIterator(Iterator):
     def __init__(self, scans, image_data_generator,
                  target_size=(13, 13, 13), load_all_scans=False,
                  dim_ordering=K.image_dim_ordering,
@@ -83,7 +83,7 @@ class ScanIterator(BalancedClassIterator):
                 self.diff[i] = np.load(scan.path.replace('AAL64', 'AAL_diff'))
                 i += 1
             class_pos.append(i)
-        super(ScanIterator, self).__init__(class_pos, self.nb_sample, batch_size, shuffle, seed)
+        super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
     def load_scan(self, path):
             return np.load(path)
