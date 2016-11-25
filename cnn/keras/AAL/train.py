@@ -7,7 +7,7 @@ from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
 import sys
-sys.stdout = sys.stderr = open('output_first_7', 'w')
+#sys.stdout = sys.stderr = open('output_first_7', 'w')
 
 fold = str(sys.argv[1])
 
@@ -19,15 +19,15 @@ batch_size = 64
 load_all_scans = True
 num_epoch = 500
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_first_7'
+path_ADNI = '/home/mhubrich/ADNI_intnorm_mean_1'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_mean_CV' + fold
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/CV1_first_NC_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/CV1_first_all_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
