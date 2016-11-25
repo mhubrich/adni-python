@@ -180,7 +180,7 @@ class _MyModelCheckpoint(Callback):
             saved (`model.save_weights(filepath)`), else the full model
             is saved (`model.save(filepath)`).
     '''
-    def __init__(self, filepath, monitor=['val_loss', 'val_acc'], verbose=0,
+    def __init__(self, filepath, monitor=['val_loss', 'val_acc', 'val_fmeasure'], verbose=0,
                  save_best_only=True, max_files=5, save_weights_only=False):
         super(_MyModelCheckpoint, self).__init__()
         self.monitor = monitor
@@ -194,7 +194,7 @@ class _MyModelCheckpoint(Callback):
         self.best = np.zeros((len(self.monitor), self.max_files), dtype=np.float64)
         self.files = np.empty((len(self.monitor), self.max_files), dtype=np.object)
         for i in range(len(self.monitor)):
-            if 'acc' in self.monitor[i]:
+            if 'acc' in self.monitor[i] or 'fmeasure' in self.monitor[i]:
                 self.monitor_op.append(np.greater)
                 self.best[i].fill(-np.Inf)
                 self.reverse.append(True)
@@ -245,7 +245,7 @@ class _MyModelCheckpoint(Callback):
                 self.model.save(filepath, overwrite=True)
 
 
-def save_model(path_dir, monitor=['val_loss', 'val_acc'], verbose=0,
+def save_model(path_dir, monitor=['val_loss', 'val_acc', 'val_fmeasure'], verbose=0,
                save_best_only=True, max_files=5, save_weights_only=False):
     if not os.path.exists(path_dir):
         os.makedirs(path_dir)
