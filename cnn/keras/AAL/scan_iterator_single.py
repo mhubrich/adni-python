@@ -89,8 +89,8 @@ class ScanIterator(BalancedClassIterator):
         # build batch of image data
         for i, j in enumerate(index_array):
             x = self.get_scan(self.scans[j])
-            if self.shuffle:
-                x = self.image_data_generator.random_transform(x, np.random.randint(4))
+            #if self.shuffle:
+            #    x = self.image_data_generator.random_transform(x, np.random.randint(4))
             x = self.expand_dims(x, self.dim_ordering)
             batch_x[i] = x
         # build batch of labels

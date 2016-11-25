@@ -1,29 +1,30 @@
 from cnn.keras import callbacks
 from keras.optimizers import SGD
-from cnn.keras.AAL.diff_model import build_model
-from cnn.keras.AAL.image_processing import inputs
+from cnn.keras.models.AAL61.model_single9 import build_model
+from cnn.keras.AAL.image_processing_single import inputs
 from utils.split_scans import read_imageID
 import sys
-sys.stdout = sys.stderr = open('output_diff_19', 'w')
+#sys.stdout = sys.stderr = open('output_diff_19', 'w')
 
+fold = str(sys.argv[1])
 
 # Training specific parameters
-target_size = (18, 18, 18)
+target_size = (19, 22, 11)
 SEED = 0  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 128
-load_all_scans = True
-num_epoch = 50000
+batch_size = 32
+load_all_scans = False
+num_epoch = 500
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL_diff'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_diff_4'
+path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL61_new'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL61_new_2_CV' + fold
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/3_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/3_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
@@ -36,8 +37,9 @@ def train():
 
     # Define callbacks
     cbks = [callbacks.print_history(),
-            callbacks.flush()]
-            #callbacks.save_model(path_checkpoints, max_files=3)]
+            callbacks.flush(),
+            callbacks.early_stopping(max_acc=0.97, patience=10),
+            callbacks.save_model(path_checkpoints, max_files=5)]
 
     # Start training
     model.fit_generator(
@@ -48,7 +50,7 @@ def train():
         nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         verbose=2,
-        max_q_size=128,
+        max_q_size=32,
         nb_worker=1,
         pickle_safe=True)
 
