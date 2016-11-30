@@ -3,8 +3,6 @@ import glob
 import os
 import csv
 
-from utils.config import config
-
 
 class Scan:
     def __init__(self, subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path):
@@ -19,22 +17,18 @@ class Scan:
         self.path = path
 
 
-def _build_path(base, subject, preprocessing, date, imageID):
+def _build_path(base, subject, preprocessing, date, imageID, ext):
     preprocessing = preprocessing.replace(' ', '_')
     date = date.replace(' ', '_')
     date = date.replace(':', '_')
-    if config['nii']:
-        ext = '*.nii*'
-    else:
-        ext = '*.npy'
-    path = os.path.join(base, subject, preprocessing, date, imageID, ext)
+    path = os.path.join(base, subject, preprocessing, date, imageID, '*.' + ext)
     path = glob.glob(path)
     assert len(path) == 1, \
         "There are %d scans in directory: %s" % (len(path), path)
     return path[0]
 
 
-def _parse_scan_info(base, filename):
+def _parse_scan_info(base, filename, ext):
     xml = ET.parse(filename)
     root = xml.getroot()
     nodeSubject = root.find('project').find('subject')
@@ -78,7 +72,7 @@ def _parse_scan_info(base, filename):
     imageID = 'I' + imageID
     preprocessing = nodeDerivedProduct.find('processedDataLabel').text
     date = nodeSeries.find('dateAcquired').text
-    path = _build_path(base, subject, preprocessing, date, imageID)
+    path = _build_path(base, subject, preprocessing, date, imageID, ext)
     seriesID = nodeSeries.find('seriesIdentifier').text
     return Scan(subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path)
 
@@ -95,10 +89,11 @@ def conversions(scans):
     return scans
 
 
-def load_scans(directory):
+def load_scans(directory, ext='npy'):
     files = glob.glob(os.path.join(directory, '*.xml'))
     scans = []
     for f in files:
-        scans.append(_parse_scan_info(directory, f))
+        scans.append(_parse_scan_info(directory, f, ext))
     scans = conversions(scans)
     return scans
+
