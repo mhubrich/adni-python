@@ -6,9 +6,10 @@ from utils.config import config
 
 
 class Scan:
-    def __init__(self, subject, imageID, gender, age, group, tracer, manufacturer, path):
+    def __init__(self, subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path):
         self.subject = subject
         self.imageID = imageID
+        self.seriesID =seriesID
         self.gender = gender
         self.age = age
         self.group = group
@@ -77,7 +78,8 @@ def _parse_scan_info(base, filename):
     preprocessing = nodeDerivedProduct.find('processedDataLabel').text
     date = nodeSeries.find('dateAcquired').text
     path = _build_path(base, subject, preprocessing, date, imageID)
-    return Scan(subject, imageID, gender, age, group, tracer, manufacturer, path)
+    seriesID = nodeSeries.find('seriesIdentifier').text
+    return Scan(subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path)
 
 
 def load_scans(directory):

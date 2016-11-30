@@ -1,6 +1,6 @@
 from keras.models import load_model
 from cnn.keras import callbacks
-from cnn.keras.metrics import fmeasure
+from keras.metrics import fmeasure
 from keras.optimizers import SGD
 from cnn.keras.AAL.model import build_model
 from cnn.keras.AAL.image_processing import inputs
@@ -13,21 +13,21 @@ fold = str(sys.argv[1])
 
 # Training specific parameters
 target_size = (18, 18, 18)
-SEED = 42  # To deactivate seed, set to None
+SEED = 0  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 64
-load_all_scans = True
+batch_size = 32
+load_all_scans = False
 num_epoch = 500
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_mean_1'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_mean_CV' + fold
+path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_first_3_CV' + fold
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV/' + fold + '_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_first_all/' + fold + '_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_first_all/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
@@ -51,7 +51,7 @@ def train():
             callbacks.early_stopping(max_acc=0.98, patience=10),
             callbacks.save_model(path_checkpoints, max_files=3)]
 
-    #g, _ = sort_groups(scans_train)
+    g, _ = sort_groups(scans_train)
 
     # Start training
     hist = model.fit_generator(

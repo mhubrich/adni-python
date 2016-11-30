@@ -249,7 +249,7 @@ def save_model(path_dir, monitor=['val_loss', 'val_acc', 'val_fmeasure'], verbos
                save_best_only=True, max_files=5, save_weights_only=False):
     if not os.path.exists(path_dir):
         os.makedirs(path_dir)
-    return _MyModelCheckpoint(os.path.join(path_dir, 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}-val_loss_{val_loss:.4f}-val_acc_{val_acc:.4f}.h5'),
+    return _MyModelCheckpoint(os.path.join(path_dir, 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}-fmeasure_{fmeasure:.3f}-val_loss_{val_loss:.4f}-val_acc_{val_acc:.4f}-val_fmeasure_{val_fmeasure:.4f}.h5'),
                               monitor=monitor, verbose=verbose, save_best_only=save_best_only,
                               max_files=max_files, save_weights_only=save_weights_only)
 
