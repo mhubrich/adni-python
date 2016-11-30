@@ -28,9 +28,18 @@ def CV(scans, k, val_split, classes, path, seed=None):
     subjects, subject_names = sort_subjects(scans)
     x, y = [], []
     for n in subject_names:
-        if subjects[n][0].group in classes:
+        counts = {}
+        flag = False
+        for scan in subjects[n]:
+            if scan.group in classes:
+                flag = True
+                if scan.group in counts:
+                    counts[scan.group] += 1
+                else:
+                    counts[scan.group] = 1
+        if flag:
             x.append(n)
-            y.append(classes.index(subjects[n][0].group))
+            y.append(classes.index(max(counts, key=counts.get)))
     skf = StratifiedKFold(n_splits=k, random_state=seed, shuffle=True)
     fold = 0
     for index, test_index in skf.split(x, y):
