@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import glob
 import os
+import csv
 
 from utils.config import config
 
@@ -82,9 +83,22 @@ def _parse_scan_info(base, filename):
     return Scan(subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path)
 
 
+def conversions(scans):
+    conv = {}
+    with open('conversions', 'rb') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            conv[row[0]] = row[2]
+    for scan in scans:
+        if scan.imageID in conv:
+            scan.group = conv[scan.imageID]
+    return scans
+
+
 def load_scans(directory):
     files = glob.glob(os.path.join(directory, '*.xml'))
     scans = []
     for f in files:
         scans.append(_parse_scan_info(directory, f))
+    scans = conversions(scans)
     return scans
