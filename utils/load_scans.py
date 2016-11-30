@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import glob
 import os
 import csv
+import inspect
 
 
 class Scan:
@@ -78,8 +79,9 @@ def _parse_scan_info(base, filename, ext):
 
 
 def conversions(scans):
+    path = os.path.join(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))), 'conversions')
     conv = {}
-    with open('conversions', 'rb') as csvfile:
+    with open(path, 'rb') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             conv[row[0]] = row[2]
