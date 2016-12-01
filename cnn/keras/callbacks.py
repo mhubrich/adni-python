@@ -308,3 +308,60 @@ def early_stopping(max_acc=0.95, patience=5, verbose=VERBOSITY):
                              patience=patience,
                              verbose=verbose)
 
+
+class EarlyStop(Callback):
+    '''Stop training when all monitored quantities has stopped improving.
+    # Arguments
+        monitor: quantities to be monitored.
+        patience: number of epochs with no improvement
+            after which training will be stopped.
+        verbose: verbosity mode.
+    '''
+    def __init__(self, monitor=['val_loss', 'val_acc'], patience=0, verbose=0):
+        super(EarlyStopping, self).__init__()
+
+        self.monitor = monitor
+        self.patience = patience
+        self.verbose = verbose
+        self.min_delta = min_delta
+        self.wait = 0
+        self.stopped_epoch = 0
+        self.ops = []
+        for m in self.monitor:
+            if 'loss' in m:
+                self.ops.append(np.less)
+            else:
+                self.ops.append(np.greater)
+
+    def on_train_begin(self, logs={}):
+        self.wait = 0       # Allow instances to be re-used
+        self.best = []
+        for i in range(len(self.ops)):
+            self.best.append(np.Inf if self.ops[i] == np.less else -np.Inf)
+
+    def on_epoch_end(self, epoch, logs={}):
+        flag = False
+        for i in range(len(self.monitor)):
+            current = logs.get(self.monitor[i])
+            if current is None:
+                warnings.warn('Early stopping requires %s available!' %
+                              (self.monitor[i]), RuntimeWarning)
+            if self.ops[i](current, self.best[i]):
+                self.best[i] = current
+                flag = True
+        if flag:
+            self.wait = 0
+        else:
+            self.wait += 1
+            if self.wait >= self.patience:
+                self.stopped_epoch = epoch
+                self.model.stop_training = True
+
+    def on_train_end(self, logs={}):
+        if self.stopped_epoch > 0 and self.verbose > 0:
+            print('Epoch %05d: early stopping' % (self.stopped_epoch))
+
+
+def early_stop(monitor=['val_loss', 'val_acc'], patience=10, verbose=VERBOSITY):
+    return EarlyStop(monitor=monitor, patience=patience, verbose=verbose)
+

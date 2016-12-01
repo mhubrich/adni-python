@@ -84,11 +84,18 @@ def conversions(scans):
     with open(path, 'rb') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
+            if row[1] == 'EMCI' and row[2] == 'Normal':
+                continue
+            if row[1] == 'MCI' and row[2] == 'Normal':
+                continue
+            if row[1] == 'LMCI' and row[2] == 'Normal':
+                continue
+            if row[1] == 'AD' and row[2] == 'Normal':
+                continue
             conv[row[0]] = row[2]
     for scan in scans:
         if scan.imageID in conv:
-            if conv[scan.imageID] != 'Normal':
-                scan.group = conv[scan.imageID]
+            scan.group = conv[scan.imageID]
     return scans
 
 

@@ -1,4 +1,5 @@
 import os
+import numpy
 #from sklearn.model_selection import StratifiedKFold, train_test_split
 
 from utils.load_scans import load_scans
@@ -25,21 +26,28 @@ def write_imageID(scans, fname):
 
 
 def CV(scans, k, val_split, classes, path, seed=None):
+    class_indices = dict(zip(classes, np.arange(len(classes))))
     subjects, subject_names = sort_subjects(scans)
     x, y = [], []
     for n in subject_names:
         counts = {}
         flag = False
+        age = 0.0
         for scan in subjects[n]:
             if scan.group in classes:
                 flag = True
+                age += scan.age
                 if scan.group in counts:
                     counts[scan.group] += 1
                 else:
                     counts[scan.group] = 1
+        age /= np.sum(counts.values())
         if flag:
             x.append(n)
-            y.append(classes.index(max(counts, key=counts.get)))
+            if age <= 76:
+                y.append(class_indices[max(counts, key=counts.get)])
+            else:
+                y.append(class_indices[max(counts, key=counts.get)] + len(classes))
     skf = StratifiedKFold(n_splits=k, random_state=seed, shuffle=True)
     fold = 0
     for index, test_index in skf.split(x, y):
