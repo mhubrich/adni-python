@@ -60,3 +60,32 @@ def CV(scans, k, val_split, classes, path, seed=None):
         write_imageID([s for i in val_index for s in subjects[x[i]]], os.path.join(path, str(fold) + '_val'))
         write_imageID([s for i in test_index for s in subjects[x[i]]], os.path.join(path, str(fold) + '_test'))
 
+
+def split(scans, val_split, classes, path, seed=None):
+    class_indices = dict(zip(classes, np.arange(len(classes))))
+    subjects, subject_names = sort_subjects(scans)
+    x, y = [], []
+    for n in subject_names:
+        counts = {}
+        flag = False
+        age = 0.0
+        for scan in subjects[n]:
+            if scan.group in classes:
+                flag = True
+                age += scan.age
+                if scan.group in counts:
+                    counts[scan.group] += 1
+                else:
+                    counts[scan.group] = 1
+        if flag:
+            x.append(n)
+            age /= np.sum(counts.values())
+            if age <= 76:
+                y.append(class_indices[max(counts, key=counts.get)])
+            else:
+                y.append(class_indices[max(counts, key=counts.get)] + len(classes))
+    train_index, val_index = train_test_split(np.arange(len(x)), stratify=y, test_size=val_split, random_state=seed)
+    # Save train and val set
+    write_imageID([s for i in train_index for s in subjects[x[i]]], os.path.join(path, 'train'))
+    write_imageID([s for i in val_index for s in subjects[x[i]]], os.path.join(path, 'val'))
+
