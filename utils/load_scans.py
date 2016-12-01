@@ -87,7 +87,8 @@ def conversions(scans):
             conv[row[0]] = row[2]
     for scan in scans:
         if scan.imageID in conv:
-            scan.group = conv[scan.imageID]
+            if conv[scan.imageID] != 'Normal':
+                scan.group = conv[scan.imageID]
     return scans
 
 
