@@ -91,7 +91,7 @@ def conversions(scans):
             if row[1] == 'LMCI' and row[2] == 'Normal':
                 continue
             if row[1] == 'AD' and row[2] == 'Normal':
-                continue
+                conv[row[0]] = 'discard'
             conv[row[0]] = row[2]
     for scan in scans:
         if scan.imageID in conv:

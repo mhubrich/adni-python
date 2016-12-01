@@ -1,5 +1,5 @@
 import os
-import numpy
+import numpy as np
 #from sklearn.model_selection import StratifiedKFold, train_test_split
 
 from utils.load_scans import load_scans
@@ -41,9 +41,9 @@ def CV(scans, k, val_split, classes, path, seed=None):
                     counts[scan.group] += 1
                 else:
                     counts[scan.group] = 1
-        age /= np.sum(counts.values())
         if flag:
             x.append(n)
+            age /= np.sum(counts.values())
             if age <= 76:
                 y.append(class_indices[max(counts, key=counts.get)])
             else:
