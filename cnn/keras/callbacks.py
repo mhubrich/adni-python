@@ -318,12 +318,11 @@ class EarlyStop(Callback):
         verbose: verbosity mode.
     '''
     def __init__(self, monitor=['val_loss', 'val_acc'], patience=0, verbose=0):
-        super(EarlyStopping, self).__init__()
+        super(EarlyStop, self).__init__()
 
         self.monitor = monitor
         self.patience = patience
         self.verbose = verbose
-        self.min_delta = min_delta
         self.wait = 0
         self.stopped_epoch = 0
         self.ops = []
