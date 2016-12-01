@@ -20,14 +20,14 @@ load_all_scans = False
 num_epoch = 1000
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_newclasses2_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_newclasses_age_CV' + fold
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_new2/' + fold + '_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_new2/' + fold + '_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_age/' + fold + '_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_age/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
@@ -48,7 +48,7 @@ def train():
     # Define callbacks
     cbks = [callbacks.print_history(),
             callbacks.flush(),
-            callbacks.early_stopping(max_acc=0.99, patience=5),
+            callbacks.early_stop(patience=100),
             callbacks.save_model(path_checkpoints, max_files=3)]
 
     g, _ = sort_groups(scans_train)
