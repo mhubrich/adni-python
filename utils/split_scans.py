@@ -54,18 +54,19 @@ def CV_AAL2(scans, k, val_split, classes, path, seed=None):
     for key in means:
         ranges[key] = []
         for j in range(1, num_intervals):
-        #    ranges[key].append(np.sort(means[key])[(len(means[key])/num_intervals) * j])
             ranges[key].append(np.min(means[key]) + j * ((np.max(means[key]) - np.min(means[key]))/num_intervals))
     x, y = [], []
     for n in subject_names:
         counts = {}
         m = 0.0
         age = 0.0
+        FAQ = 0.0
         flag = False
         for scan in subjects[n]:
             if scan.group in classes:
                 flag = True
                 age += scan.age
+                FAQ += scan.FAQ
                 if scan.group in counts:
                     counts[scan.group] += 1
                 else:
@@ -75,6 +76,7 @@ def CV_AAL2(scans, k, val_split, classes, path, seed=None):
         if flag:
             x.append(n)
             age /= np.sum(counts.values())
+            FAQ /= np.sum(counts.values())
             m /= np.sum(counts.values()) * len(indices)
             interval = len(ranges[max(counts, key=counts.get)])
             for i in range(len(ranges[max(counts, key=counts.get)])):
@@ -86,12 +88,14 @@ def CV_AAL2(scans, k, val_split, classes, path, seed=None):
                 label += '0'
             else:
                 label += '1'
-            if subjects[n][0].gender == 'M':
-                label += '0'
+            if max(counts, key=counts.get) == 'AD':
+                if FAQ < 14.65167:
+                    label += '0'
+                else:
+                    label += '1'
             else:
-                label += '1'
-            y.append(class_indices[max(counts, key=counts.get)] * int(3*str(num_intervals)) + int(label))
-    return x, y
+                label += '2'
+            y.append(class_indices[max(counts, key=counts.get)] * int(3*str(2)) + int(label))
     skf = StratifiedKFold(n_splits=k, random_state=seed, shuffle=True)
     fold = 0
     for index, test_index in skf.split(x, y):
