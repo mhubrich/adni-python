@@ -20,14 +20,14 @@ load_all_scans = False
 num_epoch = 500
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_newclasses_age2_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/AAL_newclasses_mean_CV' + fold
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_age2/' + fold + '_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_age2/' + fold + '_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean/' + fold + '_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED)
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED)
 
