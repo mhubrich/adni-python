@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from sklearn.model_selection import StratifiedKFold, train_test_split
+#from sklearn.model_selection import StratifiedKFold, train_test_split
 
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
@@ -42,8 +42,8 @@ def CV_AAL(scans, k, val_split, classes, path, seed=None):
                     counts[scan.group] += 1
                 else:
                     counts[scan.group] = 1
-                for k in range(len(indices)):
-                    m += np.mean(np.load(scan.path.replace('AAL64', indices[k])))
+                for j in range(len(indices)):
+                    m += np.mean(np.load(scan.path.replace('AAL64', indices[j])))
         if flag:
             m /= np.sum(counts.values()) * len(indices)
             if max(counts, key=counts.get) in means:
@@ -53,8 +53,8 @@ def CV_AAL(scans, k, val_split, classes, path, seed=None):
     ranges = {}
     for key in means:
         ranges[key] = []
-        for k in range(1, num_intervals):
-            ranges[key].append(np.sort(means[key])[(len(means[key])/num_intervals) * k])
+        for j in range(1, num_intervals):
+            ranges[key].append(np.sort(means[key])[(len(means[key])/num_intervals) * j])
     x, y = [], []
     for n in subject_names:
         counts = {}
@@ -67,8 +67,8 @@ def CV_AAL(scans, k, val_split, classes, path, seed=None):
                     counts[scan.group] += 1
                 else:
                     counts[scan.group] = 1
-                for k in range(len(indices)):
-                    m += np.mean(np.load(scan.path.replace('AAL64', indices[k])))
+                for j in range(len(indices)):
+                    m += np.mean(np.load(scan.path.replace('AAL64', indices[j])))
         if flag:
             x.append(n)
             m /= np.sum(counts.values()) * len(indices)
