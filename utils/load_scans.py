@@ -100,6 +100,16 @@ def _parse_scan_info(base, filename, ext):
 
 
 def conversions(scans):
+    missing = {}
+    missing['I80978'] = 3.0
+    missing['I118431'] = 0.0
+    missing['I290403'] = 1.0
+    missing['I323920'] = 0.0
+    missing['I403815'] = 0.0
+    missing['I349178'] = 25.0
+    missing['I139900'] = 12.0
+    missing['I135500'] = 5.0
+    missing['I43049'] = 8.0
     path = os.path.join(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))), 'conversions')
     conv = {}
     with open(path, 'rb') as csvfile:
@@ -122,6 +132,8 @@ def conversions(scans):
     for scan in scans:
         if scan.imageID in conv:
             scan.group = conv[scan.imageID]
+        if scan.imageID in missing:
+            scan.FAQ = missing[scan.imageID]
     return scans
 
 
