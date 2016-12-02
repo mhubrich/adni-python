@@ -6,13 +6,16 @@ import inspect
 
 
 class Scan:
-    def __init__(self, subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path):
+    def __init__(self, subject, imageID, seriesID, gender, age, group, FAQ, MMSE, CDR, tracer, manufacturer, path):
         self.subject = subject
         self.imageID = imageID
         self.seriesID =seriesID
         self.gender = gender
         self.age = age
         self.group = group
+        self.FAQ = FAQ
+        self.MMSE = MMSE
+        self.CDR = CDR
         self.tracer = tracer
         self.manufacturer = manufacturer
         self.path = path
@@ -33,6 +36,7 @@ def _parse_scan_info(base, filename, ext):
     xml = ET.parse(filename)
     root = xml.getroot()
     nodeSubject = root.find('project').find('subject')
+    nodeVisit = nodeSubject.find('visit')
     nodeStudy = nodeSubject.find('study')
     nodeSeries = nodeStudy.find('series')
     nodeSeriesLevelMeta = nodeSeries.find('seriesLevelMeta')
@@ -51,6 +55,23 @@ def _parse_scan_info(base, filename, ext):
     for subjectInfo in nodeSubject.findall('subjectInfo'):
         if subjectInfo.attrib['item'] == 'DX Group':
             group = subjectInfo.text
+            break
+    assert group is not None, \
+        "Could not find group in: %s" % filename
+    CDR = -1
+    for assessment in nodeVisit.findall('assessment'):
+        if assessment.attrib['name'] == 'CDR':
+            CDR = float(assessment.find('component').find('assessmentScore').text)
+            break
+    MMSE = -1
+    for assessment in nodeVisit.findall('assessment'):
+        if assessment.attrib['name'] == 'MMSE':
+            MMSE = float(assessment.find('component').find('assessmentScore').text)
+            break
+    FAQ = -1
+    for assessment in nodeVisit.findall('assessment'):
+        if assessment.attrib['name'] == 'Functional Assessment Questionnaire':
+            FAQ = float(assessment.find('component').find('assessmentScore').text)
             break
     assert group is not None, \
         "Could not find group in: %s" % filename
@@ -75,7 +96,7 @@ def _parse_scan_info(base, filename, ext):
     date = nodeSeries.find('dateAcquired').text
     path = _build_path(base, subject, preprocessing, date, imageID, ext)
     seriesID = nodeSeries.find('seriesIdentifier').text
-    return Scan(subject, imageID, seriesID, gender, age, group, tracer, manufacturer, path)
+    return Scan(subject, imageID, seriesID, gender, age, group, FAQ, MMSE, CDR, tracer, manufacturer, path)
 
 
 def conversions(scans):
