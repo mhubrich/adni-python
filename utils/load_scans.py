@@ -85,15 +85,19 @@ def conversions(scans):
         reader = csv.reader(csvfile)
         for row in reader:
             if row[1] == 'EMCI' and row[2] == 'Normal':
-                continue
-            if row[1] == 'MCI' and row[2] == 'Normal':
-                continue
-            if row[1] == 'LMCI' and row[2] == 'Normal':
-                continue
-            if row[1] == 'AD' and row[2] == 'Normal':
                 conv[row[0]] = 'discard'
-                continue
-            conv[row[0]] = row[2]
+            elif row[1] == 'MCI' and row[2] == 'Normal':
+                conv[row[0]] = 'discard'
+            elif row[1] == 'LMCI' and row[2] == 'Normal':
+                conv[row[0]] = 'discard'
+            elif row[1] == 'AD' and row[2] == 'Normal':
+                conv[row[0]] = 'discard'
+            elif row[1] == 'Normal' and row[2] == 'AD':
+                conv[row[0]] = 'discard'
+            elif row[1] == 'EMCI' and row[2] == 'AD':
+                conv[row[0]] = 'discard'
+            else:
+                conv[row[0]] = row[2]
     for scan in scans:
         if scan.imageID in conv:
             scan.group = conv[scan.imageID]
