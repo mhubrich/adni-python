@@ -5,6 +5,7 @@ from keras.callbacks import Callback, ModelCheckpoint, EarlyStopping, LearningRa
 import os
 import time
 import sys
+import warnings
 import numpy as np
 
 VERBOSITY = 1
@@ -194,14 +195,14 @@ class _MyModelCheckpoint(Callback):
         self.best = np.zeros((len(self.monitor), self.max_files), dtype=np.float64)
         self.files = np.empty((len(self.monitor), self.max_files), dtype=np.object)
         for i in range(len(self.monitor)):
-            if 'acc' in self.monitor[i] or 'fmeasure' in self.monitor[i]:
-                self.monitor_op.append(np.greater)
-                self.best[i].fill(-np.Inf)
-                self.reverse.append(True)
-            else:
+            if 'loss' in self.monitor[i]:
                 self.monitor_op.append(np.less)
                 self.best[i].fill(np.Inf)
                 self.reverse.append(False)
+            else:
+                self.monitor_op.append(np.greater)
+                self.best[i].fill(-np.Inf)
+                self.reverse.append(True)
 
     def on_epoch_end(self, epoch, logs={}):
         filepath = self.filepath.format(epoch=epoch, **logs)
@@ -245,11 +246,19 @@ class _MyModelCheckpoint(Callback):
                 self.model.save(filepath, overwrite=True)
 
 
-def save_model(path_dir, monitor=['val_loss', 'val_acc', 'val_fmeasure'], verbose=0,
+def save_model(path_dir, monitor=['loss', 'acc', 'fmeasure'], verbose=0,
                save_best_only=True, max_files=5, save_weights_only=False):
     if not os.path.exists(path_dir):
         os.makedirs(path_dir)
-    return _MyModelCheckpoint(os.path.join(path_dir, 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}-fmeasure_{fmeasure:.3f}-val_loss_{val_loss:.4f}-val_acc_{val_acc:.4f}-val_fmeasure_{val_fmeasure:.4f}.h5'),
+    fname = 'model.{epoch:04d}'
+    for m in monitor:
+        fname += '-' + m + '_{' + m + ':.3f}'
+    for i in range(len(monitor)):
+        monitor[i] = 'val_' + monitor[i]
+    for m in monitor:
+        fname += '-' + m + '_{' + m + ':.4f}'
+    fname += '.h5'
+    return _MyModelCheckpoint(os.path.join(path_dir, fname),
                               monitor=monitor, verbose=verbose, save_best_only=save_best_only,
                               max_files=max_files, save_weights_only=save_weights_only)
 
@@ -310,7 +319,7 @@ def early_stopping(max_acc=0.95, patience=5, verbose=VERBOSITY):
 
 
 class EarlyStop(Callback):
-    '''Stop training when all monitored quantities has stopped improving.
+    '''Stop training when all monitored quantities have stopped improving.
     # Arguments
         monitor: quantities to be monitored.
         patience: number of epochs with no improvement

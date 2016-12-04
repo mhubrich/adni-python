@@ -1,6 +1,6 @@
+from keras.optimizers import Adadelta
 from keras.models import load_model
 from cnn.keras import callbacks
-from keras.optimizers import SGD
 from cnn.keras.AAL.model import build_model
 from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
@@ -19,7 +19,7 @@ load_all_scans = False
 num_epoch = 500
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/adam_test_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/adadelta_test2_CV' + fold
 path_weights = None
 
 
@@ -33,8 +33,8 @@ def train():
     # Set up the model
     if path_weights is None:
         model = build_model(1)
-        sgd = SGD(lr=0.001, decay=0.000001, momentum=0.9, nesterov=True)
-        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', 'fscore'])
+        adadelta = Adadelta(lr=0.1, decay=0.001)
+        model.compile(loss='binary_crossentropy', optimizer=adadelta, metrics=['accuracy', 'matthews_correlation'])
     else:
         model = load_model(path_weights)
     #model.load_weights('/home/mhubrich/checkpoints/adni/AAL64_CV_10/model.0150-loss_0.468-acc_0.819-val_loss_0.3542-val_acc_0.8852.h5', by_name=True)
@@ -47,8 +47,8 @@ def train():
     # Define callbacks
     cbks = [callbacks.print_history(),
             callbacks.flush(),
-            callbacks.early_stop(patience=100),
-            callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc'])]
+            callbacks.early_stop(patience=150, monitor=['val_loss', 'val_acc', 'val_matthews_correlation']),
+            callbacks.save_model(path_checkpoints, max_files=3, monitor=['loss', 'acc', 'matthews_correlation'])]
 
     g, _ = sort_groups(scans_train)
 

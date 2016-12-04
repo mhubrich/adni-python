@@ -31,7 +31,10 @@ def build_model(num_classes):
     model.add(Dropout(0.2))
     model.add(Dense(128, activation='relu', W_regularizer=l2(0.0001)))
     model.add(Dropout(0.2))
-    model.add(Dense(num_classes, activation='softmax', W_regularizer=l2(0.0001)))
+    if num_classes > 1:
+        model.add(Dense(num_classes, activation='softmax', W_regularizer=l2(0.0001)))
+    else:
+        model.add(Dense(num_classes, activation='sigmoid', W_regularizer=l2(0.0001)))
 
     return model
 
