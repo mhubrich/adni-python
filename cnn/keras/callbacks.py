@@ -246,15 +246,11 @@ class _MyModelCheckpoint(Callback):
                 self.model.save(filepath, overwrite=True)
 
 
-def save_model(path_dir, monitor=['loss', 'acc', 'fmeasure'], verbose=0,
+def save_model(path_dir, monitor=['val_loss', 'val_acc', 'val_fmeasure'], verbose=0,
                save_best_only=True, max_files=5, save_weights_only=False):
     if not os.path.exists(path_dir):
         os.makedirs(path_dir)
-    fname = 'model.{epoch:04d}'
-    for m in monitor:
-        fname += '-' + m + '_{' + m + ':.3f}'
-    for i in range(len(monitor)):
-        monitor[i] = 'val_' + monitor[i]
+    fname = 'model.{epoch:04d}-loss_{loss:.3f}-acc_{acc:.3f}'
     for m in monitor:
         fname += '-' + m + '_{' + m + ':.4f}'
     fname += '.h5'

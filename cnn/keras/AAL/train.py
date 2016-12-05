@@ -1,5 +1,7 @@
 from keras.models import load_model
 from cnn.keras import callbacks
+from cnn.keras.evaluation_callback import Evaluation
+from cnn.keras.AAL.test_callback import Test
 from keras.optimizers import SGD
 from cnn.keras.AAL.model import build_model
 from cnn.keras.AAL.image_processing import inputs
@@ -19,7 +21,7 @@ load_all_scans = False
 num_epoch = 500
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/adam_test_CV' + fold
+#path_checkpoints = '/home/mhubrich/checkpoints/adni/SGD_test_CV' + fold
 path_weights = None
 
 
@@ -27,14 +29,16 @@ def train():
     # Get inputs for training and validation
     scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
     scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
+    scans_test = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_test')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED, 'binary')
-    val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'val', SEED, 'binary')
+    val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
+    test_inputs = inputs(scans_test, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
 
     # Set up the model
     if path_weights is None:
         model = build_model(1)
         sgd = SGD(lr=0.001, decay=0.000001, momentum=0.9, nesterov=True)
-        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', 'fscore'])
+        model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
     else:
         model = load_model(path_weights)
     #model.load_weights('/home/mhubrich/checkpoints/adni/AAL64_CV_10/model.0150-loss_0.468-acc_0.819-val_loss_0.3542-val_acc_0.8852.h5', by_name=True)
@@ -47,8 +51,10 @@ def train():
     # Define callbacks
     cbks = [callbacks.print_history(),
             callbacks.flush(),
-            callbacks.early_stop(patience=100),
-            callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc'])]
+            Evaluation(val_inputs,
+                       [callbacks.early_stop(patience=100, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])]),
+            #            callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])]),
+            Test(test_inputs, 'SGD_test_CV' + fold)]
 
     g, _ = sort_groups(scans_train)
 
@@ -57,8 +63,6 @@ def train():
         train_inputs,
         samples_per_epoch=train_inputs.nb_sample,
         nb_epoch=num_epoch,
-        validation_data=val_inputs,
-        nb_val_samples=val_inputs.nb_sample,
         callbacks=cbks,
         class_weight={0:max(len(g['Normal']), len(g['AD']))/float(len(g['Normal'])),
                       1:max(len(g['Normal']), len(g['AD']))/float(len(g['AD']))},

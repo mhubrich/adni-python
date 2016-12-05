@@ -1,7 +1,6 @@
 from keras.models import load_model
 from cnn.keras import callbacks
 from cnn.keras.evaluation_callback import Evaluation
-from cnn.keras.AAL.test_callback import Test
 from keras.optimizers import Adadelta
 from cnn.keras.AAL.model import build_model
 from cnn.keras.AAL.image_processing import inputs
@@ -16,12 +15,12 @@ fold = str(sys.argv[1])
 target_size = (18, 18, 18)
 SEED = 0  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
-batch_size = 32
+batch_size = 48
 load_all_scans = False
-num_epoch = 500
+num_epoch = 750
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-#path_checkpoints = '/home/mhubrich/checkpoints/adni/adadelta_test4_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/adadelta_test8_CV' + fold
 path_weights = None
 
 
@@ -29,15 +28,13 @@ def train():
     # Get inputs for training and validation
     scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
     scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
-    scans_test = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_test')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED, 'binary')
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
-    test_inputs = inputs(scans_test, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
 
     # Set up the model
     if path_weights is None:
         model = build_model(1)
-        adadelta = Adadelta(lr=0.2, decay=0.01)
+        adadelta = Adadelta(lr=0.2, decay=0.002)
         model.compile(loss='binary_crossentropy', optimizer=adadelta, metrics=['accuracy'])
     else:
         model = load_model(path_weights)
@@ -52,9 +49,8 @@ def train():
     cbks = [callbacks.print_history(),
             callbacks.flush(),
             Evaluation(val_inputs,
-                       [callbacks.early_stop(patience=100, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])]),
-            #            callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])]),
-            Test(test_inputs, 'ADADELTA_test_CV' + fold)]
+                       [callbacks.early_stop(patience=75, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
+                        callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])])]
 
     g, _ = sort_groups(scans_train)
 
@@ -67,7 +63,7 @@ def train():
         class_weight={0:max(len(g['Normal']), len(g['AD']))/float(len(g['Normal'])),
                       1:max(len(g['Normal']), len(g['AD']))/float(len(g['AD']))},
         verbose=2,
-        max_q_size=32,
+        max_q_size=48,
         nb_worker=1,
         pickle_safe=True)
 
