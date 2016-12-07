@@ -1,3 +1,12 @@
+##############################################################
+# Set seed for determinisitc behaviour between different runs.
+# Especially fresh weights will be initialized the same way.
+# Caution: CudNN might not be deterministic after all.
+SEED = 0
+import numpy as np
+np.random.seed(SEED)
+##############################################################
+
 from keras.models import load_model
 from cnn.keras import callbacks
 from cnn.keras.evaluation_callback import Evaluation
@@ -20,7 +29,7 @@ load_all_scans = False
 num_epoch = 750
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/adadelta_test6_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/adadelta_test6_2_CV' + fold
 path_weights = None
 
 

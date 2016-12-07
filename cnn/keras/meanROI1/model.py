@@ -1,9 +1,9 @@
 from keras.models import Sequential
-from cnn.keras.models.meanROI1_1.model_single4_conv import build_model as mod1
-from cnn.keras.models.meanROI1_2.model_single5_conv import build_model as mod2
-from cnn.keras.models.meanROI1_3.model_single5_conv import build_model as mod3
-from cnn.keras.models.meanROI1_4.model_single4_conv import build_model as mod4
-from cnn.keras.models.meanROI1_5.model_single8_conv import build_model as mod5
+from cnn.keras.models.meanROI1_1.model_single1_conv import build_model as mod1
+from cnn.keras.models.meanROI1_2.model_single1_conv import build_model as mod2
+from cnn.keras.models.meanROI1_3.model_single1_conv import build_model as mod3
+from cnn.keras.models.meanROI1_4.model_single1_conv import build_model as mod4
+from cnn.keras.models.meanROI1_5.model_single1_conv import build_model as mod5
 from cnn.keras.meanROI1.diff_model import build_model as mod_diff
 from keras.layers import Merge
 from keras.layers.core import Dense, Dropout
@@ -29,7 +29,9 @@ def build_model(num_classes):
     model.add(Dropout(0.2))
     model.add(Dense(128, activation='relu', W_regularizer=l2(0.0001)))
     model.add(Dropout(0.2))
-    model.add(Dense(num_classes, activation='softmax', W_regularizer=l2(0.0001)))
-
+    if num_classes > 1:
+        model.add(Dense(num_classes, activation='softmax', W_regularizer=l2(0.0001)))
+    else:
+        model.add(Dense(num_classes, activation='sigmoid', W_regularizer=l2(0.0001)))
     return model
 

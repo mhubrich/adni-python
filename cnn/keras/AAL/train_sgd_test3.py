@@ -11,8 +11,8 @@ from keras.models import load_model
 from cnn.keras import callbacks
 from cnn.keras.evaluation_callback import Evaluation
 from keras.optimizers import SGD
-from cnn.keras.meanROI1.model import build_model
-from cnn.keras.meanROI1.image_processing import inputs
+from cnn.keras.AAL.model import build_model
+from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
 import sys
@@ -27,8 +27,8 @@ batch_size = 48
 load_all_scans = False
 num_epoch = 750
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_meanROI1_1'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_1_CV' + fold
+path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/sgd_test3_CV' + fold
 path_weights = None
 
 
@@ -42,7 +42,7 @@ def train():
     # Set up the model
     if path_weights is None:
         model = build_model(1)
-        sgd = SGD(lr=0.001, decay=0.0005, momentum=0.9, nesterov=True)
+        sgd = SGD(lr=0.001, decay=0.000001, momentum=0.9, nesterov=True)
         model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
     else:
         model = load_model(path_weights)

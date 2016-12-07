@@ -48,11 +48,11 @@ class ScanIterator(Iterator):
 
         # second, build an index of the images in the different class subfolders
         if self.load_all_scans:
-            self.scans1 = np.zeros((self.nb_sample,) + (17, 17, 17), dtype='float32')
-            self.scans2 = np.zeros((self.nb_sample,) + (22, 22, 22), dtype='float32')
+            self.scans1 = np.zeros((self.nb_sample,) + (21, 21, 21), dtype='float32')
+            self.scans2 = np.zeros((self.nb_sample,) + (23, 23, 23), dtype='float32')
             self.scans3 = np.zeros((self.nb_sample,) + (33, 33, 33), dtype='float32')
-            self.scans4 = np.zeros((self.nb_sample,) + (19, 19, 19), dtype='float32')
-            self.scans5 = np.zeros((self.nb_sample,) + (13, 13, 13), dtype='float32')
+            self.scans4 = np.zeros((self.nb_sample,) + (20, 20, 20), dtype='float32')
+            self.scans5 = np.zeros((self.nb_sample,) + (12, 12, 12), dtype='float32')
         else:
             self.scans1 = []
             self.scans2 = []
@@ -103,11 +103,11 @@ class ScanIterator(Iterator):
         with self.lock:
             index_array, current_index, current_batch_size = next(self.index_generator)
         # The transformation of images is not under thread lock so it can be done in parallel
-        batch_x1 = np.zeros((current_batch_size,) + (1, 17, 17, 17))
-        batch_x2 = np.zeros((current_batch_size,) + (1, 22, 22, 22))
+        batch_x1 = np.zeros((current_batch_size,) + (1, 21, 21, 21))
+        batch_x2 = np.zeros((current_batch_size,) + (1, 23, 23, 23))
         batch_x3 = np.zeros((current_batch_size,) + (1, 33, 33, 33))
-        batch_x4 = np.zeros((current_batch_size,) + (1, 19, 19, 19))
-        batch_x5 = np.zeros((current_batch_size,) + (1, 13, 13, 13))
+        batch_x4 = np.zeros((current_batch_size,) + (1, 20, 20, 20))
+        batch_x5 = np.zeros((current_batch_size,) + (1, 12, 12, 12))
         batch_diff = np.zeros((current_batch_size, 5))
         # build batch of image data
         for i, j in enumerate(index_array):

@@ -10,9 +10,9 @@ np.random.seed(SEED)
 from keras.models import load_model
 from cnn.keras import callbacks
 from cnn.keras.evaluation_callback import Evaluation
-from keras.optimizers import SGD
-from cnn.keras.meanROI1.model import build_model
-from cnn.keras.meanROI1.image_processing import inputs
+from keras.optimizers import Adadelta
+from cnn.keras.AAL.model import build_model
+from cnn.keras.AAL.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
 import sys
@@ -22,13 +22,14 @@ fold = str(sys.argv[1])
 
 # Training specific parameters
 target_size = (18, 18, 18)
+SEED = 0  # To deactivate seed, set to None
 classes = ['Normal', 'AD']
 batch_size = 48
 load_all_scans = False
 num_epoch = 750
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_intnorm_meanROI1_1'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_1_CV' + fold
+path_ADNI = '/home/mhubrich/ADNI_intnorm_AAL64'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/adadelta_test12_CV' + fold
 path_weights = None
 
 
@@ -42,8 +43,8 @@ def train():
     # Set up the model
     if path_weights is None:
         model = build_model(1)
-        sgd = SGD(lr=0.001, decay=0.0005, momentum=0.9, nesterov=True)
-        model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
+        adadelta = Adadelta(lr=0.2, decay=0.0008)
+        model.compile(loss='binary_crossentropy', optimizer=adadelta, metrics=['accuracy'])
     else:
         model = load_model(path_weights)
     #model.load_weights('/home/mhubrich/checkpoints/adni/AAL64_CV_10/model.0150-loss_0.468-acc_0.819-val_loss_0.3542-val_acc_0.8852.h5', by_name=True)
@@ -57,7 +58,7 @@ def train():
     cbks = [callbacks.print_history(),
             callbacks.flush(),
             Evaluation(val_inputs,
-                       [callbacks.early_stop(patience=75, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
+                       [callbacks.early_stop(patience=60, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
                         callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])])]
 
     g, _ = sort_groups(scans_train)
