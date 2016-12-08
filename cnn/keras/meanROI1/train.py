@@ -28,13 +28,39 @@ load_all_scans = False
 num_epoch = 750
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_meanROI1_1'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_1_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_augmented_CV' + fold
 path_weights = None
+
+
+def load_augmentation(scans, path):
+    tmp = []
+    import fnmatch
+    import os
+    from utils.load_scans import Scan
+    files = []
+    for root, dirnames, filenames in os.walk(path):
+        for filename in fnmatch.filter(filenames, '*.npy'):
+            files.append(os.path.join(root, filename))
+    for f in files:
+        fname = os.path.splitext(os.path.basename(f))[0]
+        group = fname.split('_')[0]
+        subject = fname.split('_')[1] + '_' + fname.split('_')[2] + '_' + fname.split('_')[3]
+        age = float(fname.split('_')[4])
+        FAQ = float(fname.split('_')[5])
+        imageID = fname.split('_')[6] + '_' + fname.split('_')[7]
+        tmp.append(Scan(subject, imageID, None, None, age, group, FAQ, None, None, None, None, f))
+    for t in tmp:
+        for scan in scans:
+            if scan.subject == t.subject:
+                scans.append(t)
+                break
+    return scans
 
 
 def train():
     # Get inputs for training and validation
     scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
+    scans_train = load_augmentation(scans_train, '/home/mhubrich/ADNI_intnorm_meanROI1_augmentation/meanROI1_1')
     scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED, 'binary')
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')

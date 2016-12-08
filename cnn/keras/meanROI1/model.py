@@ -5,6 +5,7 @@ from cnn.keras.models.meanROI1_3.model_single1_conv import build_model as mod3
 from cnn.keras.models.meanROI1_4.model_single1_conv import build_model as mod4
 from cnn.keras.models.meanROI1_5.model_single1_conv import build_model as mod5
 from cnn.keras.meanROI1.diff_model import build_model as mod_diff
+from cnn.keras.meanROI1.age_model import build_model as mod_age
 from keras.layers import Merge
 from keras.layers.core import Dense, Dropout
 from keras.regularizers import l2
@@ -17,8 +18,9 @@ def build_model(num_classes):
     model4 = mod4()
     model5 = mod5()
     model_diff = mod_diff(5)
+    model_age = mod_age()
 
-    merged = Merge([model1, model2, model3, model4, model5, model_diff], mode='concat')
+    merged = Merge([model1, model2, model3, model4, model5, model_diff, model_age], mode='concat')
 
     model = Sequential()
     model.add(merged)
