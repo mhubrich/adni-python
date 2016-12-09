@@ -16,5 +16,5 @@ def build_model(num_features=5):
     model.add(Dropout(0.1, name='diff_dropout4'))
     model.add(Dense(5, activation='relu', name='diff_dense5'))
     model.add(Dropout(0.1, name='diff_dropout5'))
-    model.add(Dense(2, activation='softmax', name='diff_dense6'))
+    model.add(Dense(1, activation='sigmoid', name='diff_dense6'))
     return model
