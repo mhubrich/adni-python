@@ -12,6 +12,7 @@ from cnn.keras.models.AVG444.model import build_model
 from cnn.keras.AVG444.image_processing import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
+import csv
 import sys
 
 fold = str(sys.argv[1])
@@ -19,8 +20,9 @@ fold = str(sys.argv[1])
 
 # Training specific parameters
 target_size = (22, 22, 22)
+filter_length = 1
 classes = ['Normal', 'AD']
-batch_size = 64
+batch_size = 128
 load_all_scans = True
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_avgpool444'
@@ -37,12 +39,28 @@ def predict():
     model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
     model.load_weights(path_checkpoints[int(fold)-1])
 
+    nb_runs = ((target_size[0]-filter_length+1) ** 3) + 1
+    nb_pred = len(scans_val) * nb_runs
+    predictions = np.zeros((nb_pred, 1), dtype=np.float32)
     groups, _ = sort_groups(scans_val)
-    import time
-    for scan in groups['Normal']+groups['AD']:
-        print(time.strftime('%X'))
-        val_inputs = inputs(scan, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
-        pred = model.predict_generator(val_inputs, val_inputs.nb_sample, max_q_size=batch_size, nb_worker=1, pickle_safe=True)
+    scans = groups['Normal'] + groups['AD']
+    i = 0
+    for scan in scans:
+        val_inputs = inputs(scan, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary', filter_length)
+        predictions[i:i+val_inputs.nb_sample] = model.predict_generator(val_inputs,
+                                                                        val_inputs.nb_sample,
+                                                                        max_q_size=batch_size,
+                                                                        nb_worker=1,
+                                                                        pickle_safe=True)
+        i += val_inputs.nb_sample
+
+    np.save('savefile_predictions_filter_' + str(filter_length) + '_CV' + fold + '.npy', predictions)
+    with open('predictions_AVG444_fliter_' + str(filter_length) + '_CV' + fold + '.csv', 'wb') as csvfile:
+        writer = csv.writer(csvfile)
+        for i in range(len(scans)):
+            for j in range(nb_runs):
+                x, y, z = val_inputs.mod3(j, target_size[0] - filter_length + 1)
+                writer.writerow([scan.imageID, str(x), str(y), str(z), str(predictions[i*nb_runs + j, 0])])
 
 
 if __name__ == "__main__":

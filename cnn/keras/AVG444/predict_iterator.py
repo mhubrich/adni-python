@@ -9,10 +9,9 @@ class ScanIterator(Iterator):
                  dim_ordering=K.image_dim_ordering,
                  classes=None, class_mode=None,
                  batch_size=32, shuffle=False, seed=None,
-                 filter_length=4):
+                 filter_length=1):
         self.target_size = tuple(target_size)
         self.dim_ordering = dim_ordering
-        self.shuffle = shuffle
         self.filter_length = filter_length
         if self.dim_ordering == 'tf':
             self.image_shape = self.target_size + (1,)
@@ -26,10 +25,10 @@ class ScanIterator(Iterator):
 
         np.random.seed(seed)
 
-        self.scans = self.load_scan(scan.path)
+        self.scan = self.load_scan(scan.path)
         self.classes = 0 if scan.group == 'Normal' else 1
-        self.nb_sample = (self.target_size[0] - self.filter_length + 1) ** 3
-        super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
+        self.nb_sample = ((self.target_size[0] - self.filter_length + 1) ** 3) + 1
+        super(ScanIterator, self).__init__(self.nb_sample, batch_size, False, seed)
 
     def load_scan(self, path):
             return np.load(path)
@@ -50,8 +49,11 @@ class ScanIterator(Iterator):
         z, y = divmod(c, b)
         return x, y, z
 
-    def extinguish(self, scan, pos=(0,0,0), n=self.filter_length):
-        return scan[pos[0]:pos[0]+n, pos[1]:pos[1]+n, pos[2]:pos[2]+n] = 0
+    def extinguish(self, scan, pos=(0,0,0), n=4):
+        if pos[2] == self.target_size[0] - self.filter_length + 1:
+            return scan
+        scan[pos[0]:pos[0]+n, pos[1]:pos[1]+n, pos[2]:pos[2]+n] = 0
+        return scan
 
     def next(self):
         with self.lock:
@@ -61,7 +63,7 @@ class ScanIterator(Iterator):
         # build batch of image data
         for i, j in enumerate(index_array):
             x = np.array(self.scan, copy=True)
-            x = self.extinguish(x, pos=mod3(j), n=self.filter_length)
+            x = self.extinguish(x, pos=self.mod3(j, self.target_size[0] - self.filter_length + 1), n=self.filter_length)
             x = self.expand_dims(x, self.dim_ordering)
             batch_x[i] = x
         # build batch of labels
