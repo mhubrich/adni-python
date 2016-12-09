@@ -1,4 +1,4 @@
-from cnn.keras.AVG444.scan_generator import ScanGenerator
+from cnn.keras.MAX444.scan_generator import ScanGenerator
 
 
 def _image_processing(method):

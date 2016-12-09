@@ -1,5 +1,5 @@
 from keras.preprocessing.image import ImageDataGenerator
-from cnn.keras.AVG444.scan_iterator import ScanIterator
+from cnn.keras.MAX444.scan_iterator import ScanIterator
 
 
 class ScanGenerator(ImageDataGenerator):
