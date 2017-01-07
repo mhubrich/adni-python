@@ -11,7 +11,7 @@ def _image_processing(method):
     return generator
 
 
-def inputs(scans, target_size, batch_size, load_all_scans, classes, method, seed=None, class_mode='categorical', filter_length=2):
+def inputs(scans, target_size, batch_size, load_all_scans, classes, method, seed=None, class_mode='categorical'):
     assert method in ['train', 'val', 'predict'], \
         'method must be one of: train, val, predict.'
 
@@ -42,6 +42,5 @@ def inputs(scans, target_size, batch_size, load_all_scans, classes, method, seed
             classes=classes,
             class_mode=None,
             shuffle=False,
-            seed=seed,
-            filter_length=filter_length)
+            seed=seed)
 

@@ -1,5 +1,5 @@
 from keras.preprocessing.image import ImageDataGenerator
-from cnn.keras.AVG444.predict_iterator import ScanIterator
+from cnn.keras.AVG444.scan_iterator import ScanIterator
 
 
 class ScanGenerator(ImageDataGenerator):
@@ -7,15 +7,13 @@ class ScanGenerator(ImageDataGenerator):
                             target_size=(13, 13, 13), load_all_scans=False,
                             classes=None, class_mode='categorical',
                             batch_size=32, shuffle=True, seed=None,
-                            save_to_dir=None, save_prefix=None, save_format=None,
-                            filter_length=2):
+                            save_to_dir=None, save_prefix=None, save_format=None):
         return ScanIterator(
             scans, self,
             target_size=target_size, load_all_scans=load_all_scans,
             dim_ordering=self.dim_ordering,
             classes=classes, class_mode=class_mode,
-            batch_size=batch_size, shuffle=shuffle, seed=seed,
-            filter_length=filter_length)
+            batch_size=batch_size, shuffle=shuffle, seed=seed)
 
     def random_transform(self, x, i=None):
         return x

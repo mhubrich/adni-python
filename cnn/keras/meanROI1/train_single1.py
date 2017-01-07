@@ -18,24 +18,25 @@ from utils.sort_scans import sort_groups
 import sys
 #sys.stdout = sys.stderr = open('output_first_7', 'w')
 
-fold = str(sys.argv[1])
+#fold = str(sys.argv[1])
 
 # Training specific parameters
 target_size = (21, 21, 21)
 classes = ['Normal', 'AD']
 batch_size = 32
 load_all_scans = False
-num_epoch = 750
+num_epoch = 2000
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_meanROI1_1'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_1_pretrained_CV' + fold
-path_weights = None
+path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_1_pretrained_82_2_rui'
+path_weights = '/home/mhubrich/checkpoints/adni/meanROI1_1_pretrained_82_2_rui/model.0748-loss_0.304-acc_0.922-val_loss_0.4585-val_acc_0.8577-val_fmeasure_0.8119-val_mcc_0.7081-val_mean_acc_0.8682.h5'
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2_rui/7_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2_rui/7_val')
+    scans_val += read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2_rui/7_test')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED, 'binary')
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
 
@@ -51,8 +52,8 @@ def train():
     cbks = [callbacks.print_history(),
             callbacks.flush(),
             Evaluation(val_inputs,
-                       [callbacks.early_stop(patience=75, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
-                        callbacks.save_model(path_checkpoints, max_files=3, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])])]
+                       [callbacks.early_stop(patience=100, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
+                        callbacks.save_model(path_checkpoints, max_files=2, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])])]
 
     g, _ = sort_groups(scans_train)
 

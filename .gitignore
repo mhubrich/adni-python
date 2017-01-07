@@ -6,6 +6,7 @@
 # due to large file size
 *.h5
 *.csv
+*.npy
 
 # no output files because they can differ on MOGON and KARWATH
 output*

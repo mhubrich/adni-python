@@ -12,30 +12,31 @@ from cnn.keras import callbacks
 from cnn.keras.evaluation_callback import Evaluation
 from keras.optimizers import SGD
 from cnn.keras.meanROI1.diff_model_FC import build_model
-from cnn.keras.meanROI1.image_processing_single import inputs
+from cnn.keras.meanROI1.image_processing_diff_single import inputs
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
 import sys
 #sys.stdout = sys.stderr = open('output_first_7', 'w')
 
-fold = str(sys.argv[1])
+#fold = str(sys.argv[1])
 
 # Training specific parameters
 target_size = (21, 21, 21)
 classes = ['Normal', 'AD']
 batch_size = 128
 load_all_scans = False
-num_epoch = 10000
+num_epoch = 15000
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_intnorm_meanROI1_diff'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_diff_pretrained_CV' + fold
+path_checkpoints = '/home/mhubrich/checkpoints/adni/meanROI1_diff_pretrained_82_2_rui'
 path_weights = None
 
 
 def train():
     # Get inputs for training and validation
-    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
-    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
+    scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2_rui/7_train')
+    scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2_rui/7_val')
+    scans_val += read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2_rui/7_test')
     train_inputs = inputs(scans_train, target_size, batch_size, load_all_scans, classes, 'train', SEED, 'binary')
     val_inputs = inputs(scans_val, target_size, batch_size, load_all_scans, classes, 'predict', SEED, 'binary')
 

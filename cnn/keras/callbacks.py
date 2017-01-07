@@ -191,17 +191,26 @@ class _MyModelCheckpoint(Callback):
         self.max_files = max_files
         self.save_weights_only = save_weights_only
         self.monitor_op = []
+        self.monitor_op2 = []
+        self.monitor2 = []
         self.reverse = []
         self.best = np.zeros((len(self.monitor), self.max_files), dtype=np.float64)
+        self.best2 = np.zeros((len(self.monitor), self.max_files), dtype=np.float64)
         self.files = np.empty((len(self.monitor), self.max_files), dtype=np.object)
         for i in range(len(self.monitor)):
             if 'loss' in self.monitor[i]:
                 self.monitor_op.append(np.less)
+                self.monitor_op2.append(np.greater)
+                self.monitor2.append('val_acc')
                 self.best[i].fill(np.Inf)
+                self.best2[i].fill(-np.Inf)
                 self.reverse.append(False)
             else:
                 self.monitor_op.append(np.greater)
+                self.monitor_op2.append(np.less)
+                self.monitor2.append('val_loss')
                 self.best[i].fill(-np.Inf)
+                self.best2[i].fill(np.Inf)
                 self.reverse.append(True)
 
     def on_epoch_end(self, epoch, logs={}):
@@ -209,11 +218,16 @@ class _MyModelCheckpoint(Callback):
         if self.save_best_only:
             for i in range(len(self.monitor)):
                 current = logs.get(self.monitor[i])
+                current2 = logs.get(self.monitor2[i])
                 if current is None:
                     warnings.warn('Can save best model only with %s available, '
                                   'skipping.' % (self.monitor[i]), RuntimeWarning)
+                if current2 is None:
+                    warnings.warn('Can save best model only with %s available, '
+                                  'skipping.' % (self.monitor2[i]), RuntimeWarning)
                 else:
-                    if self.monitor_op[i](current, self.best[i][-1]):
+                    if (self.monitor_op[i](current, self.best[i][-1])
+                        or (np.equal(current, self.best[i][-1]) and self.monitor_op2[i](current2, self.best2[i][-1]))):
                         if self.verbose > 0:
                             print('Epoch %05d: %s improved from %0.5f to %0.5f,'
                                   ' saving model to %s'
@@ -227,11 +241,13 @@ class _MyModelCheckpoint(Callback):
                         if self.files[i][-1] is not None and len(np.extract(self.files == self.files[i][-1], self.files)) < 2:
                             os.remove(self.files[i][-1])
                         self.best[i][-1] = current
+                        self.best2[i][-1] = current2
                         self.files[i][-1] = filepath
                         indices = np.argsort(self.best[i])
                         if self.reverse[i]:
                             indices = indices[::-1]
                         self.best[i] = self.best[i][indices]
+                        self.best2[i] = self.best2[i][indices]
                         self.files[i] = self.files[i][indices]
                     else:
                         if self.verbose > 0:
