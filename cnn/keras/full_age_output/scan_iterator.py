@@ -52,6 +52,7 @@ class ScanIterator(Iterator):
         else:
             self.scans = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
+        self.age = np.zeros((self.nb_sample,), dtype='float32')
         class_pos = [0]
         i = 0
         for c in classes:
@@ -63,6 +64,7 @@ class ScanIterator(Iterator):
                     self.scans[i] = self.load_scan(scan.path)
                 else:
                     self.scans.append(scan.path)
+                self.age[i] = (scan.age - 55.139699999999998) / (95.816400000000002 - 55.139699999999998)
                 i += 1
             class_pos.append(i)
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
@@ -105,5 +107,6 @@ class ScanIterator(Iterator):
                 batch_y[i, label] = 1.
         else:
             return batch_x
-        return batch_x, batch_y
+        batch_age = self.age[index_array]
+        return batch_x, [batch_y, batch_age]
 

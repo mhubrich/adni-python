@@ -41,9 +41,11 @@ def matthews_correlation(y_true, y_pred):
 
 
 class Evaluation(Callback):
-    def __init__(self, generator, callbacks=[]):
+    def __init__(self, x_val, y_val, batch_size=32, callbacks=[]):
         super(Evaluation, self).__init__()
-        self.generator = generator
+        self.X = x_val
+        self.y_true = y_val
+        self.batch_size=batch_size
         self.callbacks = callbacks
 
     def _set_params(self, params):
@@ -57,18 +59,17 @@ class Evaluation(Callback):
             callback._set_model(model)
 
     def on_epoch_end(self, epoch, logs={}):
-        pred = self.model.predict_generator(self.generator, self.generator.nb_sample,
-                 max_q_size=self.generator.batch_size, nb_worker=1, pickle_safe=True)
+        pred = self.model.predict(self.X, self.batch_size, verbose=0)
         # In case of multi-output-model use only first output
         if isinstance(pred, list):
             pred = pred[0]
         if 'AVG444_dense4_acc' in logs:
             logs['acc'] = logs['AVG444_dense4_acc']  # workaround
-        logs['val_loss'] = loss(self.generator.classes, pred)
-        logs['val_acc'] = accuracy(self.generator.classes, pred)
-        logs['val_fmeasure'] = fmeasure(self.generator.classes, pred)
-        logs['val_mean_acc'] = mean_accuracy(self.generator.classes, pred)
-        logs['val_mcc'] = matthews_correlation(self.generator.classes, pred)
+        logs['val_loss'] = loss(self.y_true, pred)
+        logs['val_acc'] = accuracy(self.y_true, pred)
+        logs['val_fmeasure'] = fmeasure(self.y_true, pred)
+        logs['val_mean_acc'] = mean_accuracy(self.y_true, pred)
+        logs['val_mcc'] = matthews_correlation(self.y_true, pred)
         for callback in self.callbacks:
             callback.on_epoch_end(epoch, logs)
 

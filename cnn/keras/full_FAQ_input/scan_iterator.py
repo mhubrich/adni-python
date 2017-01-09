@@ -52,6 +52,7 @@ class ScanIterator(Iterator):
         else:
             self.scans = []
         self.classes = np.zeros((self.nb_sample,), dtype='int32')
+        self.FAQ = np.zeros((self.nb_sample,), dtype='float32')
         class_pos = [0]
         i = 0
         for c in classes:
@@ -63,14 +64,15 @@ class ScanIterator(Iterator):
                     self.scans[i] = self.load_scan(scan.path)
                 else:
                     self.scans.append(scan.path)
+                self.FAQ[i] = scan.FAQ / 30.0
                 i += 1
             class_pos.append(i)
         super(ScanIterator, self).__init__(self.nb_sample, batch_size, shuffle, seed)
 
     def load_scan(self, path):
         scan = np.load(path)
-        scan += 0.30299312
-        scan /= 3.6425772  # 3.9455702
+        #scan += 0.30299312
+        #scan /= 3.6425772  # 3.9455702
         return scan
 
     def get_scan(self, scan):
@@ -94,6 +96,7 @@ class ScanIterator(Iterator):
             x = self.get_scan(self.scans[j])
             x = self.expand_dims(x, self.dim_ordering)
             batch_x[i] = x
+        batch_FAQ = self.FAQ[index_array]
         # build batch of labels
         if self.class_mode == 'sparse':
             batch_y = self.classes[index_array]
@@ -104,6 +107,6 @@ class ScanIterator(Iterator):
             for i, label in enumerate(self.classes[index_array]):
                 batch_y[i, label] = 1.
         else:
-            return batch_x
-        return batch_x, batch_y
+            return [batch_x, batch_FAQ]
+        return [batch_x, batch_FAQ], batch_y
 
