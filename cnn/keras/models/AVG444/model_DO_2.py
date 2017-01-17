@@ -5,9 +5,9 @@ from keras.models import Model
 
 def build_model(input_shape=(1, 22, 22, 22)):
     name = 'AVG444'
-    do = 1.0/14
+    do = 0.0
     input = Input(shape=input_shape, name=name+'_input')
-    x = GaussianNoise(0.00001, name=name+'_noise1')(input)
+    x = GaussianNoise(0.001, name=name+'_noise1')(input)
     x = Convolution3D(32, 7, 7, 7, activation='relu', W_regularizer=l2(0.0001), name=name+'_conv1')(x)
     x = Dropout(do, name=name+'_dropout1')(x)
     x = Convolution3D(32, 5, 5, 5, activation='relu', W_regularizer=l2(0.0001), name=name+'_conv2')(x)
