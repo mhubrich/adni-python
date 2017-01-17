@@ -24,8 +24,8 @@ batch_size = 128
 load_all_scans = True
 num_epoch = 2000
 # Paths
-path_ADNI = '/home/mhubrich/ADNI_pSMC_avgpool444'
-path_checkpoints = '/home/mhubrich/checkpoints/adni/full_scan_28_CV' + fold
+path_ADNI = '/home/mhubrich/ADNI_intnorm_avgpool444_new'
+path_checkpoints = '/home/mhubrich/checkpoints/adni/full_scan_29_CV' + fold
 
 
 def load_data(scans, flip=False):
@@ -57,30 +57,27 @@ def load_data(scans, flip=False):
 def train():
     # Get inputs for training and validation
     scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
-    x_train, y_train = load_data(scans_train, flip=True)
+    x_train, y_train = load_data(scans_train, flip=False)
 
     scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
     x_val, y_val = load_data(scans_val, flip=False)
 
     # Set up the model
-    #model = build_model()
-    #sgd = SGD(lr=0.001, decay=0.0005, momentum=0.9, nesterov=True)
-    #model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
-    from keras.models import load_model
-    model = load_model('/home/mhubrich/checkpoints/adni/full_scan_28_CV5/model.0135-loss_0.455-acc_0.923-val_loss_0.3584-val_acc_0.9021-val_fmeasure_0.8889-val_mcc_0.8018-val_mean_acc_0.8995.h5')
+    model = build_model()
+    sgd = SGD(lr=0.001, decay=0.0005, momentum=0.9, nesterov=True)
+    model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
     # Define callbacks
     cbks = [callbacks.print_history(),
             callbacks.flush(),
             Evaluation(x_val, y_val, batch_size,
-                       [callbacks.early_stop(patience=30, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
+                       [callbacks.early_stop(patience=60, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc']),
                         callbacks.save_model(path_checkpoints, max_files=2, monitor=['val_loss', 'val_acc', 'val_fmeasure', 'val_mcc', 'val_mean_acc'])])]
 
     g, _ = sort_groups(scans_train)
 
     hist = model.fit(x=x_train,
                      y=y_train,
-                     #validation_data=(x_val, y_val),
                      nb_epoch=num_epoch,
                      callbacks=cbks,
                      class_weight={0:max(len(g['Normal']), len(g['AD']))/float(len(g['Normal'])),
