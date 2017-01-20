@@ -1,5 +1,5 @@
 from keras.regularizers import l2
-from keras.layers import Input, Dense, GaussianNoise, Convolution3D, Flatten, Dropout, merge
+from keras.layers import Input, Dense, Dropout, merge
 from keras.models import Model
 
 from cnn.keras.models.deepROI4.model_conv import build_model as mod
@@ -8,8 +8,8 @@ from cnn.keras.models.deepROI4.model_conv import build_model as mod
 def build_model(input_shape=(1, 22, 22, 22), name='deepROI4'):
     name = name
 
-    model_NC_in, model_NC_out = mod(input_shape=input_shape, name='deepROI6_NC')
-    model_AD_in, model_AD_out = mod(input_shape=input_shape, name='deepROI6_AD')
+    model_NC_in, model_NC_out = mod(input_shape=input_shape, name='deepROI7_NC')
+    model_AD_in, model_AD_out = mod(input_shape=input_shape, name='deepROI7_AD')
 
     x = merge([model_NC_out, model_AD_out], mode='concat')
 

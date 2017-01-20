@@ -48,23 +48,21 @@ class Evaluation(Callback):
         self.batch_size=batch_size
         self.callbacks = callbacks
 
-    def _set_params(self, params):
-        super(Evaluation, self)._set_params(params)
+    def set_params(self, params):
+        super(Evaluation, self).set_params(params)
         for callback in self.callbacks:
-            callback._set_params(params)
+            callback.set_params(params)
 
-    def _set_model(self, model):
-        super(Evaluation, self)._set_model(model)
+    def set_model(self, model):
+        super(Evaluation, self).set_model(model)
         for callback in self.callbacks:
-            callback._set_model(model)
+            callback.set_model(model)
 
     def on_epoch_end(self, epoch, logs={}):
         pred = self.model.predict(self.X, self.batch_size, verbose=0)
         # In case of multi-output-model use only first output
         if isinstance(pred, list):
             pred = pred[0]
-        if 'AVG444_dense4_acc' in logs:
-            logs['acc'] = logs['AVG444_dense4_acc']  # workaround
         logs['val_loss'] = loss(self.y_true, pred)
         logs['val_acc'] = accuracy(self.y_true, pred)
         logs['val_fmeasure'] = fmeasure(self.y_true, pred)

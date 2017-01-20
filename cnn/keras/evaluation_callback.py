@@ -46,12 +46,12 @@ class Evaluation(Callback):
         self.generator = generator
         self.callbacks = callbacks
 
-    def _set_params(self, params):
+    def set_params(self, params):
         super(Evaluation, self)._set_params(params)
         for callback in self.callbacks:
             callback._set_params(params)
 
-    def _set_model(self, model):
+    def set_model(self, model):
         super(Evaluation, self)._set_model(model)
         for callback in self.callbacks:
             callback._set_model(model)
