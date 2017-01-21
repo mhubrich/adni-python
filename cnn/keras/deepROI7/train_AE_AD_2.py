@@ -8,9 +8,9 @@ np.random.seed(SEED)
 ##############################################################
 
 import os
+from keras.callbacks import ModelCheckpoint, EarlyStopping
 from cnn.keras import callbacks
 from cnn.keras.evaluation_callback2 import Evaluation
-from keras.optimizers import SGD
 from cnn.keras.models.deepROI4.model_AE import build_model
 from utils.split_scans import read_imageID
 from utils.sort_scans import sort_groups
@@ -20,9 +20,9 @@ fold = str(sys.argv[1])
 
 # Training specific parameters
 target_size = (22, 22, 22)
-classes = ['Normal']
-batch_size = 32
-num_epoch = 500000
+classes = ['AD']
+batch_size = 64
+num_epoch = 1000
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_pSMC_deepROI6_1'
 path_importanceMap = 'importanceMap_1_35_fold_' + fold + '_'
@@ -40,28 +40,25 @@ def load_data(scans):
             'Could not find class %s' % c
         nb_samples += len(groups[c])
     X_AD = np.zeros((nb_samples, 1,) + target_size, dtype=np.float32)
-    y = np.zeros(nb_samples, dtype=np.int32)
     i = 0
     for c in classes:
         for scan in groups[c]:
             X_AD[i] = np.load(scan.path) * importanceMap_AD
-            y[i] = 0 if scan.group == classes[0] else 1
             i += 1
-    return X_AD, y
+    return X_AD
 
 
 def train():
     # Get inputs for training and validation
     scans_train = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_train')
-    x_train_AD, y_train = load_data(scans_train)
+    x_train_AD = load_data(scans_train)
 
     scans_val = read_imageID(path_ADNI, '/home/mhubrich/ADNI_CV_mean2/' + fold + '_val')
-    x_val_AD, y_val = load_data(scans_val)
+    x_val_AD = load_data(scans_val)
 
     # Set up the model
     model = build_model()
-    #sgd = SGD(lr=0.001, decay=0.0005, momentum=0.9, nesterov=True)
-    model.compile(loss='mse', optimizer='rmsprop', metrics=['accuracy'])
+    model.compile(loss='mse', optimizer='rmsprop')
 
     if not os.path.exists(path_checkpoints):
         os.makedirs(path_checkpoints)
@@ -69,10 +66,9 @@ def train():
     path_checkp = os.path.join(path_checkpoints, 'weights.h5')
 
     # Define callbacks
-    cbks = [callbacks.print_history(),
-            callbacks.flush(),
-            callbacks.ModelCheckpoint(path_checkp, monitor='val_loss', verbose=0, save_best_only=True, save_weights_only=False, mode='auto'),
-            callbacks.EarlyStopping(monitor='val_loss', patience=100, verbose=0, mode='auto')]
+    cbks = [callbacks.flush(),
+            ModelCheckpoint(path_checkp, monitor='val_loss', verbose=0, save_best_only=True, save_weights_only=False, mode='auto'),
+            EarlyStopping(monitor='val_loss', patience=80, verbose=0, mode='auto')]
 
     hist = model.fit(x=x_train_AD,
                      y=x_train_AD,
