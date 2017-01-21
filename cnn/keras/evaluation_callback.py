@@ -15,13 +15,13 @@ def loss(y_true, y_pred):
 def TP(y_true, y_pred):
     # TP = tp/(tp+fn)
     conf = confusion_matrix(y_true, np.round(y_pred))
-    return float(conf[1,1]) / (conf[1,1] + conf[0,1] + epsilon())
+    return float(conf[1,1]) / (conf[1,1] + conf[1,0] + epsilon())
 
 
 def TN(y_true, y_pred):
     # TN = (tn/tn+fp)
     conf = confusion_matrix(y_true, np.round(y_pred))
-    return float(conf[0,0]) / (conf[0,0] + conf[1,0] + epsilon())
+    return float(conf[0,0]) / (conf[0,0] + conf[0,1] + epsilon())
 
 
 def mean_accuracy(y_true, y_pred):

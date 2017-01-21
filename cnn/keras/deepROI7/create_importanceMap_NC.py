@@ -10,7 +10,7 @@ target_size = (22, 22, 22)
 filter_length = [3, 5]
 classes = {'Normal':0, 'AD':1}
 
-path_predictions = 'predictions_deepROI7_1_fliter_'
+path_predictions = 'predictions_deepROI7_2_fliter_'
 
 importanceMap = np.zeros(target_size, dtype=np.float32)
 importanceCounts = np.zeros(target_size, dtype=np.int32)
@@ -41,9 +41,9 @@ for k in filter_length:
 
 importanceMap[np.where(importanceCounts > 0)] /= importanceCounts[np.where(importanceCounts > 0)]
 
-np.save('importanceMap_1_35_fold_' + fold + '_NC.npy', importanceMap)
+np.save('importanceMap_2_35_fold_' + fold + '_NC.npy', importanceMap)
 
 img = nib.Nifti1Image(importanceMap, np.eye(4))
-nib.save(img, 'importanceMap_1_35_fold_' + fold + '_NC.nii')
+nib.save(img, 'importanceMap_2_35_fold_' + fold + '_NC.nii')
 
 

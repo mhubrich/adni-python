@@ -10,15 +10,15 @@ target_size = (22, 22, 22)
 filter_length = [3, 5]
 classes = {'Normal':0, 'AD':1}
 
-path_predictions = 'predictions_deepROI7_2_fliter_'
+path_predictions = 'predictions_deepROI8_1_fliter_'
 
 importanceMap = np.zeros(target_size, dtype=np.float32)
-importanceCounts = np.zeros(target_size, dtype=np.int32)
+counts = np.zeros(target_size, dtype=np.float32)
 
 for k in filter_length:
     predictions = []
     imageIDs = {}
-    with open(path_predictions + str(k) + '_fold_' + fold +  '.csv', 'rb') as csvfile:
+    with open(path_predictions + str(k) + '_fold_' + fold +  '_old.csv', 'rb') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             if int(row[2]) == -1 and int(row[3]) == -1 and int(row[4]) == -1:
@@ -36,14 +36,14 @@ for k in filter_length:
         y = predictions[i][3]
         z = predictions[i][4]
         importanceMap[x, y, z] += importance
-        importanceCounts[x, y, z] += 1
+        counts[x, y, z] += 1
 
 
-importanceMap[np.where(importanceCounts > 0)] /= importanceCounts[np.where(importanceCounts > 0)]
+importanceMap[np.where(counts > 0)] /= counts[np.where(counts > 0)]
 
-np.save('importanceMap_2_35_fold_' + fold + '_AD.npy', importanceMap)
+np.save('importanceMap_1_35_fold_' + fold + '_AD_old.npy', importanceMap)
 
 img = nib.Nifti1Image(importanceMap, np.eye(4))
-nib.save(img, 'importanceMap_2_35_fold_' + fold + '_AD.nii')
+nib.save(img, 'importanceMap_1_35_fold_' + fold + '_AD_old.nii')
 
 

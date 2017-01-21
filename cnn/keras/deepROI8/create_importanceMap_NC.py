@@ -10,10 +10,9 @@ target_size = (22, 22, 22)
 filter_length = [3, 5]
 classes = {'Normal':0, 'AD':1}
 
-path_predictions = 'predictions_deepROI7_2_fliter_'
+path_predictions = 'predictions_deepROI8_1_fliter_'
 
 importanceMap = np.zeros(target_size, dtype=np.float32)
-importanceCounts = np.zeros(target_size, dtype=np.int32)
 
 for k in filter_length:
     predictions = []
@@ -27,7 +26,7 @@ for k in filter_length:
                 predictions.append([row[0], classes[row[1]], int(row[2]), int(row[3]), int(row[4]), float(row[5])])
 
     for i in range(len(predictions)):
-        if predictions[i][1] != classes['AD']:
+        if predictions[i][1] != classes['Normal']:
             continue
         importance = predictions[i][5] - imageIDs[predictions[i][0]]
         if predictions[i][1] == classes['AD']:
@@ -36,14 +35,13 @@ for k in filter_length:
         y = predictions[i][3]
         z = predictions[i][4]
         importanceMap[x, y, z] += importance
-        importanceCounts[x, y, z] += 1
 
 
-importanceMap[np.where(importanceCounts > 0)] /= importanceCounts[np.where(importanceCounts > 0)]
+importanceMap /= len(filter_length)
 
-np.save('importanceMap_2_35_fold_' + fold + '_AD.npy', importanceMap)
+np.save('importanceMap_1_35_fold_' + fold + '_NC.npy', importanceMap)
 
 img = nib.Nifti1Image(importanceMap, np.eye(4))
-nib.save(img, 'importanceMap_2_35_fold_' + fold + '_AD.nii')
+nib.save(img, 'importanceMap_1_35_fold_' + fold + '_NC.nii')
 
 
