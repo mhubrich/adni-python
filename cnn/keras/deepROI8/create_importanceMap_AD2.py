@@ -7,7 +7,7 @@ import csv
 fold = str(sys.argv[1])
 
 target_size = (22, 22, 22)
-filter_length = [3, 5]
+filter_length = [3]
 classes = {'Normal':0, 'AD':1}
 
 path_predictions = 'predictions_deepROI8_1_fliter_'
@@ -62,9 +62,9 @@ importanceMap2 = np.array(importanceMap, copy=True)
 for j in range(len(indices[0])):
     interpolate(importanceMap2, importanceMap, grid, (indices[0][j], indices[1][j], indices[2][j]))
 
-np.save('importanceMap_1_35_fold_' + fold + '_AD.npy', importanceMap2)
+np.save('importanceMap_1_3_fold_' + fold + '_AD.npy', importanceMap2)
 
 img = nib.Nifti1Image(importanceMap2, np.eye(4))
-nib.save(img, 'importanceMap_1_35_fold_' + fold + '_AD.nii')
+nib.save(img, 'importanceMap_1_3_fold_' + fold + '_AD.nii')
 
 

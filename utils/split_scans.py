@@ -10,7 +10,10 @@ def read_imageID(path_ADNI, fname):
     ret = []
     with open(fname, 'rb') as f:
         content = [x.strip(os.linesep) for x in f.readlines()]
-    scans = load_scans(path_ADNI)
+    if isinstance(path_ADNI, basestring):
+        scans = load_scans(path_ADNI)
+    else:
+        scans = path_ADNI
     for imageID in content:
         for scan in scans:
             if imageID == scan.imageID:
