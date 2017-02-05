@@ -21,7 +21,7 @@ fold = str(sys.argv[1])
 # Training specific parameters
 target_size = (22, 22, 22)
 classes = ['Normal', 'AD']
-batch_size = 128
+batch_size = 64
 num_epoch = 1000
 # Paths
 path_ADNI = '/home/mhubrich/ADNI_pSMC_deepROI6_1'
@@ -32,10 +32,10 @@ path_importanceMap = 'importanceMap_1_35_fold_' + fold
 def load_data(scans):
     importanceMap_NC = np.load(path_importanceMap + '_NC.npy')
     importanceMap_AD = np.load(path_importanceMap + '_AD.npy')
-    importanceMap_NC[np.where(importanceMap_NC < 0)] = 0
-    importanceMap_NC[np.where(importanceMap_NC > 0)] = 1
-    importanceMap_AD[np.where(importanceMap_AD < 0)] = 0
-    importanceMap_AD[np.where(importanceMap_AD > 0)] = 1
+    importanceMap_NC[np.where(importanceMap_NC < 0.001)] = 0
+    importanceMap_NC[np.where(importanceMap_NC >= 0.001)] = 1
+    importanceMap_AD[np.where(importanceMap_AD < 0.001)] = 0
+    importanceMap_AD[np.where(importanceMap_AD >= 0.001)] = 1
     groups, _ = sort_groups(scans)
     nb_samples = 0
     for c in classes:
