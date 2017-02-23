@@ -1,17 +1,17 @@
 import os
 import numpy as np
-from sklearn.model_selection import StratifiedKFold, train_test_split
+#from sklearn.model_selection import StratifiedKFold, train_test_split
 
 from utils.load_scans import load_scans
 from utils.sort_scans import sort_subjects
 
 
-def read_imageID(path_ADNI, fname):
+def read_imageID(path_ADNI, fname, ext='npy'):
     ret = []
     with open(fname, 'rb') as f:
         content = [x.strip(os.linesep) for x in f.readlines()]
     if isinstance(path_ADNI, basestring):
-        scans = load_scans(path_ADNI)
+        scans = load_scans(path_ADNI, ext)
     else:
         scans = path_ADNI
     for imageID in content:
