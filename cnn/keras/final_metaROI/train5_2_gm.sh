@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THEANO_FLAGS=device=gpu,floatX=float32 python train5_2_gm.py 1 > output_5_2_gm_CV1
+#THEANO_FLAGS=device=gpu,floatX=float32 python train5_2_gm.py 1 > output_5_2_gm_CV1
 THEANO_FLAGS=device=gpu,floatX=float32 python train5_2_gm.py 2 > output_5_2_gm_CV2
 THEANO_FLAGS=device=gpu,floatX=float32 python train5_2_gm.py 3 > output_5_2_gm_CV3
 THEANO_FLAGS=device=gpu,floatX=float32 python train5_2_gm.py 4 > output_5_2_gm_CV4
